@@ -8,8 +8,8 @@ function checkMatch($conn){
     $ask = getSmallestAsk($conn); 
     
     if($bid >= $ask){
-        $bidID = '';
-        $askID = '';
+        $bidID = getBuyOrderID($conn);
+        $askID = getSellOrderID($conn);
         $MarketMaker = getMarketMaker($conn); //Who is the market maker and who is the taker?
         $buyAmount = getBuyAmount($conn); //Amount that the biggest bid has available
         $sellAmount = getSellAmount($conn); //Amount that the smallest ask has available
@@ -72,20 +72,39 @@ function updateBalance($conn, $amount, $eur, $username, $who){ //$who='buyer' or
     }
 }
 function deleteOrder($conn, $orderType, $username, $amount, $price){
-    if($orderType=="buy"){
-        //$sql = "DELETE FROM mfeurbids WHERE username='$username' and price='$price'";
-        //$result = $conn->query($sql);
-    }else if($orderType=="sell"){
-        
+    if($orderType=='buy'){
+        $sql = "DELETE FROM mfeurbids WHERE username='$username' and price='$price'";
+        $result = $conn->query($sql);
+    }else if($orderType=='sell'){
+        $sql = "DELETE FROM mfeurasks WHERE username='$username' and price='$price'";
+        $result = $conn->query($sql);
     }
 }
 function updateOrderBook($conn, $orderType, $username, $amount, $price){  //We use to update a partial filled order
     if($orderType=='buy'){
         $sql = "UPDATE mfeurbids SET amountRP=amountRP-'$amount' WHERE username='$username' and price='$price'";   
         $result = $conn->query($sql);
+        
+        //Check if amount is 0 or less. If true, it deletes the order
+        $sql2 = "SELECT * FROM mfeurbids WHERE  LIMIT 1";
+        $result2 = $conn->query($sql2);
+        while($row = mysqli_fetch_assoc($result2)){
+            if($row['amountRP']<=0){
+                echo 'True';
+            }
+        }
     }else if($orderType=='sell'){
         $sql = "UPDATE mfeurasks SET amountRP=amountRP-'$amount' WHERE username='$username'and price='$price'";   
         $result = $conn->query($sql);
+        
+        //Check if amount is 0 or less. If true, it deletes the order
+        $sql2 = "SELECT * FROM mfeurtrades ORDER BY date DESC";
+        $result2 = $conn->query($sql2);
+        while($row = mysqli_fetch_assoc($result2)){
+            if($row['amountRP']<=0){
+                echo 'True';
+            }
+        }
     }
 }
 function getUserData($conn, $username, $dataType){ 
@@ -141,6 +160,18 @@ function getSellerName($conn){
     $result = $conn->query($sql);
     $row = mysqli_fetch_array($result);
     return $row['username'];
+}
+function getBuyOrderID($conn){
+    $sql = "SELECT id FROM mfeurbids ORDER BY price DESC LIMIT 1";
+    $result = $conn->query($sql);
+    $row = mysqli_fetch_array($result);
+    return $row['id'];
+}
+function getSellOrderID($conn){
+    $sql = "SELECT id FROM mfeurbids ORDER BY price ASC LIMIT 1";
+    $result = $conn->query($sql);
+    $row = mysqli_fetch_array($result);
+    return $row['id'];
 }
 
 function getMarketMaker($conn){
