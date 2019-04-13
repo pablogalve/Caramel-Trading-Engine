@@ -10,11 +10,10 @@ function check_Availability($conn, $type, $ticker, $amountRP, $amountEUR, $usern
             while($row = mysqli_fetch_assoc($result)){ //SALTA ERROR
             echo ' eurAvailable: ' . $row['eurAvailable'];
                 if($row['eurAvailable'] >= $amountEUR){ //You need available funds to be greater than EUR in the buy order
-                    echo 'suficiente';
                     return true;
                 }else{
                     //echo ' Error:eurAvailable: ' . $row['eurAvailable'];
-                    echo 'nastis';
+                    echo 'Error. Not enough available funds';
                     return false;
                 }
             }
@@ -27,6 +26,7 @@ function check_Availability($conn, $type, $ticker, $amountRP, $amountEUR, $usern
                 if($row['mfAvailable'] >= $amountRP){ //You need available mf to be greater than MF in the sell order
                     return true;
                 }else{
+                    echo 'Error. Not enough available RP';
                     return false;
                 }
             }
