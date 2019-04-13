@@ -16,15 +16,11 @@ function checkMatch($conn){
         $buyerName = getBuyerName($conn); //Username of the buyer
         $sellerName= getSellerName($conn); //USername of the seller
         
-        echo ' Buy Amount: ' . $buyAmount;
-        echo ' Sell Amount: ' . $sellAmount;
-        
         if($buyAmount <= $sellAmount){ //Compare amounts listed by bid and ask and exchange the smallest
             $exchangeAmount = $buyAmount;
         }else if($sellAmount < $buyAmount){
             $exchangeAmount = $sellAmount;
         }
-        echo ' Ex Amount: ' . $exchangeAmount;
         
         if($MarketMaker ==1){  // 1) Maker=buyer. Taker=seller
             $exchangePrice= $bid;
@@ -58,7 +54,7 @@ function exchange($conn, $exchangePrice, $exchangeAmount, $buyerName, $sellerNam
     
     updateBalance($conn, $exchangeAmount, $exchangeFunds, $buyerName, 'buyer');
     updateBalance($conn, $exchangeAmount, $exchangeFunds, $sellerName, 'seller');
-    
+   
     addToLastTrades($conn, $exchangePrice, $exchangeAmount, 'buy', $buyerName);
     addToLastTrades($conn, $exchangePrice, $exchangeAmount, 'sell', $sellerName);
     
@@ -66,11 +62,11 @@ function exchange($conn, $exchangePrice, $exchangeAmount, $buyerName, $sellerNam
     updateOrderBook($conn, 'sell', $sellerName, $exchangeAmount, $exchangePrice);
 }
 function updateBalance($conn, $amount, $eur, $username, $who){ //$who='buyer' or 'seller'. $Username is the person that buys or sells
-    if($who == "buyer"){ //Quitamos eur y añadimos amount y amountAvailable
+    if($who == 'buyer'){ //Quitamos eur y a単adimos amount y amountAvailable
         $sql = "UPDATE users SET mf=mf+'$amount',mfAvailable=mfAvailable+'$amount',eur=eur-'$eur' WHERE uid='$username'";
         $result = $conn->query($sql);
         
-    }else if($who == "seller"){ //Quitamos amount y añadimos eur y eurAvailable
+    }else if($who == 'seller'){ //Quitamos amount y a単adimos eur y eurAvailable
         $sql = "UPDATE users SET mf=mf-'$amount',eurAvailable=eurAvailable+'$eur',eur=eur+'$eur' WHERE uid='$username'";
         $result = $conn->query($sql);
     }
@@ -84,11 +80,11 @@ function deleteOrder($conn, $orderType, $username, $amount, $price){
     }
 }
 function updateOrderBook($conn, $orderType, $username, $amount, $price){  //We use to update a partial filled order
-    if($orderType=="buy"){
-        $sql = "UPDATE mfeurbids SET amount=amount-'$amount' WHERE username='$username' and price='$price'";   
+    if($orderType=='buy'){
+        $sql = "UPDATE mfeurbids SET amountRP=amountRP-'$amount' WHERE username='$username' and price='$price'";   
         $result = $conn->query($sql);
-    }else if($orderType=="sell"){
-        $sql = "UPDATE mfeurasks SET amount=amount-'$amount' WHERE username='$username'and price='$price'";   
+    }else if($orderType=='sell'){
+        $sql = "UPDATE mfeurasks SET amountRP=amountRP-'$amount' WHERE username='$username'and price='$price'";   
         $result = $conn->query($sql);
     }
 }
@@ -123,16 +119,16 @@ function getSmallestAsk($conn){
 }
 
 function getBuyAmount($conn){
-    $sql = "SELECT amount FROM mfeurbids ORDER BY price DESC LIMIT 1";
+    $sql = "SELECT amountRP FROM mfeurbids ORDER BY price DESC LIMIT 1";
     $result = $conn->query($sql);
     $row = mysqli_fetch_array($result);
-    return $row['amount'];
+    return $row['amountRP'];
 }
 function getSellAmount($conn){
-    $sql = "SELECT amount FROM mfeurasks ORDER BY price ASC LIMIT 1";
+    $sql = "SELECT amountRP FROM mfeurasks ORDER BY price ASC LIMIT 1";
     $result = $conn->query($sql);
     $row = mysqli_fetch_array($result);
-    return $row['amount'];
+    return $row['amountRP'];
 }
 function getBuyerName($conn){
     $sql = "SELECT username FROM mfeurbids ORDER BY price DESC LIMIT 1";
@@ -157,10 +153,8 @@ function getMarketMaker($conn){
     $rowBid = mysqli_fetch_array($resultBid);
    
     if($rowBid['date'] < $rowAsk['date']){//Bid order was created before than ask order
-        echo ' Bid is maker ';
         return 1;
     }else if($rowBid['date'] > $rowAsk['date']){//Bid order was created before than ask order
-        echo ' Ask is maker';
         return 0;
     }else{  //Both orders have been sent at the same time
         echo 'Matching error. We can not determine who is maker/taker.';
@@ -172,6 +166,7 @@ function getMarketMaker($conn){
 
 function addToLastTrades($conn, $exchangePrice, $exchangeAmount, $orderType, $username){
     $date = date('Y-m-d H:i:s a', time());
+    echo 'Today is: ' . $date;
     $sql = "INSERT INTO mfeurtrades (price, amount, username, orderType, date) 
             VALUES ('$exchangePrice','$exchangeAmount', '$username', '$orderType', '$date')";
     $result = $conn->query($sql);
