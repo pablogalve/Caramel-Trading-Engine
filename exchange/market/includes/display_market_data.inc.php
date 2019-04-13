@@ -22,6 +22,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
                 <th>Username</th>
                 <th>Amount(MF)</th>
                 <th>Price(EUR)</th>
+                <th>Date</th>
               </tr>
             
             <?php
@@ -31,7 +32,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
             echo "<br><br><br> Last Trades <br>";
             
             while($row = mysqli_fetch_assoc($result)){
-                echo "<tr><td>". $row['username'] ."</td><td>". $row['amountRP'] ."</td><td>". $row['price'] ."</td></tr>";
+                echo "<tr><td>". $row['username'] ."</td><td>". $row['amountRP'] ."</td><td>". $row['price'] ."</td><td>". $row['date'] ."</td></tr>";
             }
             echo '</table>';
             ?>
