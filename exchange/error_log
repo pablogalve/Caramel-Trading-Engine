@@ -1,0 +1,15 @@
+[24-Nov-2018 18:45:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[25-Nov-2018 15:32:15 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[03-Dec-2018 17:10:00 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[03-Dec-2018 17:15:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[10-Dec-2018 14:57:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[10-Dec-2018 15:03:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[10-Dec-2018 15:04:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[10-Dec-2018 15:40:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[10-Dec-2018 15:40:09 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[11-Dec-2018 08:31:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[11-Dec-2018 18:46:40 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[11-Apr-2019 15:32:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[11-Apr-2019 15:36:29 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[11-Apr-2019 15:37:52 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55
+[11-Apr-2019 15:58:35 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/holders.php on line 55

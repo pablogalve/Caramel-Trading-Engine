@@ -1,0 +1,235 @@
+[28-Oct-2018 15:53:01 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/pablogalve.com/includes/signup.inc.php on line 4
+[28-Oct-2018 15:53:01 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/pablogalve.com/includes/signup.inc.php on line 4
+[28-Oct-2018 15:53:01 UTC] PHP Warning:  include(): Failed opening 'dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/pablogalve.com/includes/signup.inc.php on line 4
+[28-Oct-2018 15:53:01 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/pablogalve.com/includes/signup.inc.php on line 13
+[28-Oct-2018 15:53:01 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/pablogalve.com/includes/signup.inc.php on line 13
+[28-Oct-2018 15:53:13 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/pablogalve.com/includes/signup.inc.php on line 4
+[28-Oct-2018 15:53:13 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/pablogalve.com/includes/signup.inc.php on line 4
+[28-Oct-2018 15:53:13 UTC] PHP Warning:  include(): Failed opening 'dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/pablogalve.com/includes/signup.inc.php on line 4
+[28-Oct-2018 15:53:13 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/pablogalve.com/includes/signup.inc.php on line 13
+[28-Oct-2018 15:53:13 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/pablogalve.com/includes/signup.inc.php on line 13
+[28-Oct-2018 16:03:28 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'moonfund_eVj5t15E' (-2) in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 3
+[28-Oct-2018 16:03:28 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 6
+[28-Oct-2018 16:04:58 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'moonfund_eVj5t15E' (-2) in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 3
+[28-Oct-2018 16:04:58 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 6
+[28-Oct-2018 16:05:42 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'moonfund_eVj5t15E' (-2) in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 3
+[28-Oct-2018 16:05:42 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 6
+[28-Oct-2018 16:07:20 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (-2) in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 3
+[28-Oct-2018 16:07:20 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 6
+[28-Oct-2018 16:08:15 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (-2) in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 3
+[28-Oct-2018 16:08:15 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 6
+[28-Oct-2018 16:08:45 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (-2) in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 3
+[28-Oct-2018 16:08:45 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/pablogalve.com/dbh.php on line 6
+[30-Oct-2018 23:54:58 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[30-Oct-2018 23:54:58 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[30-Oct-2018 23:58:44 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[30-Oct-2018 23:58:44 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[30-Oct-2018 23:59:59 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[30-Oct-2018 23:59:59 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[31-Oct-2018 00:00:00 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[31-Oct-2018 00:00:00 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[31-Oct-2018 00:00:03 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[31-Oct-2018 00:00:03 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[31-Oct-2018 00:04:17 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[31-Oct-2018 00:04:17 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[31-Oct-2018 00:04:24 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[31-Oct-2018 00:04:24 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[11-Nov-2018 23:16:59 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[11-Nov-2018 23:16:59 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[11-Nov-2018 23:17:11 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[11-Nov-2018 23:17:11 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[11-Nov-2018 23:26:57 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[11-Nov-2018 23:26:57 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[11-Nov-2018 23:27:33 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[11-Nov-2018 23:27:33 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[11-Nov-2018 23:30:45 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[11-Nov-2018 23:30:45 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[11-Nov-2018 23:30:48 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[11-Nov-2018 23:30:48 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[11-Nov-2018 23:38:00 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[11-Nov-2018 23:38:00 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[11-Nov-2018 23:48:16 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[11-Nov-2018 23:48:16 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[12-Nov-2018 00:00:37 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[12-Nov-2018 00:00:37 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[12-Nov-2018 00:07:43 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[12-Nov-2018 00:07:43 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[12-Nov-2018 00:10:27 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[12-Nov-2018 00:10:27 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[12-Nov-2018 00:11:25 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM'' in /home2/moonfund/public_html/exchange/dbh.php on line 3
+[12-Nov-2018 00:11:25 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[13-Nov-2018 17:09:18 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[13-Nov-2018 23:33:15 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[13-Nov-2018 23:33:17 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[13-Nov-2018 23:33:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[16-Nov-2018 16:28:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 14:42:36 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 14:42:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 14:42:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 14:42:42 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 14:42:42 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 15:08:35 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 15:19:54 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 17:04:21 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:04:21 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:05:01 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:05:01 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:05:25 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:05:25 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:05:30 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:05:30 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:05:59 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:05:59 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:17:30 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:17:30 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:18:06 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:18:06 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:34:39 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:34:39 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:37:21 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:37:21 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:37:44 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:37:44 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:38:03 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:38:03 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:39:00 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:39:00 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 17:39:45 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 17:39:45 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 22:16:33 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 22:16:33 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 22:16:59 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 22:16:59 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 22:17:22 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 22:17:22 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 22:18:11 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 22:18:11 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 22:18:35 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 22:18:35 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 22:19:47 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 22:19:47 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 22:21:37 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 22:21:37 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 22:22:09 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 22:22:09 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 22:22:13 UTC] PHP Notice:  Undefined index: first in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 6
+[18-Nov-2018 22:22:13 UTC] PHP Notice:  Undefined index: last in /home2/moonfund/public_html/exchange/includes/signup.inc.php on line 7
+[18-Nov-2018 22:45:59 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 7
+[18-Nov-2018 22:45:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 22:45:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 15
+[18-Nov-2018 22:46:45 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 7
+[18-Nov-2018 22:46:45 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 22:46:45 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 15
+[18-Nov-2018 22:47:17 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 7
+[18-Nov-2018 22:47:17 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 22:47:17 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 15
+[18-Nov-2018 22:49:30 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 7
+[18-Nov-2018 22:49:30 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 22:49:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 15
+[18-Nov-2018 22:50:16 UTC] PHP Warning:  include(/../dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 22:50:16 UTC] PHP Warning:  include(): Failed opening '/../dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 22:50:16 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 7
+[18-Nov-2018 22:50:16 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 11
+[18-Nov-2018 22:50:16 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 11
+[18-Nov-2018 22:53:04 UTC] PHP Parse error:  syntax error, unexpected '.' in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 22:53:32 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 7
+[18-Nov-2018 22:53:32 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 22:53:32 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 15
+[18-Nov-2018 22:59:03 UTC] PHP Warning:  include($path): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 22:59:03 UTC] PHP Warning:  include($path): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 22:59:03 UTC] PHP Warning:  include(): Failed opening '$path' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 22:59:03 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 7
+[18-Nov-2018 22:59:03 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 11
+[18-Nov-2018 22:59:03 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 11
+[18-Nov-2018 23:00:19 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 9
+[18-Nov-2018 23:00:19 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 14
+[18-Nov-2018 23:00:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:04:09 UTC] PHP Warning:  include(exchange/dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 23:04:09 UTC] PHP Warning:  include(exchange/dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 23:04:09 UTC] PHP Warning:  include(): Failed opening 'exchange/dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 23:04:09 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 9
+[18-Nov-2018 23:04:09 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 13
+[18-Nov-2018 23:04:09 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 13
+[18-Nov-2018 23:05:21 UTC] PHP Warning:  include(exchange/dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 23:05:21 UTC] PHP Warning:  include(exchange/dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 23:05:21 UTC] PHP Warning:  include(): Failed opening 'exchange/dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 23:05:21 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 13
+[18-Nov-2018 23:05:21 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:05:21 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:08:42 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 23:08:42 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 23:08:42 UTC] PHP Warning:  include(): Failed opening 'dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 3
+[18-Nov-2018 23:08:42 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 13
+[18-Nov-2018 23:08:42 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:08:42 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:10:16 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 23:10:16 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 23:10:16 UTC] PHP Warning:  include(): Failed opening 'dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 23:10:16 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 23:10:16 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 16
+[18-Nov-2018 23:10:16 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 16
+[18-Nov-2018 23:11:02 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 23:11:02 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 23:11:02 UTC] PHP Warning:  include(): Failed opening 'dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 23:11:02 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 23:11:02 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 16
+[18-Nov-2018 23:11:02 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 16
+[18-Nov-2018 23:12:05 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 23:12:05 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:12:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 20
+[18-Nov-2018 23:12:31 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 23:12:31 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:12:31 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 20
+[18-Nov-2018 23:12:56 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 23:12:56 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:12:56 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 20
+[18-Nov-2018 23:13:46 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 23:13:46 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:13:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 21
+[18-Nov-2018 23:16:19 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 23:16:19 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:17:03 UTC] PHP Notice:  Undefined index: username in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 12
+[18-Nov-2018 23:17:03 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:17:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 17
+[18-Nov-2018 23:19:47 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:20:09 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:21:00 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:21:47 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:22:11 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:22:45 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:22:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:23:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:28:47 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 23:28:47 UTC] PHP Warning:  include(dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 23:28:47 UTC] PHP Warning:  include(): Failed opening 'dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 2
+[18-Nov-2018 23:28:47 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 16
+[18-Nov-2018 23:28:47 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 16
+[18-Nov-2018 23:40:12 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 16
+[18-Nov-2018 23:40:12 UTC] PHP Fatal error:  Call to a member function query() on null in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 16
+[18-Nov-2018 23:40:26 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:40:30 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:40:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:41:02 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:41:19 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:42:15 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:42:26 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:43:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:43:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 21
+[18-Nov-2018 23:43:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:43:24 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 21
+[18-Nov-2018 23:43:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 18
+[18-Nov-2018 23:43:34 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 21
+[18-Nov-2018 23:44:04 UTC] PHP Notice:  Undefined index: id in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 25
+[18-Nov-2018 23:44:36 UTC] PHP Notice:  Undefined index: id in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 25
+[18-Nov-2018 23:45:15 UTC] PHP Notice:  Undefined index: id in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 25
+[18-Nov-2018 23:53:02 UTC] PHP Fatal error:  Call to undefined function session_register() in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 25
+[18-Nov-2018 23:53:24 UTC] PHP Fatal error:  Call to undefined function session_register() in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 23
+[18-Nov-2018 23:54:10 UTC] PHP Fatal error:  Call to undefined function session_register() in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 22
+[18-Nov-2018 23:54:20 UTC] PHP Fatal error:  Call to undefined function session_register() in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 21
+[18-Nov-2018 23:54:25 UTC] PHP Fatal error:  Call to undefined function session_register() in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 21
+[18-Nov-2018 23:55:02 UTC] PHP Fatal error:  Call to undefined function session_register() in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 21
+[19-Nov-2018 00:01:47 UTC] PHP Notice:  Undefined index: password in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 13
+[19-Nov-2018 00:04:16 UTC] PHP Notice:  Undefined index: password in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 13
+[19-Nov-2018 00:04:45 UTC] PHP Notice:  Undefined index: password in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 13
+[19-Nov-2018 00:05:00 UTC] PHP Notice:  Undefined index: password in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 13
+[19-Nov-2018 00:11:05 UTC] PHP Notice:  Undefined index: pwd in /home2/moonfund/public_html/exchange/includes/login.inc.php on line 13
