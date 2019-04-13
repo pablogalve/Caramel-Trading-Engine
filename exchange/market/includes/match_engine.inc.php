@@ -166,8 +166,8 @@ function getMarketMaker($conn){
 
 function addToLastTrades($conn, $exchangePrice, $exchangeAmount, $orderType, $username){
     $date = date('Y-m-d H:i:s a', time());
-    echo 'Today is: ' . $date;
-    $sql = "INSERT INTO mfeurtrades (price, amount, username, orderType, date) 
+    
+    $sql = "INSERT INTO mfeurtrades (price, amountRP, username, orderType, date) 
             VALUES ('$exchangePrice','$exchangeAmount', '$username', '$orderType', '$date')";
     $result = $conn->query($sql);
 }
