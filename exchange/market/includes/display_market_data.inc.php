@@ -22,17 +22,19 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
                 <th>Username</th>
                 <th>Amount(MF)</th>
                 <th>Price(EUR)</th>
+                <th>Fee(EUR)</th>
+                <th>Fee(Royalty)</th>
                 <th>Date</th>
               </tr>
             
             <?php
 
-            $sql = "SELECT * FROM mfeurtrades ORDER BY price DESC";
+            $sql = "SELECT * FROM mfeurtrades ORDER BY date DESC";
             $result = $conn->query($sql);
             echo "<br><br><br> Last Trades <br>";
             
             while($row = mysqli_fetch_assoc($result)){
-                echo "<tr><td>". $row['username'] ."</td><td>". $row['amountRP'] ."</td><td>". $row['price'] ."</td><td>". $row['date'] ."</td></tr>";
+                echo "<tr><td>". $row['username'] ."</td><td>". $row['amountRP'] ."</td><td>". $row['price'] ."</td><td>". $row['feeEUR'] ."</td><td>". $row['feeRP'] ."</td><td>". $row['date'] ."</td></tr>";
             }
             echo '</table>';
             ?>
