@@ -8,13 +8,9 @@ function checkMatch($conn){
     $ask = getSmallestAsk($conn); 
     
     if($bid >= $ask){
-        $bidID = getBuyOrderID($conn);
-        $askID = getSellOrderID($conn);
         $MarketMaker = getMarketMaker($conn); //Who is the market maker and who is the taker?
         $buyAmount = getBuyAmount($conn); //Amount that the biggest bid has available
         $sellAmount = getSellAmount($conn); //Amount that the smallest ask has available
-        $buyerName = getBuyerName($conn); //Username of the buyer
-        $sellerName= getSellerName($conn); //USername of the seller
         
         if($buyAmount <= $sellAmount){ //Compare amounts listed by bid and ask and exchange the smallest
             $exchangeAmount = $buyAmount;
@@ -22,29 +18,34 @@ function checkMatch($conn){
             $exchangeAmount = $sellAmount;
         }
         
-        if($MarketMaker ==1){  // 1) Maker=buyer. Taker=seller
+        if($MarketMaker == 1){  // 1) Maker=buyer. Taker=seller
             $exchangePrice= $bid;
-            $exchangeFunds= 1;
+            //$exchangeFunds= 1;
             
-            exchange($conn, $exchangePrice, $exchangeAmount, $buyerName, $sellerName);
-            
+            exchange($conn, $exchangePrice, $exchangeAmount);
             
         }else if($MarketMaker==0){  // 0) Maker=seller. Taker=buyer
             $exchangePrice= $ask;
-            $exchangeFunds= 1; 
+            //$exchangeFunds= 1; 
             
-            exchange($conn, $exchangePrice, $exchangeAmount, $buyerName, $sellerName);
+            exchange($conn, $exchangePrice, $exchangeAmount);
         }  
     }
 }
-function exchange($conn, $exchangePrice, $exchangeAmount, $buyerName, $sellerName){
+function exchange($conn, $exchangePrice, $exchangeAmount){
     //Now let's get buyer data from user's database to proceed to exchange
+    $buyerName = getBuyerName($conn); //Username of the buyer
+    $bidID = getBuyOrderID($conn);
+    
     $bidmf = getUserData($conn, $buyerName, "mf");
     $bidmfAvailable = getUserData($conn, $buyerName, "mfAvailable");
     $bideur = getUserData($conn, $buyerName, "eur");
     $bideurAvailable = getUserData($conn, $buyerName, "eurAvailable");
     
     //Now let's get data from the seller user user
+    $sellerName= getSellerName($conn); //USername of the seller
+    $askID = getSellOrderID($conn);
+    
     $askmf = getUserData($conn, $sellerName, "mf");
     $askmfAvailable = getUserData($conn, $sellerName, "mfAvailable");
     $askeur = getUserData($conn, $sellerName, "eur");
@@ -58,8 +59,8 @@ function exchange($conn, $exchangePrice, $exchangeAmount, $buyerName, $sellerNam
     addToLastTrades($conn, $exchangePrice, $exchangeAmount, 'buy', $buyerName);
     addToLastTrades($conn, $exchangePrice, $exchangeAmount, 'sell', $sellerName);
     
-    updateOrderBook($conn, 'buy', $buyerName, $exchangeAmount, $exchangePrice);
-    updateOrderBook($conn, 'sell', $sellerName, $exchangeAmount, $exchangePrice);
+    updateOrderBook($conn, 'buy', $exchangeAmount, $bidID);
+    updateOrderBook($conn, 'sell', $exchangeAmount, $askID);
 }
 function updateBalance($conn, $amount, $eur, $username, $who){ //$who='buyer' or 'seller'. $Username is the person that buys or sells
     if($who == 'buyer'){ //Quitamos eur y a単adimos amount y amountAvailable
@@ -71,38 +72,38 @@ function updateBalance($conn, $amount, $eur, $username, $who){ //$who='buyer' or
         $result = $conn->query($sql);
     }
 }
-function deleteOrder($conn, $orderType, $username, $amount, $price){
+function deleteOrder($conn, $orderType, $id){
     if($orderType=='buy'){
-        $sql = "DELETE FROM mfeurbids WHERE username='$username' and price='$price'";
+        $sql = "DELETE FROM mfeurbids WHERE id='$id'";
         $result = $conn->query($sql);
     }else if($orderType=='sell'){
-        $sql = "DELETE FROM mfeurasks WHERE username='$username' and price='$price'";
+        $sql = "DELETE FROM mfeurasks WHERE id='$id'";
         $result = $conn->query($sql);
     }
 }
-function updateOrderBook($conn, $orderType, $username, $amount, $price){  //We use to update a partial filled order
+function updateOrderBook($conn, $orderType, $amount, $id){  //We use to update a partial filled order
     if($orderType=='buy'){
-        $sql = "UPDATE mfeurbids SET amountRP=amountRP-'$amount' WHERE username='$username' and price='$price'";   
+        $sql = "UPDATE mfeurbids SET amountRP=amountRP-'$amount' WHERE id='$id'";   
         $result = $conn->query($sql);
         
         //Check if amount is 0 or less. If true, it deletes the order
-        $sql2 = "SELECT * FROM mfeurbids WHERE  LIMIT 1";
+        $sql2 = "SELECT * FROM mfeurbids WHERE id='$id'";
         $result2 = $conn->query($sql2);
         while($row = mysqli_fetch_assoc($result2)){
             if($row['amountRP']<=0){
-                echo 'True';
+                deleteOrder($conn, 'buy', $id);
             }
         }
     }else if($orderType=='sell'){
-        $sql = "UPDATE mfeurasks SET amountRP=amountRP-'$amount' WHERE username='$username'and price='$price'";   
+        $sql = "UPDATE mfeurasks SET amountRP=amountRP-'$amount' WHERE id='$id'";   
         $result = $conn->query($sql);
         
         //Check if amount is 0 or less. If true, it deletes the order
-        $sql2 = "SELECT * FROM mfeurtrades ORDER BY date DESC";
+        $sql2 = "SELECT * FROM mfeurasks WHERE id='$id'";
         $result2 = $conn->query($sql2);
         while($row = mysqli_fetch_assoc($result2)){
             if($row['amountRP']<=0){
-                echo 'True';
+                deleteOrder($conn, 'sell', $id);
             }
         }
     }
