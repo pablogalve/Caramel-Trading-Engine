@@ -53,14 +53,17 @@ function exchange($conn, $exchangePrice, $exchangeAmount){
     
     $exchangeFunds = $exchangeAmount * $exchangePrice;
     
-    updateBalance($conn, $exchangeAmount, $exchangeFunds, $buyerName, 'buyer');
-    updateBalance($conn, $exchangeAmount, $exchangeFunds, $sellerName, 'seller');
-   
     addToLastTrades($conn, $exchangePrice, $exchangeAmount, 'buy', $buyerName);
     addToLastTrades($conn, $exchangePrice, $exchangeAmount, 'sell', $sellerName);
     
+    updateBalance($conn, $exchangeAmount, $exchangeFunds, $buyerName, 'buyer');
+    updateBalance($conn, $exchangeAmount, $exchangeFunds, $sellerName, 'seller');
+    
     updateOrderBook($conn, 'buy', $exchangeAmount, $bidID);
     updateOrderBook($conn, 'sell', $exchangeAmount, $askID);
+    
+    //Check for another match, just in case there were more than one match at once
+    //checkMatch($conn); //It gives errors
 }
 function updateBalance($conn, $amount, $eur, $username, $who){ //$who='buyer' or 'seller'. $Username is the person that buys or sells
     if($who == 'buyer'){ //Quitamos eur y a単adimos amount y amountAvailable
@@ -199,8 +202,8 @@ function getMarketMaker($conn){
 function addToLastTrades($conn, $exchangePrice, $exchangeAmount, $orderType, $username){
     $date = date('Y-m-d H:i:s a', time());
     
-    $sql = "INSERT INTO mfeurtrades (price, amountRP, username, orderType, date) 
-            VALUES ('$exchangePrice','$exchangeAmount', '$username', '$orderType', '$date')";
+    $sql = "INSERT INTO `mfeurtrades`(`id`, `username`, `price`, `orderType`, `amountRP`, `amountEUR`, `feeRP`, `feeEUR`, `date`) 
+    VALUES (NULL,'$username','$exchangePrice','$orderType','$exchangeAmount','7','7','7','$date')";
     $result = $conn->query($sql);
 }
 ?>
