@@ -1,6 +1,6 @@
 <?php
-
 include '../dbh.php';
+include 'update_balances.inc.php';
 date_default_timezone_set('Europe/Tallinn');
 
 function checkMatch($conn){
@@ -65,16 +65,7 @@ function exchange($conn, $exchangePrice, $exchangeAmount){
     //Check for another match, just in case there were more than one match at once
     //checkMatch($conn); //It gives errors
 }
-function updateBalance($conn, $amount, $eur, $username, $who){ //$who='buyer' or 'seller'. $Username is the person that buys or sells
-    if($who == 'buyer'){ //Quitamos eur y a単adimos amount y amountAvailable
-        $sql = "UPDATE users SET mf=mf+'$amount',mfAvailable=mfAvailable+'$amount',eur=eur-'$eur' WHERE uid='$username'";
-        $result = $conn->query($sql);
-        
-    }else if($who == 'seller'){ //Quitamos amount y a単adimos eur y eurAvailable
-        $sql = "UPDATE users SET mf=mf-'$amount',eurAvailable=eurAvailable+'$eur',eur=eur+'$eur' WHERE uid='$username'";
-        $result = $conn->query($sql);
-    }
-}
+
 function deleteOrder($conn, $orderType, $id){
     if($orderType=='buy'){
         $sql = "DELETE FROM mfeurbids WHERE id='$id'";
