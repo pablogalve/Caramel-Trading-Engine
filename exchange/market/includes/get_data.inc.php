@@ -40,7 +40,6 @@ function getBuyAmount($conn, $ticker, $id){
         $row = mysqli_fetch_array($result);
         return $row['amountRP'];
     }
-    
 }
 function getSellAmount($conn, $ticker, $id){
     if($ticker=='mfeur'){
@@ -48,6 +47,22 @@ function getSellAmount($conn, $ticker, $id){
         $result = $conn->query($sql);
         $row = mysqli_fetch_array($result);
         return $row['amountRP'];
+    }
+}
+function getBuyAmountEUR($conn, $ticker, $id){
+    if($ticker=='mfeur'){
+        $sql = "SELECT amountEUR FROM mfeurbids WHERE id = '$id'";
+        $result = $conn->query($sql);
+        $row = mysqli_fetch_array($result);
+        return $row['amountEUR'];
+    }
+}
+function getSellAmountEUR($conn, $ticker, $id){
+    if($ticker=='mfeur'){
+        $sql = "SELECT amountEUR FROM mfeurasks WHERE id = '$id'";
+        $result = $conn->query($sql);
+        $row = mysqli_fetch_array($result);
+        return $row['amountEUR'];
     }
 }
 function getBuyerName($conn, $ticker, $id){

@@ -4,7 +4,6 @@ function buy($conn){
     if(isset($_POST['submitbuymfeur'])){
             $amountRP = $_POST['amountRP'];  //Royalty position amount
             $price = $_POST['price'];
-            //$amountEUR = $_POST['amountEUR'];
             $username = $_POST['username'];
             $type = $_POST['type'];  //Buy or sell
             $ticker = $_POST['ticker'];  //mfeur, mfbtc, mfusd, etc.
@@ -19,7 +18,6 @@ function buy($conn){
         if(isset($_POST['submitsellmfeur'])){
             $amountRP = $_POST['amountRP'];  //Royalty position amount
             $price = $_POST['price'];
-            //$amountEUR = $_POST['amountEUR'];
             $username = $_POST['username'];
             $type = $_POST['type'];  //Buy or sell
             $ticker = $_POST['ticker'];  //mfeur, mfbtc, mfusd, etc.
