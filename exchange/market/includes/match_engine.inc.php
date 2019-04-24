@@ -3,6 +3,8 @@ include '../dbh.php';
 include 'update_balances.inc.php';
 include 'delete_order.inc.php';
 include 'update_orderbook.inc.php';
+include 'getMarketMaker.inc.php';
+include 'get_data.inc.php';
 
 date_default_timezone_set('Europe/Tallinn');
 
@@ -68,110 +70,6 @@ function exchange($conn, $exchangePrice, $exchangeAmount, $bidID, $askID){
     
     //Check to see if there is more than one match
     checkMatch($conn);
-}
-
-function getUserData($conn, $username, $dataType){ 
-    $sql = "SELECT * FROM users WHERE uid = '$username'";
-    $result = $conn->query($sql);
-    $row = mysqli_fetch_array($result);
-    if($dataType == "mf"){
-        return $row['mf'];
-    }else if($dataType == "mfAvailable"){
-        return $row['mfAvailable'];
-    }else if($dataType == "eur"){
-        return $row['eur'];
-    }else if($dataType == "eurAvailable"){
-        return $row['eurAvailable'];
-    }
-}
-
-function getBiggestBid($conn, $ticker){
-    if($ticker=='mfeur'){
-        $sql = "SELECT price FROM mfeurbids ORDER BY price DESC LIMIT 1";
-        $result = $conn->query($sql);
-        $row = mysqli_fetch_array($result);
-        return $row['price'];
-    }
-}
-
-function getSmallestAsk($conn, $ticker){
-    if($ticker=='mfeur'){
-        $sql = "SELECT price FROM mfeurasks ORDER BY price ASC LIMIT 1";
-        $result = $conn->query($sql);
-        $row = mysqli_fetch_array($result);
-        return $row['price'];
-    }
-    
-}
-
-function getBuyAmount($conn, $ticker, $id){
-    if($ticker=='mfeur'){
-        $sql = "SELECT amountRP FROM mfeurbids WHERE id = '$id'";
-        $result = $conn->query($sql);
-        $row = mysqli_fetch_array($result);
-        return $row['amountRP'];
-    }
-    
-}
-function getSellAmount($conn, $ticker, $id){
-    if($ticker=='mfeur'){
-        $sql = "SELECT amountRP FROM mfeurasks WHERE id = '$id'";
-        $result = $conn->query($sql);
-        $row = mysqli_fetch_array($result);
-        return $row['amountRP'];
-    }
-}
-function getBuyerName($conn, $ticker, $id){
-    if($ticker=='mfeur'){
-        $sql = "SELECT username FROM mfeurbids WHERE id = '$id'";
-        $result = $conn->query($sql);
-        $row = mysqli_fetch_array($result);
-        return $row['username'];
-    }
-}
-function getSellerName($conn, $ticker, $id){
-    if($ticker=='mfeur'){
-        $sql = "SELECT username FROM mfeurasks WHERE id = '$id'";
-        $result = $conn->query($sql);
-        $row = mysqli_fetch_array($result);
-    return $row['username'];
-    }
-}
-function getBuyOrderID($conn, $ticker){
-    if($ticker=='mfeur'){
-        $sql = "SELECT id FROM mfeurbids ORDER BY price DESC LIMIT 1";
-        $result = $conn->query($sql);
-        $row = mysqli_fetch_array($result);
-        return $row['id'];
-    }
-}
-function getSellOrderID($conn, $ticker){
-    if($ticker=='mfeur'){
-        $sql = "SELECT id FROM mfeurasks ORDER BY price ASC LIMIT 1";
-        $result = $conn->query($sql);
-        $row = mysqli_fetch_array($result);
-        return $row['id'];
-   }
-}
-
-function getMarketMaker($conn, $ticker, $buyerID, $sellerID){
-    if($ticker=='mfeur'){
-        $sqlAsk = "SELECT date FROM mfeurasks WHERE id = '$sellerID'";
-        $resultAsk = $conn->query($sqlAsk);
-        $rowAsk = mysqli_fetch_array($resultAsk);
-    
-        $sqlBid = "SELECT date FROM mfeurbids WHERE id = '$buyerID'";
-        $resultBid = $conn->query($sqlBid);
-        $rowBid = mysqli_fetch_array($resultBid);
-        
-         if($rowBid['date'] < $rowAsk['date']){//Bid order was created before than ask order
-        return 1;
-    }else if($rowBid['date'] > $rowAsk['date']){//Bid order was created before than ask order
-        return 0;
-    }else{  //Both orders have been sent at the same time
-        echo 'Matching error. We can not determine who is maker/taker.';
-    }
-    }
 }
 
 function addToLastTrades($conn, $ticker, $exchangePrice, $exchangeAmount, $orderType, $username){
