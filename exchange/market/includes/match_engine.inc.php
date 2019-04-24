@@ -47,9 +47,8 @@ function exchange($conn, $exchangePrice, $exchangeAmount, $bidID, $askID){
     $bideur = getUserData($conn, $buyerName, "eur");
     $bideurAvailable = getUserData($conn, $buyerName, "eurAvailable");
     
-    //Now let's get data from the seller user user
+    //Now let's get data from the seller user
     $sellerName= getSellerName($conn, 'mfeur', $askID); //USername of the seller
-    
     
     $askmf = getUserData($conn, $sellerName, "mf");
     $askmfAvailable = getUserData($conn, $sellerName, "mfAvailable");
@@ -66,6 +65,9 @@ function exchange($conn, $exchangePrice, $exchangeAmount, $bidID, $askID){
     
     addToLastTrades($conn, 'mfeur', $exchangePrice, $exchangeAmount, 'buy', $buyerName);
     addToLastTrades($conn, 'mfeur', $exchangePrice, $exchangeAmount, 'sell', $sellerName);
+    
+    //Check to see if there is more than one match
+    checkMatch($conn);
 }
 
 function getUserData($conn, $username, $dataType){ 
