@@ -75,18 +75,47 @@ function exchange($conn, $exchangePrice, $exchangeAmount, $exchangeAmountEUR, $b
     updateBalance($conn, $exchangeAmount, $exchangeAmountEUR, $buyerName, 'buyer', $buyerFee, 0);
     updateBalance($conn, $exchangeAmount, $exchangeAmountEUR, $sellerName, 'seller', 0, $sellerFee);
     
+    addToCandleStick($conn, 'mfeur', $exchangePrice, $exchangeAmountEUR);
+    
     //Check to see if there is more than one match
     checkMatch($conn);
 }
 
-function addToLastTrades($conn, $ticker, $exchangePrice, $exchangeAmount, $ExchangeAmountEUR, $orderType, $username, $feeRP, $feeEUR){
+function addToLastTrades($conn, $ticker, $exchangePrice, $exchangeAmount, $exchangeAmountEUR, $orderType, $username, $feeRP, $feeEUR){
     $date = date('Y-m-d H:i:s a', time());
    
     if($ticker=='mfeur'){
         $sql = "INSERT INTO `mfeurtrades`(`id`, `username`, `price`, `orderType`, `amountRP`, `amountEUR`, `feeRP`, `feeEUR`, `date`) 
-            VALUES (NULL,'$username','$exchangePrice','$orderType','$exchangeAmount',' $ExchangeAmountEUR,','$feeRP','$feeEUR','$date')";
+            VALUES (NULL,'$username','$exchangePrice','$orderType','$exchangeAmount',' $exchangeAmountEUR,','$feeRP','$feeEUR','$date')";
         $result = $conn->query($sql);
     }
+}
+function addToCandleStick($conn, $ticker, $exchangePrice, $exchangeAmountEUR){
+    $date = date('Y-m-d', time());
     
+    $sql = "SELECT * from mfeurcandlestick";
+    $result = $conn->query($sql);
+    $row = mysqli_fetch_array($result);
+    
+    if($row['date'] == $date){
+        
+        //La fecha existe, por lo tanto las nuevas ordenes hacen UPDATE de una row/fila ya existente
+        if($exchangePrice > $row['high']){
+            $sql = "UPDATE mfeurcandlestick SET high='$exchangePrice' WHERE date='$date'";
+            $result = $conn->query($sql);
+        }else if($exchangePrice < $row['low']){
+            $sql = "UPDATE mfeurcandlestick SET low='$exchangePrice' WHERE date='$date'";
+            $result = $conn->query($sql);
+        }
+        $sql = "UPDATE mfeurcandlestick SET volume=volume+'$exchangeAmountEUR',close='$exchangePrice' WHERE date='$date'";
+        $result = $conn->query($sql);
+    }else{
+        
+        //La fecha no existe, así que hay que crearla con INSERT INTO
+        $sql = "INSERT INTO `mfeurcandlestick`(`date`, `open`, `close`, `high`, `low`, `volume`) 
+            VALUES ('$date', $exchangePrice,$exchangePrice,$exchangePrice,$exchangePrice,$exchangeAmountEUR)";
+        $result = $conn->query($sql);
+    }
+   
 }
 ?>
