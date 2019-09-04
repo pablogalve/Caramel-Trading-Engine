@@ -21,6 +21,13 @@ You’ll receive frequent dividends if your project achieves profitability.     
 A fair, and transparent platform for people to list, back, manage and trade startups. Until such time they choose to graduate the startup (now an established business) away from our platform, and into the world.
 And we even have a little device, that does it’s best, to protect backers from any failed projects as well (Safety Net).
 
+## Our Whitepaper in 10 different languages
+Our users have translated our whitepaper into their mother tongue, including english, spanish, french, hindi, filipino, catalan, indonesian, portugues, ukranian and vietnamese. 
+
+Choose your own language to get involved into our mission!
+
+[Translations](https://github.com/pablogalve/exchange_PHP/tree/master/Whitepaper)
+
 ## Landing Page v1.0
 <p align="left">
   <img src="Assets/landing_page_v2.png" width="800" title="Landing Page"> 
@@ -31,9 +38,4 @@ And we even have a little device, that does it’s best, to protect backers from
   <img src="Assets/landing_page_v1.png" width="800" title="Landing Page"> 
 </p>
 
-## Our Whitepaper in 11 different languages
-Our users have translated our whitepaper into their mother tongue. 
 
-Choose your own language to get involved into our mission!
-
-[Translations](https://github.com/pablogalve/exchange_PHP/tree/master/Whitepaper)
