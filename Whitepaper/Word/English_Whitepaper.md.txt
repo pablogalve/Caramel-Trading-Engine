@@ -1,0 +1,364 @@
+ 
+INDEX
+Summary ……………………………………………………………………....…………………….	             3-4
+Mission…………………………………………………………………………………………....……	4-6
+What are tokens?…………………………………………………………………………….……		6
+Project Life-Cycle (Summary)…………………………………………………..……………		7
+Starting a Project (Pre-Publish)………………………………………………..……………		8
+Crowd Brainstorming……………………………………………………………………..……		9
+Initial Token Offering…………………………………………………………………...………		10
+Moon Funding Project Review……………………………………………………………… 	11
+Marketplace……………………………………………………………………………………….…		12
+Failure to reach revenues………………………………………………………………..……		13
+Project Operations……………………………………………………………………………….		14
+Raising Additional Funds (Token Dilution)………………………………………….…		15
+Asset Sales / Voluntary Company Dissolution……………………………….………	15
+Project Bankruptcy ……………………………………………………………………....………	16
+Project Graduation / Equity Delivery……………………………………………..………	16
+Crowd Safety Net………………………………………………………………………………..…	17-18
+Crowd Voting Mechanism…………………………………………………………………..…	19
+Referral Commission………………...………………………………………………………….	20
+Listing Fees………………………………………………………………………………………...…	20
+Moon Funding Profitability………………………………………………………………………	21-22
+
+
+
+
+
+
+
+Summary
+
+Moon Funding is a one-stop solution to creating a business from scratch!
+Share an idea. We’ll evolve it / fill in the gaps. Fund it. Build it. 
+You’ll receive frequent dividends if your project achieves profitability.                                                         You can buy/sell your positions on our marketplace in real time. If you want to sell your idea, and walk away at any time – you’re welcome to do that. Once your business is fully established, you can graduate it from our system entirely, and take it off into the world.
+We’re a full service solution! Writing down your idea, and your rules, is all that’s required of our entrepreneurs. And we even make that part easy!
+To re-iterate in bullet point form, Moon Funding is:
+1.	A platform for users to post business projects, and for our crowd to brainstorm, and collaborate with the entrepreneur (for a reward!), to develop the idea, it’s documentation, and settings / terms. Aiming to provide complete transparency for all parties.
+2.	An equity crowdfunding platform, using cryptocurrencies to finance user projects.
+3.	An online marketplace for users to buy/sell their (hopefully) dividend paying positions in user projects, in real-time.
+4.	A communications platform, for project managers to share near real-time accounts, and updates, aiming to provide unprecedented levels of operational transparency to their backers. And for the crowd to continually make suggestions, and feedback.
+5.	A crowd control platform, where backers have established procedures to vote on any desired changes / evolutions to the businesses (Voting System).
+In conclusion...
+A fair, and transparent platform for people to list, back, manage and trade startups. Until such time they choose to graduate the startup (now an established business) away from our platform, and into the world.
+And we even have a little device, that does it’s best, to protect backers from any failed projects as well (Safety Net).
+
+
+Mission
+I.	Remove barriers to entry for entrepreneurs
+All entrepreneurs need to do is write down the broad strokes / beginnings of their idea. And any specific terms / conditions they have. (Ownership, Voting rules, Etc). Then, Moon Funding and it’s crowd fund and build the business, and everyone gets their agreed share. Easy!
+II.	Use the crowd to brainstorm / collaborate on business ideas / plans.
+Apply the knowledge, experience and suggestions of the crowd to form business plans, rules and processes documentation. And to reward those contributions with a small stake in the project. (Entrepreneur approves suggestions / edits, after the crowd has upvoted, and commented on them)
+III.	First come first served incentives, that help drive crowdfunding
+Getting started is the hardest part! So we aim to reward those that act first, and subsequently enable everything… We do that by selling the tokens at different prices, the first people to buy get the cheapest tokens and once the sale has ended they have already get a ROI (Return on investment). 
+IV.	Paperwork-free, real-time marketplace trading
+Our coin/token represents the physical equity/shares of the company. All the dividends will be shared among coin/token holders.
+Users can buy/sell our tokens in real-time on our marketplace and other exchanges where these tokens are listed. Prices are set entirely by supply & demand, users can place bids to buy/sell at any price. And the most competitive rates are accepted automatically.
+V.	To provide unprecedented levels of operational transparency
+Investors should be able to review the details of their companies, in as close to real time as is physically possible. Waiting on quarterly results, and annual meetings is a relic of the pre-internet era. If you own the business; you should be in on the day-to-day action! It’s your company!
+You should not be forced to base your buy/sell decisions on less than all the information. That is unfair, dangerous and wrong.
+Moon Funding serves to provide as close to real time reports of sales, revenues, expenses as we are physically able to do so. Along with updates from your project manager, as to exactly what is happening, what the company is planning to do at any given moment, and their personal opinions of any given event.
+VI.	Keeping the entrepreneur, and crowd in control! 
+Using the aforementioned transparency, combined with the established processes defined in each project’s documentation. We aim to give token holders complete control. 
+The crowd can communicate ideas and suggestions all the time, for the project manager to apply at their discretion. However, if a significant disagreement of opinion / strategy occurs, then we have voting procedures in place to see the will of the crowd enforced. If a voting majority occurs, then Moon Funding will ensure the project manager falls into line, or they will be replaced.
+VII.	Provide a full service solution to business development & operations
+Moon Funding is a business development and management company. We assign each project a manager (The entrepreneur or any other chosen person), and using the project documentation and rules as an instruction book, along with the funding from the crowd – we make that business happen! Contracting Moon Funding staff / expertise where possible, and hiring additional staff specific to requirements of each individual business.
+We basically do all the work in order to build the business, so that the entrepreneur and the crowd don’t have to. Yet, they’re both still in control. 
+VIII.	Crowd Safety Net
+Moon Funding stands behind it’s crowd backers. If a project you back runs into trouble, and ultimately fails. We have a system in place that will do it’s best to compensate you. No guarantees of course, it’s just a best effort process:
+We allocate 90% of all safety net mandatory token purchase premiums, and 30% of Moon Funding net revenues specifically towards compensating Token Holders of failed projects.
+This way, backers have our entire portfolio backing them up, in the event that they pick a dud! So even if you choose a bad project; we’ll see what we can do to help you! So that you can take another shot at backing the next big thing.
+IX.	Project Graduation
+As a project develops beyond the startup phase, and starts looking to expand beyond the realm of the Moon Funding platform.  We have created a process for each project to graduate our system, and take the form of a regular company. No longer reporting to our platform, processes or marketplace functions.
+At the time of graduation (after token holders have voted for such), token holders are presented with two options; to accept a buyout of their tokens at an agreed rate or to continue baking the project. 
+Take into account that while a startup is inside Moon Funding, we provide full support to them and supervise that everything is being done the correct way: we will NOT allow scams in our platform as we want the best for our members. However, once the startup graduates, Moon Funding will no longer offer support and supervision to the startup.
+At that point, the project will be de-listed from Moon Funding (or kept in Moon Funding: this will be decided through voting). And is free to go about it’s business, as per any other company! Perform an IPO. Or whatever it wants to do. Our job is done! 
+
+
+What are tokens?
+Every project is it’s own completely separate, and registered company. Every project has its own coin/token, and it represents the shares/stake of each company.
+Whilst you’re holding tokens, per our user agreement, Moon Funding will distribute all earnings, earmarked for dividends via the project documentation / business plan.
+Coins/Tokens also serve to enable our crowd voting mechanism. Token holders can apply their voting weight to dictate how the business should be run. And Moon Funding enforces the will of the crowd, per the documentation established by the entrepreneur when starting their project.
+
+
+
+
+
+
+
+
+
+Project Life-Cycle (Summary) 
+1.	Pre-Publish: The first draft of the entrepreneur’s idea, and initial settings configuration.
+2.	Crowd Brainstorming: idea & settings evolution.
+3.	Initial Token Offering
+4.	Moon Funding Review: Assign manager (Usually the entrepreneur, but we can assign other person it the crowd/entrepreneur wants to). Assess feasibility / legality. Refund if necessary.
+5.	Marketplace Launch: Tokens issued. Trading begins. Unsold ITO listed at set prices or burnt (Decided before launching the ITO).
+* If Project Fails To Achieve Revenues: Marketplace suspends. Additional funding considered. If not viable: liquidate & add protected tokens to safety net.
+6.	Operations: Frequent updates from your project manager. Frequent dividends.
+* Additional Funding: Requires shareholder vote. Dilute tokens to raise cash. Two options; 1) Selling tokens to the marketplace (Investors must be notified before doing so, that way they can decide to sell before that action or to hold/buy more). 2) Run an ITO in parallel to the marketplace (for higher risk situations, requiring all or nothing).
+* Bankruptcy / Liquidation event: Marketplace suspended. Cash / assets liquidated, and everything issued to token holders. If bankruptcy; move remaining protected tokens to safety net.
+7.	Graduation: Users vote to advance the listing beyond Moon Funding. You can chose between accepting a buyout of your tokens or to continue baking the project.
+* Potential deviations to a normal / successful flow.
+
+
+
+
+
+
+
+Starting a Project (Pre-Publish)
+It’s free! To begin, users just need to fill out as much of our listing form as they’re able. And then they can publish their listing for our crowd to begin brainstorming.
+1.	Basic information                                                                                                             Project name, 1 line description, upload a project image / logo. Select appropriate categories for your listing. (To help populate the rest of the create listing process)
+2.	Ownership percentages                                                                                                  Moon Funding (4%). Brainstorm Rewards (1%). Allocate the remaining 95% between the Entrepreneur, Backers, and any other partners.
+3.	Crowd voting settings                                                                                             Determine the voting weights required to control the business.
+4.	Answer some questions about your project.                                                                           We’ve designed some very simple questions, the answers to which will help evolve your business model / plan.
+5.	Create / Upload Project Document(s)                                                                      Write / upload as many information documents, specifications, plans, rules, and supporting files as you like.
+6.	Define any specific terms                                                                                                  Do you have any specific conditions regarding this business? Do you want a job? Do you want something done in a certain way? Detail what’s important to you here. And we’ll honor it – provided the crowd agrees / will fund you.
+
+
+
+
+
+
+
+
+
+
+
+Crowd Brainstorming
+Once a project is published, the crowd brainstorming phase lasts a minimum of 14 days, and can be extended by the entrepreneur as required.  The better you make the pitch & plan; the more likely the project will hit its funding goal (or even more than that!)
+Entrepreneur has the final word
+The crowd can submit / share ideas, document edits, settings adjustments. That the entrepreneur can accept / adapt / ignore as he likes. All the project settings, plans, documents, etc, can be changed continuously for an unlimited number of edits.
+Brainstorming Rewards
+A minimum of 1% of project tokens are allocated towards rewarding users that interact with each project. (This setting can be increased at any time, to encourage more participation; but it cannot be decreased)
+Manual Rewards / Token Assignments
+Entrepreneurs, at their discretion, can assign tokens to specific users during the brainstorming phase. e.g.: To reward someone with 2% of the project tokens, in return for creating an explainer video.
+
+
+
+
+
+
+
+
+
+
+
+Initial Token Offering
+The funding goal, and the equity on offer, determine how many tokens are created to represent 100% ownership of a project.  That includes:
+
+Moon Funding:                              4%
+Crowd Brainstorming:                  1% minimum
+Entrepreneur/s:                             variable – share 95% cut with the backers
+Sold to Backers for Finance:        variable – share 95% cut with the entrepreneur
+
+The Initial Token Offering will be made in the Moon Funding platform, selling tokens at different prices as an incentive for investors to buy. For example, if you want to sell 60% of the tokens, you can divide it into 4 different sales:
+
+Percentage of stake	Price
+1	0.0001
+5	0.0005
+15	0.001
+39	0.002
+
+This is just an example, you can make as many different prices as you want.
+You can also do an ITO inside Moon Funding platform to get the benefits we offer and an ICO outside Moon Funding platform to get additional funding.
+For example, if you want to sell 1000 tokens, you can sell 700 to our investors and 300 to ICO investors, or viceversa. You could also sell 500 tokens to our investors to get started and some months later sell the other 500 tokens in an ICO to get en explosive growth.
+
+
+
+
+Moon Funding Project Review
+Once the Initial Token Offering is complete, the project will be sent to Moon Funding for review. Here we’ll check the legal issues around the idea, and the overall feasibility of the plan & it’s funding levels.
+If the funding is way off (insufficient), then we’ll kick the project back down to the Initial Token Offering phase, pursuing a revised funding level.
+If there are minor legal issues with the plan, we’ll discuss and brainstorm those via the project news. And see if adjustments to the model can be made, to come to some middle ground. (Users will be presented with an opportunity to cancel their investment, if they do not like the proposed changes to the model. And if the funding level drops, it’ll be kicked back down to the I.T.O)
+If a project is deemed to be exceptionally risky, well beyond the norms of a typical startup, we will make an announcement in the project news. And at our discretion, we may also advise users that we are reducing the Crowd Safety Net level of protection on their positions. And subsequently offer them the opportunity to cancel their bids for a full refund.
+For projects / ideas that are completely illegal, unethical, and that we don’t want to be associated with in any way. We’ll fully refund all backers. And if you wish to contact the entrepreneur to pursue that privately - outside of the Moon Funding platform and protections - that’s up to you.
+
+
+
+
+
+
+
+
+
+
+
+
+Marketplace
+Users can buy and sell their tokens on our marketplace and exchanges where tokens are listed at any time. Users can list them for sale at any price they like. The marketplace is a completely free market. Supply and demand dictates the fluctuating prices. With no other market controls, or daily limits in place.
+Marketplace Fees:
+We use a maker/taker fee schedule. Takers incur a 0.29% fee while makers have no fees.
+Every trade occurs between two parties: the maker, whose order exists on the order book prior to the trade, and the taker, who places the order that matches (or “takes”) the maker’s order. Makers are so named because their orders make the liquidity in a market. Takers are the ones who remove this liquidity by matching makers’ orders with their own.
+Marketplace Design
+On our marketplace users will be able to trade cryptocurrencies against (hopefully) dividend paying positions of our startups. Each user project will have its own marketplace in our platform.
+Marketplace Reporting Features
+You will be able to see the following, with relation to marketplace trading;
+●	A full trading history of both your buys, sells and maker/taker fees.
+●	Latest trades that happened on the marketplace.
+●	The full order book of bids to buy/sell.
+●	A market depth graph to provide a visual aid as to the state of the order books.
+●	A “Top Traders” display, to show which users are buying & selling to maximum effect.
+Marketplace Suspension
+If there are any on-going significant events in a given project, such as imminent bankruptcy, or an active shareholder vote to graduate the project. Then the marketplace may be suspended temporarily / permanently for the protection of buyers, and to prevent any potential abuses of the crowd safety net. Marketplaces may also be suspended for technical reasons from time to time, but we’ll try and keep that to a minimum!
+Failure to reach revenues
+This is a project failure scenario, and mitigation plan:
+If a project is part way through development, and for whatever reason, is falling drastically short of the funding required to launch / get started / achieve profitability. Then we will;
+1.	Suspend the token trading marketplace.
+
+2.	Attempt to raise additional funds via a second token offering. (Token Dilution)
+
+3.	If the initial token offering fails to hit its funding goal. A second token offering can be attempted with even better terms for new backers.
+
+4.	Failing that, we will be forced to declare the project a failure. And transfer users to the crowd safety net. Where protected tokens will join the ‘revolving refund queue’.
+
+Any remaining project cash / company assets will be liquidated, and added to the Crowd Safety Net revenues, used to help refund backers of all failed projects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Project Operations
+As soon as a project reaches its funding goal, via the Initial Token offering, and is approved by Moon Funding to get started, issue it’s tokens and open it’s marketplace. It begins the operations phase.
+Frequent Updates
+The project manager will post frequent news, and updates regarding the development, and day to day operations of the project. You will be kept in the loop about just about everything. It is the project manager’s job to summarise the activity, plans, problems and thoughts. It’s literally a running commentary of everything the project is doing, and planning to do.
+Project Cash / Expenses
+The status of the project funding, along with invoices/receipts for how it is used are updated daily. And we have a special section in each projects’ forum where you can discuss each project’s expenditure, recommend cost savings, alternative suppliers, etc.
+Accounts / Revenues
+As frequently as is physically reasonable to do so, we want to keep you up to date with the day to day sales, and project revenues. For some online businesses, this can be automated and shown in real-time. For other projects, they’ll post frequent summaries, and more detailed reports every week/month.
+But the main aim of this process is to keep investors in the loop, the whole time! Not force you to wait on quarterly sales reports. We want daily / weekly updates at the very least. Our reporting requirements are higher than any public company. We expect complete transparency from our projects and managers.
+Dividends
+As soon as revenues are known, and there are earnings to dish out (per the project documentation / settings), dividends should be paid (and project available cash updated; for funds re-invested into the business). This process should happen as frequently as possible, weekly or monthly dividends for each project is what we are looking for.
+
+
+Raising Additional Funds (Token Dilution)
+There are different ways to accomplish that objective, although in any of these options members must be notified prior to the action so they can decide what to do with their personal tokens (sell, hold or buy more):
+1.	Sell tokens on the marketplace from the company account or team members account to raise liquid cash.
+2.	Only if it’s a reissuable coin/token: Issue more tokens and create a second token offering.
+Asset Sales / Voluntary Company Dissolution
+Token holders may vote to sell individual assets, or release company cash as a special dividend, per the crowd voting settings at any time. This can be extended to voluntarily shutting down the entire business, liquidating all assets and paying out one final dividend.
+Asset Sales
+Very simply, the shareholders create a motion to sell a specific asset(s), or issue some of the company cash as a special dividend. And if approved, it happens at the earliest convenience.
+Voluntary Company Dissolution & Liquidation
+This basically works the same way as the aforementioned asset sales. The entire company is liquidated at the earliest convenience, and one final dividend is paid to all token holders.
+Safety Net Coverage Implications – Important!
+In the event of a voluntary (unnecessary) company dissolution event, you will be forfeiting all safety net coverage for your tokens. So make sure you only vote for such an action, if the final dividend is worth it.
+In the event of individual asset sales. Moon funding will review each instance, on a case by case basis, to ensure that there is no detrimental (suicidal) effect of this action on the business as a whole. If the act is deemed reckless, Moon funding may elect to reduce existing safety net coverage for any tokens in this project, by any fraction it deems fair. 
+
+
+Project Bankrupcy
+In the event of project bankruptcy, the marketplace is suspended. All protected tokens are moved to the crowd safety net. And any recoverable assets from the business will be liquidated, and the benefits added to the crowd safety net.
+The Difference between Voluntary Dissolution & Bankruptcy
+Voluntary dissolution happens in projects where they have very high asset values, or lots of company cash. But where revenues are very low (but profitable). And thereby the company is worth more money shut down, than the little / no income it provides.
+Bankruptcy occurs in projects that are operating at a loss, and their cash is decreasing constantly, or has already run out.
+Moon funding will NOT sell any of its positions in problematic projects, with an imminent risk of failure. That would be unethical.
+*Any time Moon funding decides to sell any of its tokens, in any project, for any reason, it will provide 30 days advance notice, along with full disclosure as to why.
+
+Project Graduation / Equity Delivered
+Every project is it’s own completely separate, and registered company. Every project has its own coin/token, and it represents the shares/stake of each company.
+Project Graduation
+The crowd can vote to graduate the project beyond the Moon Funding platform at any time, per the crowd voting settings established for that project. At which point all token holders will be offered two options;
+1.	Continue baking the project beyond the Moon Funding platform.
+2.	To accept an agreed buyout price for your tokens. (These funds will come out of the projects available cash and/or a financial backer looking to snap up the extra equity)
+Once a project has graduated it will basically be removed from Moon Funding (or kept in Moon Funding: this will be decided through voting). There will be no more crowd voting settings, or frequent reports, and transparent accounting. Only the legal minimum required reporting, per the business plan, and equity holder agreement you sign.
+Crowd Safety Net
+*Warning! This is a best effort process. It should not be relied upon.
+Token holders are moved to the safety net, in the event that a project fails. Where we will do our best to compensate the backers as best our revenues allow.
+Coverage
+Tokens purchased during initial token offerings are covered for 50% of their ITO price by default; less any dividends received during the course of holding those tokens.
+‘Free’ Tokens issued to entrepreneurs and brainstorm contributors are not covered by default. 
+Premiums
+There is a 1% mandatory surcharge added to the cost of all token buys (both in Initial Token Offerings) and via the marketplace. (With the exception of Moon Funding Tokens)
+Eg. You buy 10 tokens for 0.01 each: Total cost: 0.1 + 0.001 Safety Net Premium
+Then if that project fails, your 10 tokens are covered for a total of 0.05. Less any dividends you receive during the course of holding those tokens.
+Selling tokens will terminate the coverage applied to them. 
+Source of Funds:
+90% of all premiums and 30% of all Moon Funding net revenues are added to the safety net pool.
+This is the only income this refund process has available to it. If it is insufficient, then we will not be able to refund everybody the same day.
+Refund Process:
+Once the project has been declared a failure / bankrupt. It’s market place will be suspended. And protected tokens will be added to the bottom of the Safety Net refund queue / list. Any remaining company cash / asset liquidations will be added to the safety net pool, as they become available. And used to help compensate all users in the safety net.
+Refunds are processed once weekly. The funds available are distributed between the top [variable amount] users in the refund queue, equally (up to their maximum due). Once paid, those users are either removed from the queue (if fully refunded), or they cycle back around to the bottom for another go around for their remaining due amount. And any remaining available funds, are either rolled over to the next week, or used to refund some more users from the top of the queue that round.
+Time Limitation
+Pending refunds may remain in the safety net queue for up to 18 months. We have to limit this process, or risk stalling the process forever, in the event of a string of large failures.
+The design of the refund queue, with it chipping away at refunds, and cycling around and around, prevents one large deposit from blocking it up. Meaning everyone should get at least a partial refund, if we’re not able to fully refund you.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Crowd Voting Mechanism
+By default, the project manager has free reign to run each project however he thinks best (in accordance with the company documentation). Users and token holders can make suggestions at any time, that the manager can adopt at their discretion.
+If Token Holders want to force a course of action (that the manager doesn’t agree with), they can raise a motion for token holders to vote on / object to. And Moon Funding will enforce the will of the crowd, per the voting majorities that the entrepreneur initially sets for each of the categories listed below.
+Using these categories, and their adjustable voting weights, an entrepreneur can retain control / influence / veto power over the business without having to own 51% specifically. You can engineer the weights in a few key categories below, to basically retain full control (or at least veto power) over the business with a very small stake. Allowing you to create a big business and raise a lot of funding via selling a large stake, without losing control.
+1.	Token Dilution
+If the project needs / wants to raise additional funding, either to survive or to expand. The terms of the dilution proposal will be voted on here.
+2.	Change / Overrule Project Manager
+If Token holders decide to force something through, that the project manager doesn’t agree with. They can vote to overrule him (or change the manager)
+3.	Adjust Revenue Allocations
+Vote to change what percentage of revenues are reinvested into the business, issued as dividends, used to buy back tokens, etc.
+4.	Perform an asset sale / liquidate / voluntarily dissolve the company
+Vote to sell company assets, either to raise company cash, or a special dividend. Or close the project entirely, liquidate funds/assets whilst they still hold value.
+5.	Buyout Proposal / Graduate the business
+Once a businesses is well established, token holders may decide to graduate it from the Moon Funding platform, and take the business mainstream.  Or if there is an external buyer looking to snap up all the equity; the terms of any bulk buyout can be discussed here.
+6.	Adjustment to the crowd voting settings
+Vote to adjust the voting weights on any of the above settings.
+
+Motions last 14 days. If token holders do not object in that time, they will be deemed to be in silent agreement to the motion. A motion will automatically pass/fail if enough voters actively agree/disagree that any remaining votes become irrelevant. If you buy/sell tokens whilst voting; your vote will be increased / removed / reduced accordingly.
+Referral Commission
+We believe word of mouth is the most effective form of advertising. And to encourage that, our referral program pays the following commissions, for the life of every user you bring to Moon Funding via your referral link:
+●	10% of the value of every token purchased during an Initial Token Offering.
+●	10% of the value of every balance cashout.
+●	10% of trading fees.
+Abuse:
+Any attempt to abuse our referral program, will result in the privileges being removed, the forfeiture of your entire downline and the ability to invite new users. 
+
+Listing Fees
+Pre-Publish: No fees. Unlimited time.
+Crowd Brainstorming: No fees. (Minimum 14 days)
+Initial Token Offering: 1.50€/week. That basic fee increases by 50% every week thereafter, until it maxes out at 30€/week.
+—
+Moon Funding does not intend to make money from Listing Fees specifically. They are designed to be a function to indiscriminately remove inactive / junk listings that will not fund. 
+
+
+
+
+
+
+Moon Funding Profitability
+Moon Funding aligns its goals with our entrepreneurs.
+We want to succeed (profit) with the successful implementation of their ideas. We are not here to make a profit from their efforts, and get in the way as a result. We don’t want to create barriers to success through inflated costs; we’re here to knock those barriers down!
+Moon Funding requires a tiny 4% stake in the projects we build.
+Allowing entrepreneurs the ability to distribute the remaining 96% of their business between backers, contributors, and themselves. Giving them maximum flexibility in order to get their idea off the ground (and a good reason to use Moon Funding in the first place)
+We will make a profit on just about every element of Moon Funding, to compensate us for the risks, and indirect overheads associated with supplying these services in the first place. And also, it is essential for the functionality of our crowd safety net, which protects our bakers. To which we donate 30% of our net revenues.
+Sources of Revenue
+1.	Trading Fees
+With the maker/taker fee schedule, we net 0.195% of every transaction half in cash (that we use as cash revenues to run the business, and issue dividends to our token holders), and the rest in tokens. Which we accumulate to build our positions in each project. And this positions will receive profit, that will increase our positions… In the end we all will benefit from this, it’s a win-win situation.
+2.	Balance cashout fees
+We earn just under 2.85% of every cashout each user makes. (A substantial sum considering the potential size of our economy, backed by thousands of businesses – however, you have to factor in the miner fees,  and storage risks). This fee encourages our investors to keep their money with us, because when another user makes a cashout, a bit of this money will be shared with our investors as dividends.
+3.	Listing Promotions / Internal Advertising
+Promoting ‘premium listings’ , as larger projects wish to draw attention to themselves to help achieve their funding goals.
+4.	Successful Listing / Setup Fees
+We will charge each successfully funded listing a fee to cover the costs of incorporating each business. There will be a +15% margin incorporated into this fee; which will aim to be our average cost for this process (across all listings).
+5.	Moon Funding Staff Hours
+Any action, or service involving Moon Funding central staff (eg. design, programming, legal, accounting), will be billed to the project’s financing at cost +15%. Hourly rates will be adjusted periodically, to keep up with evolving overheads, etc. For staff members that each project hires exclusively for itself, eg. a store attendant. Won’t incur any premium, beyond covering our Human Resource Department hours + costs involved in finding that employee.
+6.	Listing Fees
+Listing fees start at ~€1.5/week. And increase weekly, after a listing enters the Initial Token Offering phase, up until the project reaches its funding goal. This should be expected to be a relatively minor source of income.
