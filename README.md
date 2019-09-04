@@ -23,10 +23,17 @@ And we even have a little device, that does it’s best, to protect backers from
 
 ## Landing Page v1.0
 <p align="left">
-  <img src="Screenshots/landing_page_v2.png" width="800" title="Landing Page"> 
+  <img src="Assets/landing_page_v2.png" width="800" title="Landing Page"> 
 </p>
 
 ## Landing Page v0.1
  <p align="left">
-  <img src="Screenshots/landing_page_v1.png" width="800" title="Landing Page"> 
+  <img src="Assets/landing_page_v1.png" width="800" title="Landing Page"> 
 </p>
+
+## Our Whitepaper in 11 different languages
+Our users have translated our whitepaper into their mother tongue. 
+
+Choose your own language to get involved into our mission!
+
+[Translations](https://github.com/pablogalve/exchange_PHP/tree/master/Whitepaper)
