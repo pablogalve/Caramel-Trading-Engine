@@ -93,14 +93,14 @@ function addToLastTrades($conn, $ticker, $exchangePrice, $exchangeAmount, $excha
 function addToCandleStick($conn, $ticker, $exchangePrice, $exchangeAmountEUR){
     $date = date('Y-m-d', time());
     
-    $sql = "SELECT * from mfeurcandlestick";
+    $sql = "SELECT * from mfeurcandlestick ORDER BY DATE DESC";
     $result = $conn->query($sql);
     $row = mysqli_fetch_array($result);
     
     if($row['date'] == $date){
-        
         //La fecha existe, por lo tanto las nuevas ordenes hacen UPDATE de una row/fila ya existente
         if($exchangePrice > $row['high']){
+            echo'1';
             $sql = "UPDATE mfeurcandlestick SET high='$exchangePrice' WHERE date='$date'";
             $result = $conn->query($sql);
         }else if($exchangePrice < $row['low']){
@@ -110,10 +110,9 @@ function addToCandleStick($conn, $ticker, $exchangePrice, $exchangeAmountEUR){
         $sql = "UPDATE mfeurcandlestick SET volume=volume+'$exchangeAmountEUR',close='$exchangePrice' WHERE date='$date'";
         $result = $conn->query($sql);
     }else{
-        
         //La fecha no existe, así que hay que crearla con INSERT INTO
-        $sql = "INSERT INTO `mfeurcandlestick`(`date`, `open`, `close`, `high`, `low`, `volume`) 
-            VALUES ('$date', $exchangePrice,$exchangePrice,$exchangePrice,$exchangePrice,$exchangeAmountEUR)";
+        $sql = "INSERT INTO `mfeurcandlestick`(`date`, `open`, `close`, `high`, `low`, `volume`, `timestamp`) 
+            VALUES ('$date', '$exchangePrice','$exchangePrice','$exchangePrice','$exchangePrice','$exchangeAmountEUR', unix_timestamp())";
         $result = $conn->query($sql);
     }
    

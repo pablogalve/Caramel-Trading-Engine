@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<HTML>
+   <BODY>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://code.highcharts.com/stock/highstock.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+        
+        <div id="container" style="height: 100px; min-width: 250px"></div>
+        
+      <script>
+      //$(function() {
+    $.getJSON('datachart.php', function(data) {
+
+    // create the chart
+    chart = new Highcharts.StockChart({
+        chart : {
+            renderTo : 'container',
+        },
+
+        rangeSelector : {
+            selected : 1
+        },
+
+        title : {
+            text : 'MF/EUR Market'
+        },
+
+        series : [{
+            type : 'candlestick',
+            name : '',
+            data : data,
+            tooltip: {
+                valueDecimals: 2
+            },
+            dataGrouping : {
+                units : [
+                    ['week', // unit name
+                    [1] // allowed multiples
+                ], [
+                    'month', 
+                    [1, 2, 3, 4, 6]]
+                ]
+            }
+        }]
+    });
+    });
+//});
+</script>
+
+   </BODY>
+</HTML>
