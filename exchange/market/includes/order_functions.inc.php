@@ -3,6 +3,7 @@ include 'check_availability.inc.php';
 include 'match_engine.inc.php';
 include '../dbh.php';
 
+
 function newOrder($conn, $type, $ticker, $price, $amountRP, $amountEUR, $username, $date){
         
         $validData = checkValidData($price, $amountRP, $amountEUR); //Check that input data are numbers and have a valid range
@@ -17,6 +18,7 @@ function newOrder($conn, $type, $ticker, $price, $amountRP, $amountEUR, $usernam
                         $result = $conn->query($sql); 
                         if($result){
                             echo 'Your order has been created successfully!';
+                            updateBalance($conn, $amountRP, -$amountEUR, $username, "eurAvailable");
                             checkMatch($conn);
                         }else{
                             echo 'Connection error: Your order has not been created';
@@ -35,6 +37,7 @@ function newOrder($conn, $type, $ticker, $price, $amountRP, $amountEUR, $usernam
                             $result = $conn->query($sql); 
                             if($result){
                                 echo 'Your order has been created successfully!';
+                                updateBalance($conn, -$amountRP, $amountEUR, $username, "mfAvailable");
                                 checkMatch($conn);
                             }else{
                                 echo 'Connection error: Your order has not been created';

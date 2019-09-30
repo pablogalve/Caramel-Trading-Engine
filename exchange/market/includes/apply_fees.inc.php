@@ -2,8 +2,8 @@
 
 function ApplyFees($conn, $type, $amount, $maker){
     //Definitions
-    $makerTradingFee = 0;
-    $takerTradingFee = 0.003;
+    $makerTradingFee = 0; //fees are expressed in percentage
+    $takerTradingFee = 0;
     
     switch($type){
         case 'trading':

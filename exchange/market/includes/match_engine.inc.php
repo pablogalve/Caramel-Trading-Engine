@@ -72,8 +72,9 @@ function exchange($conn, $exchangePrice, $exchangeAmount, $exchangeAmountEUR, $b
         addToLastTrades($conn, 'mfeur', $exchangePrice, $exchangeAmount, $exchangeAmountEUR, 'buy', $buyerName, $buyerFee, 0);
         addToLastTrades($conn, 'mfeur', $exchangePrice, $exchangeAmount, $exchangeAmountEUR, 'sell', $sellerName, 0, $sellerFee);
     }
-    updateBalance($conn, $exchangeAmount, $exchangeAmountEUR, $buyerName, 'buyer', $buyerFee, 0);
-    updateBalance($conn, $exchangeAmount, $exchangeAmountEUR, $sellerName, 'seller', 0, $sellerFee);
+    
+    updateBalance($conn, $exchangeAmount, -$exchangeAmountEUR, $buyerName, "eur");
+    updateBalance($conn, -$exchangeAmount, $exchangeAmountEUR, $sellerName, "mf");
     
     addToCandleStick($conn, 'mfeur', $exchangePrice, $exchangeAmountEUR);
     
