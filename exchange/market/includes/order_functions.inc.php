@@ -18,7 +18,7 @@ function newOrder($conn, $type, $ticker, $price, $amountRP, $amountEUR, $usernam
                         $result = $conn->query($sql); 
                         if($result){
                             echo 'Your order has been created successfully!';
-                            updateBalance($conn, $amountRP, -$amountEUR, $username, "eurAvailable");
+                            updateBalance($conn, $amountRP, -$amountEUR, $username, "eur");
                             checkMatch($conn);
                         }else{
                             echo 'Connection error: Your order has not been created';
@@ -37,7 +37,7 @@ function newOrder($conn, $type, $ticker, $price, $amountRP, $amountEUR, $usernam
                             $result = $conn->query($sql); 
                             if($result){
                                 echo 'Your order has been created successfully!';
-                                updateBalance($conn, -$amountRP, $amountEUR, $username, "mfAvailable");
+                                updateBalance($conn, -$amountRP, $amountEUR, $username, "mf");
                                 checkMatch($conn);
                             }else{
                                 echo 'Connection error: Your order has not been created';

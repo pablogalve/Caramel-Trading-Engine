@@ -44,17 +44,13 @@ function exchange($conn, $exchangePrice, $exchangeAmount, $exchangeAmountEUR, $b
     $buyerName = getBuyerName($conn, 'mfeur', $bidID); //Username of the buyer
     
     $bidmf = getUserData($conn, $buyerName, "mf");
-    $bidmfAvailable = getUserData($conn, $buyerName, "mfAvailable");
     $bideur = getUserData($conn, $buyerName, "eur");
-    $bideurAvailable = getUserData($conn, $buyerName, "eurAvailable");
     
     //Now let's get data from the seller user
     $sellerName= getSellerName($conn, 'mfeur', $askID); //USername of the seller
     
     $askmf = getUserData($conn, $sellerName, "mf");
-    $askmfAvailable = getUserData($conn, $sellerName, "mfAvailable");
     $askeur = getUserData($conn, $sellerName, "eur");
-    $askeurAvailable = getUserData($conn, $sellerName, "eurAvailable");
     
     updateOrderBook($conn, 'buy', $exchangeAmount, $bidID);
     updateOrderBook($conn, 'sell', $exchangeAmount, $askID);

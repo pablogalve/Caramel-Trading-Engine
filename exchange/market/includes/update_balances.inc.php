@@ -14,7 +14,7 @@ function updateBalance($conn, $mf_amount, $eur_amount, $username, $change)
             $result = $conn->query($sql);
             break;
         default:
-            echo 'Internal error. No currency selected to update balance. Please, contact support and send them this error to fix it';
+            echo 'Internal error. Please, contact support with subject: Error MF002';
     }
 }
 ?>
