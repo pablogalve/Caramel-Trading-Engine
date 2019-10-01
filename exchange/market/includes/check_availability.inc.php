@@ -4,12 +4,12 @@ function check_Availability($conn, $type, $ticker, $amountRP, $amountEUR, $usern
         
         if($type == 'buy'){
             
-            $sql = "SELECT eurAvailable FROM users WHERE uid='$username'";
+            $sql = "SELECT eur FROM users WHERE uid='$username'";
             $result = $conn->query($sql);
             
             while($row = mysqli_fetch_assoc($result)){ //SALTA ERROR
-            echo ' eurAvailable: ' . $row['eurAvailable'];
-                if($row['eurAvailable'] >= $amountEUR){ //You need available funds to be greater than EUR in the buy order
+            echo ' eur: ' . $row['eur'];
+                if($row['eur'] >= $amountEUR){ //You need available funds to be greater than EUR in the buy order
                     return true;
                 }else{
                     //echo ' Error:eurAvailable: ' . $row['eurAvailable'];
@@ -19,11 +19,11 @@ function check_Availability($conn, $type, $ticker, $amountRP, $amountEUR, $usern
             }
             
         }else if($type =='sell'){
-            $sql = "SELECT mfAvailable FROM users WHERE uid='$username'";
+            $sql = "SELECT mf FROM users WHERE uid='$username'";
             $result = $conn->query($sql);
             
             while($row = mysqli_fetch_assoc($result)){
-                if($row['mfAvailable'] >= $amountRP){ //You need available mf to be greater than MF in the sell order
+                if($row['mf'] >= $amountRP){ //You need available mf to be greater than MF in the sell order
                     return true;
                 }else{
                     echo 'Error. Not enough available RP';

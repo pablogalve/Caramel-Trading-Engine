@@ -3,14 +3,18 @@ function getUserData($conn, $username, $dataType){
     $sql = "SELECT * FROM users WHERE uid = '$username'";
     $result = $conn->query($sql);
     $row = mysqli_fetch_array($result);
-    if($dataType == "mf"){
-        return $row['mf'];
-    }else if($dataType == "mfAvailable"){
-        return $row['mfAvailable'];
-    }else if($dataType == "eur"){
-        return $row['eur'];
-    }else if($dataType == "eurAvailable"){
-        return $row['eurAvailable'];
+    
+    switch($dataType)
+    {
+        case "mf":
+            return $row['mf'];
+            break;
+        case "eur":
+            return $row['eur'];
+            break;
+        default:
+            echo 'Internal error. Contact support with subject: Error MF001';
+            break;
     }
 }
 
