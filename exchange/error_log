@@ -1,0 +1,12 @@
+[01-Feb-2020 20:03:16 UTC] PHP Warning:  include(session.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/welcome.php on line 2
+[01-Feb-2020 20:03:16 UTC] PHP Warning:  include(session.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/welcome.php on line 2
+[01-Feb-2020 20:03:16 UTC] PHP Warning:  include(): Failed opening 'session.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/welcome.php on line 2
+[01-Feb-2020 20:03:16 UTC] PHP Notice:  Undefined variable: login_session in /home2/moonfund/public_html/exchange/welcome.php on line 11
+[01-Feb-2020 20:03:40 UTC] PHP Warning:  include(session.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/welcome.php on line 2
+[01-Feb-2020 20:03:40 UTC] PHP Warning:  include(session.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/welcome.php on line 2
+[01-Feb-2020 20:03:40 UTC] PHP Warning:  include(): Failed opening 'session.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/welcome.php on line 2
+[01-Feb-2020 20:03:40 UTC] PHP Notice:  Undefined variable: login_session in /home2/moonfund/public_html/exchange/welcome.php on line 11
+[01-Feb-2020 20:04:05 UTC] PHP Warning:  include(session.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/welcome.php on line 2
+[01-Feb-2020 20:04:05 UTC] PHP Warning:  include(session.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/welcome.php on line 2
+[01-Feb-2020 20:04:05 UTC] PHP Warning:  include(): Failed opening 'session.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/welcome.php on line 2
+[01-Feb-2020 20:04:05 UTC] PHP Notice:  Undefined variable: login_session in /home2/moonfund/public_html/exchange/welcome.php on line 11

@@ -10,7 +10,7 @@ function updateBalance($conn, $mf_amount, $eur_amount, $username, $change)
             $result = $conn->query($sql);
             break;
         case "mf":
-            $sql = "UPDATE users SET mf=mf+'$eur_amount' WHERE uid='$username'";
+            $sql = "UPDATE users SET mf=mf+'$mf_amount' WHERE uid='$username'";
             $result = $conn->query($sql);
             break;
         default:
