@@ -15,7 +15,7 @@
 ?>
 <html>
 <head>
-<title> This is my title </title>
+<title> Market </title>
 </head>
 <body>
 <h2>This is the marketplace for MF royalties!</h2>
@@ -25,7 +25,7 @@
 <?php
 echo "<form action='".buy($conn)."' method='POST'> 
     <input type='text' name='price' placeholder='Price'><br>
-        <input type='text' name='amountRP' placeholder='MF Amount'><br>
+        <input type='text' name='amountRP' placeholder='Amount'><br>
         <input type='text' name='username' placeholder='Username'><br>
         <input type='hidden' name='ticker' value='mfeur'>
         <input type='hidden' name='type' value='buy'>
@@ -36,7 +36,7 @@ echo "<form action='".buy($conn)."' method='POST'>
   
 echo "<form action='".sell($conn)."' method='POST'> 
     <input type='text' name='price' placeholder='Price'><br>
-        <input type='text' name='amountRP' placeholder='MF Amount'><br>
+        <input type='text' name='amountRP' placeholder='Amount'><br>
         <input type='text' name='username' placeholder='Username'><br>
         <input type='hidden' name='ticker' value='mfeur'>
         <input type='hidden' name='type' value='sell'>

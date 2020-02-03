@@ -3,9 +3,6 @@ include '../dbh.php';//It connects to the database
 
 $sql = "SELECT * FROM mfeurcandlestick ORDER BY date ASC";
 $result = $conn->query($sql);
-//$row = mysqli_fetch_array($result);
-    
-//$result=mysql_query ("SELECT date, open, high, low, close FROM mfeurcandlestick ORDER BY timestamp ASC") or die (mysql_error ());
 
 $data = array();
 $count = 0;

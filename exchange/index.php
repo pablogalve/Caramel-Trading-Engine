@@ -5,7 +5,7 @@
         
         <meta name="title" content="web_Title">
         <meta name="description" content="web_Description">    
-        <link href="homecss.css" rel="stylesheet" type="text/css"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="homecss" type="text/css" href="styles.less" />
         <script src="less.js" type="text/javascript"></script>
@@ -26,10 +26,10 @@
                 <li><a href="#">CONTACT</a></li>
                 <li><a href="#">INVEST</a></li>
                 <li><a href="registration/register">REGISTER</a></li>
-                <li><a href="#">LOGIN</a></li>
+                <li><a href="registration/login">LOGIN</a></li>
             </ul>
         </div>
         <div class="buttonCont">
-            <a href="#" class="button">GET STARTED</a>
+            <a href="registration/register" class="button">GET STARTED</a>
         </div>
     </body>
