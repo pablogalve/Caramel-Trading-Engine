@@ -2,8 +2,7 @@
 function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastTrades
     if($ticker == 'mfeur'){
         if($type == 'lastTrades'){
-            
-    ?>
+?>
             <html>
             <head>
             <style>
@@ -29,15 +28,14 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
               </tr>
             
             <?php
-
-            $sql = "SELECT * FROM mfeurtrades ORDER BY date DESC";
-            $result = $conn->query($sql);
-            echo "<br><br><br> Last Trades <br>";
-            
-            while($row = mysqli_fetch_assoc($result)){
-                echo "<tr><td>". $row['username'] ."</td><td>". $row['amountRP'] ."</td><td>". $row['price'] ."</td><td>". $row['orderType'] ."</td><td>". $row['feeEUR'] ."</td><td>". $row['feeRP'] ."</td><td>". $row['date'] ."</td></tr>";
-            }
-            echo '</table>';
+                $sql = "SELECT * FROM mfeurtrades ORDER BY date DESC";
+                $result = $conn->query($sql);
+                echo "<br><br><br> Last Trades <br>";
+                
+                while($row = mysqli_fetch_assoc($result)){
+                    echo "<tr><td>". $row['username'] ."</td><td>". $row['amountRP'] ."</td><td>". $row['price'] ."</td><td>". $row['orderType'] ."</td><td>". $row['feeEUR'] ."</td><td>". $row['feeRP'] ."</td><td>". $row['date'] ."</td></tr>";
+                }
+                echo '</table>';
             ?>
             </table>
             </body>

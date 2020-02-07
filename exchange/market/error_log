@@ -266,3 +266,15 @@
 [03-Feb-2020 22:00:37 Europe/Tallinn] PHP Notice:  Constant DB_USERNAME already defined in /home2/moonfund/public_html/exchange/dbh.php on line 4
 [03-Feb-2020 22:00:37 Europe/Tallinn] PHP Notice:  Constant DB_PASSWORD already defined in /home2/moonfund/public_html/exchange/dbh.php on line 5
 [03-Feb-2020 22:00:37 Europe/Tallinn] PHP Notice:  Constant DB_DATABASE already defined in /home2/moonfund/public_html/exchange/dbh.php on line 6
+[03-Feb-2020 21:53:30 UTC] PHP Warning:  include(../dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/market/includes/match_engine.inc.php on line 2
+[03-Feb-2020 21:53:30 UTC] PHP Warning:  include(../dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/market/includes/match_engine.inc.php on line 2
+[03-Feb-2020 21:53:30 UTC] PHP Warning:  include(): Failed opening '../dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/market/includes/match_engine.inc.php on line 2
+[03-Feb-2020 23:53:30 Europe/Tallinn] PHP Warning:  include(../dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/market/includes/order_functions.inc.php on line 4
+[03-Feb-2020 23:53:30 Europe/Tallinn] PHP Warning:  include(../dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/market/includes/order_functions.inc.php on line 4
+[03-Feb-2020 23:53:30 Europe/Tallinn] PHP Warning:  include(): Failed opening '../dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/market/includes/order_functions.inc.php on line 4
+[04-Feb-2020 16:26:19 UTC] PHP Warning:  include(../dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/market/includes/match_engine.inc.php on line 2
+[04-Feb-2020 16:26:19 UTC] PHP Warning:  include(../dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/market/includes/match_engine.inc.php on line 2
+[04-Feb-2020 16:26:19 UTC] PHP Warning:  include(): Failed opening '../dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/market/includes/match_engine.inc.php on line 2
+[04-Feb-2020 18:26:19 Europe/Tallinn] PHP Warning:  include(../dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/market/includes/order_functions.inc.php on line 4
+[04-Feb-2020 18:26:19 Europe/Tallinn] PHP Warning:  include(../dbh.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/market/includes/order_functions.inc.php on line 4
+[04-Feb-2020 18:26:19 Europe/Tallinn] PHP Warning:  include(): Failed opening '../dbh.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/market/includes/order_functions.inc.php on line 4

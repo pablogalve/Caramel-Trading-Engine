@@ -2,7 +2,7 @@
     //session_start();
     //include '../header.php';
     include 'includes/order_functions.inc.php';
-    include '../dbh.php';
+    include '../database.php';
     include 'includes/display_market_data.inc.php';
     include 'includes/buy_or_sell.inc.php';
     date_default_timezone_set('Europe/Tallinn');

@@ -1,5 +1,5 @@
 <?php
-include '../dbh.php';//It connects to the database
+include '../../database.php';//It connects to the database
 session_start();
 
 // initializing variables

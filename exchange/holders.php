@@ -24,14 +24,13 @@ table, th, td {
   
 <?php 
 session_start();
-include 'holders.inc.php';
-include 'dbh.php';
+include 'database.php';
 
 $sql = "SELECT * FROM users ORDER BY MF DESC"; 
 $result = $conn->query($sql);
 
 $lastPrice = getLastPrice($conn);
-$lastPriceNew = (float)$lastPrice; //Transformamos a float porque sino luego sale error al multiplicar
+$lastPriceNew = (float)$lastPrice; //We transform to float to avoid a multiplication error
 
 while($row = mysqli_fetch_assoc($result)){
     if($row['mf'] != null){

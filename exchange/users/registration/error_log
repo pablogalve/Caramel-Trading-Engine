@@ -1,0 +1,156 @@
+[01-Feb-2020 21:06:30 UTC] PHP Warning:  include(server.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/registration/register.php on line 1
+[01-Feb-2020 21:06:30 UTC] PHP Warning:  include(server.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/registration/register.php on line 1
+[01-Feb-2020 21:06:30 UTC] PHP Warning:  include(): Failed opening 'server.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/registration/register.php on line 1
+[01-Feb-2020 21:06:30 UTC] PHP Warning:  include(errors.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/registration/register.php on line 14
+[01-Feb-2020 21:06:30 UTC] PHP Warning:  include(errors.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/registration/register.php on line 14
+[01-Feb-2020 21:06:30 UTC] PHP Warning:  include(): Failed opening 'errors.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/registration/register.php on line 14
+[01-Feb-2020 21:06:30 UTC] PHP Notice:  Undefined variable: username in /home2/moonfund/public_html/exchange/registration/register.php on line 17
+[01-Feb-2020 21:06:30 UTC] PHP Notice:  Undefined variable: email in /home2/moonfund/public_html/exchange/registration/register.php on line 21
+[01-Feb-2020 21:07:34 UTC] PHP Warning:  include(errors.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/registration/register.php on line 14
+[01-Feb-2020 21:07:34 UTC] PHP Warning:  include(errors.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/registration/register.php on line 14
+[01-Feb-2020 21:07:34 UTC] PHP Warning:  include(): Failed opening 'errors.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/registration/register.php on line 14
+[01-Feb-2020 21:07:34 UTC] PHP Notice:  Undefined variable: username in /home2/moonfund/public_html/exchange/registration/register.php on line 17
+[01-Feb-2020 21:07:34 UTC] PHP Notice:  Undefined variable: email in /home2/moonfund/public_html/exchange/registration/register.php on line 21
+[01-Feb-2020 21:08:05 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/moonfund/public_html/exchange/registration/server.php on line 10
+[01-Feb-2020 21:08:05 UTC] PHP Warning:  include(errors.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/registration/register.php on line 14
+[01-Feb-2020 21:08:05 UTC] PHP Warning:  include(errors.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/registration/register.php on line 14
+[01-Feb-2020 21:08:05 UTC] PHP Warning:  include(): Failed opening 'errors.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/registration/register.php on line 14
+[01-Feb-2020 21:09:04 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/moonfund/public_html/exchange/registration/server.php on line 10
+[01-Feb-2020 21:09:04 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 15
+[01-Feb-2020 21:09:04 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 16
+[01-Feb-2020 21:09:04 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 17
+[01-Feb-2020 21:09:04 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 18
+[01-Feb-2020 21:09:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 32
+[01-Feb-2020 21:09:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home2/moonfund/public_html/exchange/registration/server.php on line 33
+[01-Feb-2020 21:09:08 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/moonfund/public_html/exchange/registration/server.php on line 10
+[01-Feb-2020 21:09:08 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 15
+[01-Feb-2020 21:09:08 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 16
+[01-Feb-2020 21:09:08 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 17
+[01-Feb-2020 21:09:08 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 18
+[01-Feb-2020 21:09:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 32
+[01-Feb-2020 21:09:08 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home2/moonfund/public_html/exchange/registration/server.php on line 33
+[01-Feb-2020 21:09:13 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/moonfund/public_html/exchange/registration/server.php on line 10
+[01-Feb-2020 21:09:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 15
+[01-Feb-2020 21:09:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 16
+[01-Feb-2020 21:09:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 17
+[01-Feb-2020 21:09:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 18
+[01-Feb-2020 21:09:13 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 32
+[01-Feb-2020 21:09:13 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home2/moonfund/public_html/exchange/registration/server.php on line 33
+[01-Feb-2020 21:10:31 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/moonfund/public_html/exchange/registration/server.php on line 10
+[01-Feb-2020 21:10:31 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 15
+[01-Feb-2020 21:10:31 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 16
+[01-Feb-2020 21:10:31 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 17
+[01-Feb-2020 21:10:31 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 18
+[01-Feb-2020 21:10:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 32
+[01-Feb-2020 21:10:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home2/moonfund/public_html/exchange/registration/server.php on line 33
+[01-Feb-2020 21:10:34 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/moonfund/public_html/exchange/registration/server.php on line 10
+[01-Feb-2020 21:11:06 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/moonfund/public_html/exchange/registration/server.php on line 10
+[01-Feb-2020 21:17:37 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'DB_SERVER' (-2) in /home2/moonfund/public_html/exchange/registration/server.php on line 14
+[01-Feb-2020 21:17:42 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'DB_SERVER' (-2) in /home2/moonfund/public_html/exchange/registration/server.php on line 14
+[01-Feb-2020 21:17:55 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'DB_SERVER' (-2) in /home2/moonfund/public_html/exchange/registration/server.php on line 14
+[01-Feb-2020 21:17:55 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 19
+[01-Feb-2020 21:17:55 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 20
+[01-Feb-2020 21:17:55 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 21
+[01-Feb-2020 21:17:55 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 22
+[01-Feb-2020 21:17:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home2/moonfund/public_html/exchange/registration/server.php on line 36
+[01-Feb-2020 21:17:55 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home2/moonfund/public_html/exchange/registration/server.php on line 37
+[01-Feb-2020 21:18:24 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'DB_SERVER' (-2) in /home2/moonfund/public_html/exchange/registration/server.php on line 14
+[01-Feb-2020 21:18:24 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/registration/server.php on line 16
+[01-Feb-2020 21:18:28 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'DB_SERVER' (-2) in /home2/moonfund/public_html/exchange/registration/server.php on line 14
+[01-Feb-2020 21:18:28 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/registration/server.php on line 16
+[01-Feb-2020 21:18:31 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'DB_SERVER' (-2) in /home2/moonfund/public_html/exchange/registration/server.php on line 14
+[01-Feb-2020 21:18:31 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/registration/server.php on line 16
+[01-Feb-2020 21:19:18 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'DB_SERVER' (-2) in /home2/moonfund/public_html/exchange/registration/server.php on line 15
+[01-Feb-2020 21:19:18 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/registration/server.php on line 17
+[01-Feb-2020 21:19:42 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM' in /home2/moonfund/public_html/exchange/registration/server.php on line 15
+[01-Feb-2020 21:19:42 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/registration/server.php on line 17
+[01-Feb-2020 21:19:52 UTC] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'moonfund_UMjPPuqM'@'localhost' to database 'moonfund_UMjPPuqM' in /home2/moonfund/public_html/exchange/registration/server.php on line 14
+[01-Feb-2020 21:19:52 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/registration/server.php on line 16
+[01-Feb-2020 21:20:14 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'moonfund_exchange'@'localhost' (using password: YES) in /home2/moonfund/public_html/exchange/registration/server.php on line 14
+[01-Feb-2020 21:20:14 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/registration/server.php on line 16
+[01-Feb-2020 21:23:56 UTC] PHP Warning:  mysqli_connect(): (HY000/2005): Unknown MySQL server host 'DB_SERVER' (-2) in /home2/moonfund/public_html/exchange/registration/server.php on line 14
+[01-Feb-2020 21:23:56 UTC] PHP Fatal error:  Call to undefined function mysql_connect_error() in /home2/moonfund/public_html/exchange/registration/server.php on line 16
+[04-Feb-2020 12:54:10 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 12:54:10 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 12:54:10 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 12:58:58 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 12:58:58 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 12:58:58 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:00:39 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:00:39 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:00:39 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:00:49 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:00:49 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:00:49 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:01:06 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:01:06 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:01:06 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:01:06 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 60
+[04-Feb-2020 13:01:06 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 60
+[04-Feb-2020 13:01:06 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 61
+[04-Feb-2020 13:01:06 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 61
+[04-Feb-2020 13:01:12 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:01:12 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:01:12 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 13:01:12 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 60
+[04-Feb-2020 13:01:12 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 60
+[04-Feb-2020 13:01:12 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 61
+[04-Feb-2020 13:01:12 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 61
+[04-Feb-2020 14:04:39 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:04:39 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:04:39 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:04:54 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:04:54 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:04:54 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:04:54 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 60
+[04-Feb-2020 14:04:54 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 60
+[04-Feb-2020 14:04:54 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 61
+[04-Feb-2020 14:04:54 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 61
+[04-Feb-2020 14:05:33 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:05:33 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:05:33 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:05:33 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 60
+[04-Feb-2020 14:05:33 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 60
+[04-Feb-2020 14:05:33 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 61
+[04-Feb-2020 14:05:33 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 61
+[04-Feb-2020 14:05:38 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:05:38 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:05:38 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:05:38 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 60
+[04-Feb-2020 14:05:38 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 60
+[04-Feb-2020 14:05:38 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 61
+[04-Feb-2020 14:05:38 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 61
+[04-Feb-2020 14:05:48 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:05:48 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:05:48 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:06:02 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:06:02 UTC] PHP Warning:  include(../database.php): failed to open stream: No such file or directory in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:06:02 UTC] PHP Warning:  include(): Failed opening '../database.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/exchange/users/registration/server.php on line 2
+[04-Feb-2020 14:06:02 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 13
+[04-Feb-2020 14:06:02 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 13
+[04-Feb-2020 14:06:02 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 14
+[04-Feb-2020 14:06:02 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 14
+[04-Feb-2020 14:06:02 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 15
+[04-Feb-2020 14:06:02 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 15
+[04-Feb-2020 14:06:02 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 16
+[04-Feb-2020 14:06:02 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 16
+[04-Feb-2020 14:06:02 UTC] PHP Notice:  Undefined variable: conn in /home2/moonfund/public_html/exchange/users/registration/server.php on line 30
+[04-Feb-2020 14:06:02 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 30
+[04-Feb-2020 14:06:02 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home2/moonfund/public_html/exchange/users/registration/server.php on line 31
+[04-Feb-2020 14:38:41 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/moonfund/public_html/exchange/users/registration/login.php on line 6
+[04-Feb-2020 14:38:45 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/moonfund/public_html/exchange/users/registration/login.php on line 6
+[04-Feb-2020 14:38:49 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/moonfund/public_html/exchange/users/registration/login.php on line 6
+[04-Feb-2020 14:39:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[04-Feb-2020 14:39:25 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/moonfund/public_html/exchange/users/registration/login.php on line 6
+[04-Feb-2020 14:39:43 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/moonfund/public_html/exchange/users/registration/login.php on line 6
+[04-Feb-2020 14:39:54 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[04-Feb-2020 15:28:05 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[04-Feb-2020 15:28:08 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[04-Feb-2020 22:14:22 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[04-Feb-2020 22:17:00 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[04-Feb-2020 22:17:37 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[04-Feb-2020 22:17:42 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[07-Feb-2020 10:50:55 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[07-Feb-2020 10:51:01 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[07-Feb-2020 11:12:09 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[07-Feb-2020 16:15:12 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3

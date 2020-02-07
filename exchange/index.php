@@ -1,3 +1,7 @@
+<?php 
+  session_start(); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">  
     <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
@@ -13,8 +17,8 @@
     <body>
         <div class="title">
             <h1>PANTERA GROUP</h1> 
-            <p>Pantera Group is an investment firm focused on loans, 
-                liquidity providing, <br> decentralized finance and stocks.</p>
+            <p>Pantera Group is an investment firm focused on loans, real estate and <br>
+            liquidity providing in both financial markets and DeFi</p>
         </div>
         <div class="line"></div>
         <div class="index">
@@ -25,11 +29,11 @@
                 <li><a href="#">WHY US</a></li>
                 <li><a href="#">CONTACT</a></li>
                 <li><a href="#">INVEST</a></li>
-                <li><a href="registration/register">REGISTER</a></li>
-                <li><a href="registration/login">LOGIN</a></li>
+                <li><a href="users/registration/register">REGISTER</a></li>
+                <li><a href="users/registration/login">LOGIN</a></li>
             </ul>
         </div>
         <div class="buttonCont">
-            <a href="registration/register" class="button">GET STARTED</a>
+            <a href="users/registration/register" class="button">GET STARTED</a>
         </div>
     </body>
