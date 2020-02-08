@@ -28,7 +28,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
               </tr>
             
             <?php
-                $sql = "SELECT * FROM mfeurtrades ORDER BY date DESC";
+                $sql = "SELECT * FROM mfeurtrades ORDER BY date DESC LIMIT 20";
                 $result = $conn->query($sql);
                 echo "<br><br><br> Last Trades <br>";
                 
@@ -65,7 +65,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
             
             <?php
 
-            $sql = "SELECT * FROM mfeurbids ORDER BY price DESC";
+            $sql = "SELECT * FROM mfeurbids ORDER BY price DESC LIMIT 10";
             $result = $conn->query($sql);
             echo "<br><br><br> Buy Orders <br>";
             
@@ -102,7 +102,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
             
             <?php
 
-            $sql = "SELECT * FROM mfeurasks ORDER BY price DESC";
+            $sql = "SELECT * FROM mfeurasks ORDER BY price DESC LIMIT 10";
             $result = $conn->query($sql);
             echo "<br><br><br> Sell Orders <br>";
             
