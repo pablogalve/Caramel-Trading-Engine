@@ -1,14 +1,20 @@
 <?php 
 session_start();
 
-include('server.php') 
+include('server.php');
+
+//If already logged in, then redirect to "my account" panel
+if (isset($_SESSION['username'])) {
+	$_SESSION['msg'] = "You are already logged in";
+  	header('location: http://exchange.moonfunding.com/users/account/');
+  }
 
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registration system PHP and MySQL</title>
+  <title>Login Pantera Group</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
