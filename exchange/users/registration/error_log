@@ -341,3 +341,4 @@
 [08-Feb-2020 22:31:31 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
 [08-Feb-2020 22:31:55 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
 [08-Feb-2020 22:34:33 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3
+[12-Feb-2020 15:00:13 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/users/registration/server.php on line 3

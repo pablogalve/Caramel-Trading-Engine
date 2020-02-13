@@ -28,7 +28,7 @@
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">WHY US</a></li>
                 <li><a href="#">CONTACT</a></li>
-                <li><a href="#">INVEST</a></li>
+                <li><a href="invest">INVEST</a></li>
                 <li><a href="users/registration/register">REGISTER</a></li>
                 <li><a href="users/registration/login">LOGIN</a></li>
             </ul>
