@@ -44,8 +44,19 @@
                     <option value = 'secondary'>Secondary Market</option>
                     <option value = 'both'>Both markets</option>
                 </select><br>
-                <button type='submit' name='submit_buy_loaneur' >INVEST</button>
-            "
+                <button type='submit' name='submit_buy_loaneur' >INVEST</button><br>
+                ";    
+            
+            //Show available funds or "not logged in" message
+            if (isset($_SESSION['username'])) {
+                $username = $_SESSION['username'];
+                $sql = "SELECT eur FROM users WHERE username='$username' LIMIT 1";
+                $result = $conn->query($sql);
+                $row = $result->fetch_array();
+                echo "Available funds: $row[eur] €";
+            }else{
+                echo 'You are not logged in';
+            }
 
         ?>
         <div class="title">
