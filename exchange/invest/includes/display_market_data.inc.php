@@ -1,6 +1,78 @@
 <?php
 function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastTrades
-    if($ticker == 'mfeur'){
+  ?>
+  <html>
+  <head>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <?php
+  if($ticker == 'loaneur'){
+    ?>
+      <table style="width:100%">
+        <tr>
+          <th>ID</th>
+          <th>Interest Rate</th>
+          <th>Term</th>
+          <th>Available for Investment</th>
+    <?php
+    if($type == 'primary_market_ask'){
+      $sql = "SELECT * FROM primary_market_loaneur_ask ORDER BY interest_rate DESC LIMIT 5";
+      $result = $conn->query($sql);
+      ?>         
+        <th>Invest</th>          
+        </tr>
+      <?php
+    }else if($type == 'secondary_market_ask'){
+      $sql = "SELECT * FROM secondary_market_loaneur_ask ORDER BY interest_rate DESC LIMIT 5";
+      $result = $conn->query($sql);
+      ?>       
+        <th>YTD</th> 
+        <th>Discount/Premium</th> 
+        <th>Invest</th>          
+        </tr>
+      <?php
+    }else if($type == 'secondary_market_bid'){
+
+
+    }else if($type == 'active_loans'){
+
+
+    }else if($type == 'finished_loans'){
+
+
+    }
+    while($row = mysqli_fetch_assoc($result)){
+      $months = 5;
+      echo "<tr><td>". $row['id'] ."</td><td>". $row['interest_rate'] ." %</td>
+      <td>". $row['term_months'] ."</td><td> € ". $row['amount_EUR'] ."</td></tr>";
+    }
+    echo '</table>';
+  }else if($ticker == 'pgeur'){
+    if($type == 'primary_market_ask'){
+
+
+    }else if($type == 'secondary_market_ask'){
+
+
+    }else if($type == 'secondary_market_bid'){
+
+
+    }
+  }
+?>
+
+
+<?php
+  if($ticker == 'mfeur'){
         if($type == 'lastTrades'){
 ?>
             <html>

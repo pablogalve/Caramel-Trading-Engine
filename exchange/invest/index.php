@@ -19,9 +19,9 @@
         <div class="line"></div>
         <div class="index">
             <ul>
-                <li><a href="">My holdings</a></li>
+                <li><a href="#">My holdings</a></li>
                 <li><a href="equity/mfeur">Equity</a></li>
-                <li><a href="#">Fixed-interest loans</a></li>
+                <li><a href="loans/market">Fixed-interest loans</a></li>
             </ul>
         </div>
             

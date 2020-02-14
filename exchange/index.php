@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="es">  
     <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
         <title>Pantera Group</title>
         
@@ -17,8 +17,8 @@
     <body>
         <div class="title">
             <h1>PANTERA GROUP</h1> 
-            <p>Pantera Group is an investment firm focused on loans, real estate and <br>
-            liquidity providing in both financial markets and DeFi</p>
+            <p>Pantera Group is an investment firm focused on loans, 
+            liquidity providing, decentralized finance and stocks.</p>
         </div>
         <div class="line"></div>
         <div class="index">
@@ -61,5 +61,18 @@
                 </p>
             </div>
             
+        </div>
+        <div class=block2>
+            <img src="images/ayudar.png" alt="fixed-interest loans">
+            <div class=text>
+                <h2><b>We empower projects</b> that improve the lives of millions of people</h2>
+                <p><b>We invest in projects that have the potential of scaling while 
+                    respecting both the ecosystem and their workforce. </b> <br> <br>
+                    Join us now to grow your savings while leaving a positive impact 
+                    on the world</p>
+            </div>
+            <div class="buttonCont">
+                <a href="users/registration/register" class="button">GET STARTED</a>
+            </div>
         </div>
     </body>

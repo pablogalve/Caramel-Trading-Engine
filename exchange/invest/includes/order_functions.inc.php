@@ -3,7 +3,6 @@ include 'check_availability.inc.php';
 include 'match_engine.inc.php';
 include '../dbh.php';
 
-
 function newOrder($conn, $type, $ticker, $price, $amountRP, $amountEUR, $username, $date){
         
         $validData = checkValidData($price, $amountRP, $amountEUR); //Check that input data are numbers and have a valid range

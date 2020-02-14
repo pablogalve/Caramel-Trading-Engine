@@ -1,0 +1,51 @@
+[13-Feb-2020 13:36:47 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home2/moonfund/public_html/exchange/invest/loans/primary-market.php on line 4
+[13-Feb-2020 13:37:34 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home2/moonfund/public_html/exchange/invest/loans/primary-market.php on line 4
+[13-Feb-2020 13:37:55 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home2/moonfund/public_html/exchange/invest/loans/primary-market.php on line 4
+[14-Feb-2020 16:36:55 Europe/Tallinn] PHP Notice:  Undefined index: amountEUR in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 46
+[14-Feb-2020 17:10:20 Europe/Tallinn] PHP Notice:  Undefined variable: result in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 47
+[14-Feb-2020 17:10:20 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 47
+[14-Feb-2020 17:10:57 Europe/Tallinn] PHP Notice:  Undefined variable: result in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 47
+[14-Feb-2020 17:10:57 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 47
+[14-Feb-2020 17:11:30 Europe/Tallinn] PHP Notice:  Undefined variable: result in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 47
+[14-Feb-2020 17:11:30 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 47
+[14-Feb-2020 17:12:36 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 51
+[14-Feb-2020 15:18:41 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 15:18:43 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 15:19:01 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 15:19:17 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 15:19:18 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 17:19:45 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 51
+[14-Feb-2020 17:20:02 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 51
+[14-Feb-2020 17:27:44 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:29:53 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:29:58 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:31:02 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:33:09 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:34:06 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:34:49 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:34:49 Europe/Tallinn] PHP Fatal error:  Call to undefined function buy() in /home2/moonfund/public_html/exchange/invest/loans/market.php on line 42
+[14-Feb-2020 17:35:39 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:42:10 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 15:43:28 UTC] PHP Parse error:  syntax error, unexpected '>' in /home2/moonfund/public_html/exchange/invest/loans/market.php on line 36
+[14-Feb-2020 15:43:53 UTC] PHP Parse error:  syntax error, unexpected '>' in /home2/moonfund/public_html/exchange/invest/loans/market.php on line 36
+[14-Feb-2020 15:43:54 UTC] PHP Parse error:  syntax error, unexpected '>' in /home2/moonfund/public_html/exchange/invest/loans/market.php on line 36
+[14-Feb-2020 15:44:14 UTC] PHP Parse error:  syntax error, unexpected '>' in /home2/moonfund/public_html/exchange/invest/loans/market.php on line 36
+[14-Feb-2020 15:44:15 UTC] PHP Parse error:  syntax error, unexpected '>' in /home2/moonfund/public_html/exchange/invest/loans/market.php on line 36
+[14-Feb-2020 17:44:37 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:45:13 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:47:57 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:48:18 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:50:57 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:51:27 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:51:52 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:52:21 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:52:42 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 52
+[14-Feb-2020 17:54:16 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 17:54:51 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 16:04:39 UTC] PHP Parse error:  syntax error, unexpected '$market' (T_VARIABLE), expecting ',' or ';' in /home2/moonfund/public_html/exchange/invest/loans/market.php on line 43
+[14-Feb-2020 16:20:04 UTC] PHP Parse error:  syntax error, unexpected '$market' (T_VARIABLE), expecting ',' or ';' in /home2/moonfund/public_html/exchange/invest/loans/market.php on line 43
+[14-Feb-2020 18:20:14 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 18:20:44 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 18:21:09 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 18:37:59 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[14-Feb-2020 18:38:08 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
