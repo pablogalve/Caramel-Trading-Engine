@@ -40,9 +40,6 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
         <th>Invest</th>          
         </tr>
       <?php
-    }else if($type == 'secondary_market_bid'){
-
-
     }else if($type == 'active_loans'){
 
 
@@ -56,9 +53,18 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
       <td>". $row['term_months'] ."</td><td> € ". $row['amount_EUR'] ."</td></tr>";
     }
     echo '</table>';
-  }else if($ticker == 'pgeur'){
-    if($type == 'primary_market_ask'){
 
+  }else if($ticker == 'pgeur'){
+    ?>
+      <table style="width:100%">
+        <tr>
+          <th>Price</th>
+          <th>Amount</th>
+          <th>Value</th>
+    <?php
+    if($type == 'primary_market_ask'){
+      $sql = "SELECT * FROM primary_market_pgeur_ask ORDER BY price DESC LIMIT 5";
+      $result = $conn->query($sql);
 
     }else if($type == 'secondary_market_ask'){
 
@@ -67,6 +73,12 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
 
 
     }
+    while($row = mysqli_fetch_assoc($result)){
+      $months = 5;
+      echo "<tr><td>". $row['price'] ."</td><td>". $row['amount_RP'] ." PG</td>
+      <td>" . $row['amount_RP']*$row['price'] . " €</td></tr>";
+    }
+    echo '</table>';
   }
 ?>
 

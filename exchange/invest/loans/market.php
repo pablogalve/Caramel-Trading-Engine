@@ -31,14 +31,14 @@
             //Input form to buy loans
             echo "
                 I want to spend:
-                <input type='number' name='amount_EUR' placeholder='10' min='10' max='99999'> € <br>
+                <input type='number' name='amount_EUR' placeholder='100' min='10' max='99999'> € <br>
                 Min. YTM:
                 <input type='number' name='min_interest_rate' placeholder='1.5' min='0' max='99'> % <br>
                 Min. term:
                 <input type='number' name='min_term' placeholder='6' min='0' max='120'> months<br>
                 Max. term:
                 <input type='number' name='max_term' placeholder='12' min='0' max='120'> months<br>
-                Invest only on:
+                Invest on:
                 <select>
                     <option value = 'primary'>Primary Market</option>
                     <option value = 'secondary'>Secondary Market</option>
