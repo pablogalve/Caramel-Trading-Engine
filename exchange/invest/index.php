@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">  
-    <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
-        <title>Pantera Group</title>
-        
-        <meta name="title" content="web_Title">
-        <meta name="description" content="web_Description">    
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        
+<?php 
+session_start();
 
-        </head>
+if (!isset($_SESSION['username'])) {
+	include '../header_main.php';
+  }else{
+    include '../header_loggedin.php';
+  }
+?>
+
+<!DOCTYPE html>
+<html>      
     <body>
         <div class="title">
             <h1>INVEST</h1> 
@@ -17,9 +17,9 @@
             They are available both at primary and secondary market.</p>
         </div>
         <div class="line"></div>
-        <div class="index">
+        <div class="options">
             <ul>
-                <li><a href="#">My holdings</a></li>
+                <li><a href="#">My investments</a></li>
                 <li><a href="equity/primary-market-pgeur.php">Equity</a></li>
                 <li><a href="loans/market">Fixed-interest loans</a></li>
             </ul>
