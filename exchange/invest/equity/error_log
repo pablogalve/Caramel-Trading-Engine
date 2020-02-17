@@ -1,0 +1,13 @@
+[17-Feb-2020 16:22:59 UTC] PHP Notice:  Constant DB_SERVER already defined in /home2/moonfund/public_html/exchange/database.php on line 3
+[17-Feb-2020 16:22:59 UTC] PHP Notice:  Constant DB_USERNAME already defined in /home2/moonfund/public_html/exchange/database.php on line 4
+[17-Feb-2020 16:22:59 UTC] PHP Notice:  Constant DB_PASSWORD already defined in /home2/moonfund/public_html/exchange/database.php on line 5
+[17-Feb-2020 16:22:59 UTC] PHP Notice:  Constant DB_DATABASE already defined in /home2/moonfund/public_html/exchange/database.php on line 6
+[17-Feb-2020 16:23:02 UTC] PHP Notice:  Constant DB_SERVER already defined in /home2/moonfund/public_html/exchange/database.php on line 3
+[17-Feb-2020 16:23:02 UTC] PHP Notice:  Constant DB_USERNAME already defined in /home2/moonfund/public_html/exchange/database.php on line 4
+[17-Feb-2020 16:23:02 UTC] PHP Notice:  Constant DB_PASSWORD already defined in /home2/moonfund/public_html/exchange/database.php on line 5
+[17-Feb-2020 16:23:02 UTC] PHP Notice:  Constant DB_DATABASE already defined in /home2/moonfund/public_html/exchange/database.php on line 6
+[17-Feb-2020 16:34:16 UTC] PHP Parse error:  syntax error, unexpected '$error' (T_VARIABLE), expecting ',' or ';' in /home2/moonfund/public_html/exchange/invest/includes/display_error.inc.php on line 5
+[17-Feb-2020 16:34:41 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home2/moonfund/public_html/exchange/invest/includes/display_error.inc.php on line 6
+[17-Feb-2020 16:34:43 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home2/moonfund/public_html/exchange/invest/includes/display_error.inc.php on line 6
+[17-Feb-2020 16:34:53 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home2/moonfund/public_html/exchange/invest/includes/display_error.inc.php on line 6
+[17-Feb-2020 18:35:54 Europe/Tallinn] PHP Fatal error:  Call to undefined function display_error() in /home2/moonfund/public_html/exchange/invest/includes/check_availability.inc.php on line 15

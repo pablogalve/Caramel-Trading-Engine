@@ -1,4 +1,6 @@
 <?php
+include 'check_availability.inc.php';
+include 'display_error.inc.php';
 
 function newMarketOrder($conn, $ticker, $type, $price, $amountEUR, $username, $date){
     
@@ -6,7 +8,12 @@ function newMarketOrder($conn, $ticker, $type, $price, $amountEUR, $username, $d
 
     if($validData == true)
     {
-                   
+        if($ticker == 'primary_market_pgeur'){
+            if($type == 'market_buy'){
+                $canCreate = check_Availability($conn, $type, $ticker, NULL, $amountEUR, $username);  //Checks if user has enough funds
+                if($canCreate == true) echo 'funciona';
+            }
+        }
     }
 }
 
@@ -21,27 +28,27 @@ function checkValidData($type, $price, $amountRP, $amountEUR){
     if($type == 'market'){
         if(is_numeric($price) && is_numeric($amountEUR)){
             if($price < 0.01){
-                echo 'Error 903';
+                display_error('903');
                 return false;
             }
             return true;
         }else{
-            echo 'Error 906';
+            display_error('906');
             return false;
         }
     }else if($type == 'limit'){
         if(is_numeric($price) && is_numeric($amountRP)){
             if($price < 0.01){
-                echo 'Error 903';
+                display_error('903');
                 return false;
             }
             if($amountRP < 5){
-                echo 'Error 902';
+                display_error('902');
                 return false;
             }
             return true;
         }else{
-            echo 'Error 906';
+            display_error('906');
             return false;
         }
     } else return false;  

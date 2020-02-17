@@ -1,32 +1,31 @@
 <?php 
+include 'display_error.inc.php';
+
 function check_Availability($conn, $type, $ticker, $amountRP, $amountEUR, $username){
-    if($ticker == 'mfeur'){
-        
-        if($type == 'buy'){
+    if($ticker == 'primary_market_pgeur' || $ticker == 'pgeur'){        
+        if($type == 'buy' || $type == 'market_buy'){
             
-            $sql = "SELECT eur FROM users WHERE uid='$username'";
+            $sql = "SELECT eur FROM users WHERE username='$username'";
             $result = $conn->query($sql);
             
-            while($row = mysqli_fetch_assoc($result)){ //SALTA ERROR
-            echo ' eur: ' . $row['eur'];
-                if($row['eur'] >= $amountEUR){ //You need available funds to be greater than EUR in the buy order
+            while($row = mysqli_fetch_assoc($result)){ 
+                if($row['eur'] >= $amountEUR){ 
                     return true;
                 }else{
-                    //echo ' Error:eurAvailable: ' . $row['eurAvailable'];
-                    echo 'Error. Not enough available funds';
+                    display_error('900');
                     return false;
                 }
             }
             
         }else if($type =='sell'){
-            $sql = "SELECT mf FROM users WHERE uid='$username'";
+            $sql = "SELECT pg FROM users WHERE username='$username'";
             $result = $conn->query($sql);
             
             while($row = mysqli_fetch_assoc($result)){
-                if($row['mf'] >= $amountRP){ //You need available mf to be greater than MF in the sell order
+                if($row['pg'] >= $amountRP){ 
                     return true;
                 }else{
-                    echo 'Error. Not enough available RP';
+                    display_error('900');
                     return false;
                 }
             }
