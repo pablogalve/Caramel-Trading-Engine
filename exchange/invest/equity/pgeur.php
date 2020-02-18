@@ -16,26 +16,34 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="title">
-            <h1>Primary market</h1> 
-            <p>PG Royalties for sale</p>
-        </div>
+        <h1>Primary Market Asks</h1> 
+        <?php display_market_data($conn, 'pgeur', 'primary_market_ask');?>
+        <h1>Secondary Market Asks</h1> 
+        <?php display_market_data($conn, 'pgeur', 'secondary_market_ask');?>
+
+        <h2>Instant order</h2>
         <?php
-
-        display_market_data($conn, 'pgeur', 'primary_market_ask');
-
         //Input form to buy royalties
         echo "<form action='".create_order($conn)."' method='POST'>
                 I want to spend:
-                <input type='number' name='amount_EUR' placeholder='100' min='10'> € <br>
-                Max. Price:
-                <input type='number' name='price' placeholder='1.5' min='0'> € <br>
+                <input type='number' name='amount_EUR' step='0.0001' min='10'> € <br>
                 <input type='hidden' name='ticker' value='primary_market_pgeur'>
-                <input type='hidden' name='type' value='market_buy'>
+                <input type='hidden' name='type' value='market'>
                 <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-                <button type='submit' name='submit_buy' >INVEST</button><br>
+                <button type='submit' name='submit_buy' >MARKET BUY</button><br>
                 </form>";    
-            
+        ?><h2>Limit order</h2><?php
+        echo "<form action='".create_order($conn)."' method='POST'>
+                I want to buy:
+                <input type='number' name='amount_RP' step='0.0001' min='10.0000'> PG <br>
+                Max. Price:
+                <input type='number' name='price' step='0.0001' min='0'> € <br>
+                <input type='hidden' name='ticker' value='primary_market_pgeur'>
+                <input type='hidden' name='type' value='limit'>
+                <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+                <button type='submit' name='submit_buy' >LIMIT BUY</button>
+                <button type='submit' name='submit_sell' >LIMIT SELL</button><br>
+                </form>";  
             //Show available funds or "not logged in" message
             if (isset($_SESSION['username'])) {
                 $username = $_SESSION['username'];
@@ -47,6 +55,9 @@
                 echo 'You are not logged in';
             }
         ?>
-
+        <h1>Secondary Market Bids</h1> 
+        <?php
+        display_market_data($conn, 'pgeur', 'secondary_market_bid');
+        ?>
     </body>
 </html>

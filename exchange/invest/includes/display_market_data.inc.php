@@ -35,7 +35,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
       $sql = "SELECT * FROM secondary_market_loaneur_ask ORDER BY interest_rate DESC LIMIT 5";
       $result = $conn->query($sql);
       ?>       
-        <th>YTD</th> 
+        <th>YTM</th> 
         <th>Discount/Premium</th> 
         <th>Invest</th>          
         </tr>
@@ -63,15 +63,16 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
           <th>Value</th>
     <?php
     if($type == 'primary_market_ask'){
-      $sql = "SELECT * FROM primary_market_pgeur_ask ORDER BY price DESC LIMIT 5";
+      $sql = "SELECT * FROM primary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
       $result = $conn->query($sql);
 
     }else if($type == 'secondary_market_ask'){
-
+      $sql = "SELECT * FROM secondary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
+      $result = $conn->query($sql);
 
     }else if($type == 'secondary_market_bid'){
-
-
+      $sql = "SELECT * FROM secondary_market_pgeur_bid ORDER BY price ASC LIMIT 10";
+      $result = $conn->query($sql);
     }
     while($row = mysqli_fetch_assoc($result)){
       $months = 5;

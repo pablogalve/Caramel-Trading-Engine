@@ -20,7 +20,7 @@ if (!isset($_SESSION['username'])) {
         <div class="options">
             <ul>
                 <li><a href="#">My investments</a></li>
-                <li><a href="equity/primary-market-pgeur.php">Equity</a></li>
+                <li><a href="equity/pgeur">Equity</a></li>
                 <li><a href="loans/market">Fixed-interest loans</a></li>
             </ul>
         </div>

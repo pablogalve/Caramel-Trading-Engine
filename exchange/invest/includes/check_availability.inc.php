@@ -1,9 +1,9 @@
 <?php 
-include 'display_error.inc.php';
 
-function check_Availability($conn, $type, $ticker, $amountRP, $amountEUR, $username){
+//Checks if user has enough funds to cover the operation
+function check_Availability($conn, $side, $ticker, $amountRP, $amountEUR, $username){
     if($ticker == 'primary_market_pgeur' || $ticker == 'pgeur'){        
-        if($type == 'buy' || $type == 'market_buy'){
+        if($side == 'buy'){
             
             $sql = "SELECT eur FROM users WHERE username='$username'";
             $result = $conn->query($sql);
@@ -17,7 +17,7 @@ function check_Availability($conn, $type, $ticker, $amountRP, $amountEUR, $usern
                 }
             }
             
-        }else if($type =='sell'){
+        }else if($side =='sell'){
             $sql = "SELECT pg FROM users WHERE username='$username'";
             $result = $conn->query($sql);
             

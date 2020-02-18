@@ -8,16 +8,14 @@ function create_order($conn){
        $username = $_SESSION['username'];
        $ticker = $_POST['ticker'];
        $type = $_POST['type'];
+       $side = 'buy';
        $date = $_POST['date'];
+        
+       if(isset($_POST['amount_RP']))$amount_RP = $_POST['amount_RP'];
+       if(isset($_POST['amount_EUR']))$amount_EUR = $_POST['amount_EUR'];
 
-        if($type == 'market_buy'){
-            $amount_EUR = $_POST['amount_EUR'];
-            newMarketOrder($conn, $ticker, $type, $price, $amount_EUR, $username, $date);
-        }
-        if($type == 'limit_buy'){
-            $amount_RP = $_POST['amountRP'];
-            //newLimitOrder($conn, $ticker, $type, $price, $amountRP, $username, $date);
-        }
+        if($type == 'market')newMarketOrder($conn, $ticker, $type, $side, $price, $amount_EUR, $username, $date);
+        if($type == 'limit')newLimitOrder($conn, $ticker, $type, $side, $price, $amount_RP, $username, $date);
     }
 }
 

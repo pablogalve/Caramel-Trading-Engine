@@ -8,3 +8,6 @@
 [16-Feb-2020 20:28:42 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
 [16-Feb-2020 20:30:50 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
 [16-Feb-2020 20:31:36 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 53
+[18-Feb-2020 16:31:09 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 50
+[18-Feb-2020 16:32:34 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 50
+[18-Feb-2020 18:25:47 Europe/Tallinn] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/moonfund/public_html/exchange/invest/includes/display_market_data.inc.php on line 50
