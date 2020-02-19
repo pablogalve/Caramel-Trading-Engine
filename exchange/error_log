@@ -1,1 +1,4 @@
 
+[19-Feb-2020 11:30:16 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/headers/header_main.php on line 2
+[19-Feb-2020 11:32:36 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/headers/header_main.php on line 2
+[19-Feb-2020 11:32:41 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home2/moonfund/public_html/exchange/headers/header_main.php on line 2

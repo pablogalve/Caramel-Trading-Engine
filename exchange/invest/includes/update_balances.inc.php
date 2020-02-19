@@ -1,20 +1,19 @@
 <?php
 
-
-function updateBalance($conn, $mf_amount, $eur_amount, $username, $change)
+function updateBalance($conn, $amount_PG, $amount_EUR, $username, $change)
 {
     switch($change)
     {
         case "eur":
-            $sql = "UPDATE users SET eur=eur+'$eur_amount' WHERE uid='$username'";
+            $sql = "UPDATE users SET eur=eur+'$amount_EUR' WHERE username='$username'";
             $result = $conn->query($sql);
             break;
-        case "mf":
-            $sql = "UPDATE users SET mf=mf+'$mf_amount' WHERE uid='$username'";
+        case "pg":
+            $sql = "UPDATE users SET pg=pg+'$amount_PG' WHERE username='$username'";
             $result = $conn->query($sql);
             break;
         default:
-            echo 'Internal error. Please, contact support with subject: Error MF002';
+            echo 'Internal error';
     }
 }
 ?>

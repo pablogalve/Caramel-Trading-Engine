@@ -1,5 +1,5 @@
 <?php 
-  session_start(); 
+  include 'headers/header_setup.php';
 ?>
 
 <!DOCTYPE html>
@@ -20,19 +20,7 @@
             <p>Pantera Group is an investment firm focused on loans, 
             liquidity providing, decentralized finance and stocks.</p>
         </div>
-        <div class="line"></div>
-        <div class="index">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">WHY US</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="invest">INVEST</a></li>
-                <li><a href="users/registration/register">REGISTER</a></li>
-                <li><a href="users/registration/login">LOGIN</a></li>
-            </ul>
-        </div>
+        <div class="line"></div>        
         <div class="buttonCont">
             <a href="users/registration/register" class="button">GET STARTED</a>
         </div>

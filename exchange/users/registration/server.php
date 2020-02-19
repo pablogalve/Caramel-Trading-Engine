@@ -1,6 +1,5 @@
 <?php
 include '../../database.php';//It connects to the database
-session_start();
 
 // initializing variables
 $username = "";
@@ -48,8 +47,8 @@ if (isset($_POST['reg_user'])) {
   			  VALUES('$username', '$email', '$password')";
   	mysqli_query($conn, $query);
   	$_SESSION['username'] = $username;
-  	$_SESSION['success'] = "You are now logged in";
-  	header('location: index.php');
+    $_SESSION['success'] = "You are now logged in";
+  	header('location: index');
   }
 }
 
@@ -70,11 +69,12 @@ if (isset($_POST['login_user'])) {
   if (count($errors) == 0) {
   	$password = md5($password);
   	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-  	$results = mysqli_query($conn, $query);
+    $results = mysqli_query($conn, $query);
+    
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
-  	  $_SESSION['success'] = "You are now logged in";
-  	  header('location: index.php');
+      $_SESSION['success'] = "You are now logged in";   
+  	  header('location: index');
   	}else {
   		array_push($errors, "Wrong username/password combination");
   	}

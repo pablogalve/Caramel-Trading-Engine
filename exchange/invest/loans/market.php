@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
     include '../../database.php';
     include ($_SERVER['DOCUMENT_ROOT'].'/invest/includes/display_market_data.inc.php');
     date_default_timezone_set('Europe/Tallinn');

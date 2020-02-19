@@ -1,11 +1,9 @@
 <?php
-session_start();
+include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
 include '../../database.php';
 
-if (!isset($_SESSION['username'])) {
-	$_SESSION['msg'] = "You must log in first";
-  	header('location: http://exchange.moonfunding.com/users/registration/login');
-  }else{
+if (!isset($_SESSION['username']))header('location: http://exchange.moonfunding.com/users/registration/login');
+  else{
     $username = $_SESSION['username'];
     $sql = "SELECT * FROM users WHERE username='$username'";
     $result = $conn->query($sql);
@@ -33,8 +31,7 @@ if (!isset($_SESSION['username'])) {
       echo "<ul> Royalties: " . $row['pg'] . " PG</ul>";
       echo "<ul> On loans: €</ul>";
       echo "<ul> Open orders: €</ul>";
-      echo "<ul> Open orders: PG</ul>";
-    
+      echo "<ul> Open orders: PG</ul>";    
     ?>
   <h3>Personal information</h3>
     <?php
@@ -49,7 +46,7 @@ if (!isset($_SESSION['username'])) {
       echo "<ul> Email " . $row['email'] . "</ul>";
       echo "<ul> Phone  </ul>";
       echo "<ul> Language  </ul>";
-    
+      echo "<ul> Role: " . $row['role'] . "</ul>"
     ?>
   <h3>Documents</h3>
     <?php
