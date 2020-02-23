@@ -30,6 +30,7 @@ function newLimitOrder($conn, $ticker, $type, $price, $amountRP, $username, $dat
                     $result = $conn->query($sql); 
                     if($result){
                         updateBalance($conn, -$amountRP, NULL, $username, "pg");
+                        checkMatch($conn);
                     }else die("Connection failed: " . $conn->connect_error);                     
                 }
             }

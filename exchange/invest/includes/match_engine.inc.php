@@ -23,12 +23,27 @@ function exchange($conn){
     checkMatch($conn);
 }
 
-function addToLastTrades($conn, $ticker, $price, $amount_RP, $amount_EUR, $orderType, $username){
-    $date = date('Y-m-d H:i:s a', time());
-   
-    if($ticker=='pgeur'){
-        //$sql = INSERT INTO trades ...
-        $result = $conn->query($sql);
+function addToLastTrades($conn, $ticker, $id, $type, $price, $amount_RP){
+    $date = date('Y-m-d H:i:s a', time());   
+    $username = '';
+    $amount_EUR = $price*$amount_RP;
+
+    switch($ticker){
+        case 'pgeur':
+            //if($type = 'buy') //$username = GetBuyerName();
+            //else if($type ='sell') //$username = GetSellerName();
+        break;
+        case 'loaneur':
+            //if($type = 'buy') //$username = GetBuyerName();
+            //else if($type ='sell') //$username = GetSellerName();
+        break;
+        default:
+        //Error. This should not happen
+        break;
     }
+    
+    //$sql = INSERT INTO trades (`id`, `username`, `price`, `orderType`, `amount_RP`, `amount_EUR`, `date`)
+    //VALUES (NULL, '$username', '$price', '$type', '$amount_RP', '$amount_EUR, '$date')";
+    $result = $conn->query($sql);    
 }
 ?>
