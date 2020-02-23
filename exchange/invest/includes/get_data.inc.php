@@ -1,23 +1,4 @@
 <?php
-function getUserData($conn, $username, $dataType){ 
-    $sql = "SELECT * FROM users WHERE uid = '$username'";
-    $result = $conn->query($sql);
-    $row = mysqli_fetch_array($result);
-    
-    switch($dataType)
-    {
-        case "mf":
-            return $row['mf'];
-            break;
-        case "eur":
-            return $row['eur'];
-            break;
-        default:
-            echo 'Internal error. Contact support with subject: Error MF001';
-            break;
-    }
-}
-
 function getBiggestBid($conn, $ticker){
     if($ticker=='pgeur'){
         $sql = "SELECT price FROM secondary_market_pgeur_bid ORDER BY price DESC LIMIT 1";
@@ -32,7 +13,6 @@ function getSmallestAsk($conn, $ticker){
         $sql = "SELECT price FROM secondary_market_pgeur_ask ORDER BY price ASC LIMIT 1";
         $result = $conn->query($sql);
         $row = mysqli_fetch_array($result);
-
         return $row['price'];
     }    
 }
@@ -45,6 +25,7 @@ function getBuyAmount_RP($conn, $ticker, $id){
         return $row['amount_RP'];
     }
 }
+
 function getSellAmount_RP($conn, $ticker, $id){
     if($ticker=='pgeur'){
         $sql = "SELECT amount_RP FROM secondary_market_pgeur_ask WHERE id = '$id'";

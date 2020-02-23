@@ -1,29 +1,61 @@
 <?php
+include 'get_data.inc.php';
+include 'getMarketMaker.inc.php';
+include 'update_orderbook.inc.php';
+//include 'update_balances.inc.php';
 
-function checkMatch($conn){
-    //Get biggest bid
-    //Get smallest ask
-    //Bid >= Ask ?
-    //Get bid ID
-    //Get ask ID    
-    //Get bid amount
-    //Get ask amount
-    //Get smallest amount between bid and ask
-    //Get who is maker and who is taker
-    //price = maker's price
-    //exchange($conn);
+function checkMatch($conn, $ticker){
+    $bid = getBiggestBid($conn, $ticker);
+    $ask = getSmallestAsk($conn, $ticker);
+        
+    if($bid >= $ask){
+        $bid_ID = getBuyOrderID($conn, $ticker);
+        $ask_ID = getSellOrderID($conn, $ticker);
+        if($bid_ID == NULL || $ask_ID == NULL)exit;
+
+        $bid_Amount_RP = getBuyAmount_RP($conn, $ticker, $bid_ID);
+        $ask_Amount_RP = getSellAmount_RP($conn, $ticker, $ask_ID);
+        if($bid_Amount_RP == NULL || $ask_Amount_RP == NULL)exit;
+
+        //Get smallest amount between bid and ask
+        if($bid_Amount_RP <= $ask_Amount_RP)$exchange_Amount_RP = $bid_Amount_RP;
+        else if($bid_Amount_RP > $ask_Amount_RP) $exchange_Amount_RP = $ask_Amount_RP;
+        else exit;
+
+        //Get exchange price
+        $MarketMaker = getMarketMaker($conn, $ticker, $bid_ID, $ask_ID); 
+        if($MarketMaker == 'buyer')$exchangePrice = $bid;
+        else if($MarketMaker == 'seller')$exchangePrice = $ask;
+        else exit;
+
+        exchange($conn, $ticker, $exchangePrice, $exchange_Amount_RP, $bid_ID, $ask_ID);
+    }
 }
 
-function exchange($conn){
-    //Update orderbook: Delete matched amounts from bid and ask orderbooks
+function exchange($conn, $ticker, $price, $amount_RP, $bid_ID, $ask_ID){
+    updateOrderBook($conn, $ticker, 'buy', $amount_RP, $bid_ID);
+    updateOrderBook($conn, $ticker, 'sell', $amount_RP, $ask_ID);
+
     //Update balances: Seller increases EUR balance and buyer increases PG balance
-    //Add trade to LastTradesList
+    {
+        $buyerName = getBuyerName($conn, $ticker, $bid_ID);
+        $sellerName = getBuyerName($conn, $ticker, $ask_ID);
+
+        $amount_EUR = $amount_RP * $price;
+
+        updateBalance($conn, $amount_RP, $amount_EUR, $sellerName, 'eur');
+        if($ticker == 'pgeur')
+            updateBalance($conn, $amount_RP, $amount_EUR, $buyerName, 'pg');
+    }
+    addToLastTrades($conn, $ticker, $buyerName, 'buy', $price, $amount_RP);
+    addToLastTrades($conn, $ticker, $sellerName, 'sell', $price, $amount_RP);
     
     //Recursive function to ensure that there not unfilled matches
-    checkMatch($conn);
+    checkMatch($conn, $ticker);
+    echo 'Working';
 }
 
-function addToLastTrades($conn, $ticker, $id, $type, $price, $amount_RP){
+function addToLastTrades($conn, $ticker, $username, $type, $price, $amount_RP){
     $date = date('Y-m-d H:i:s a', time());   
     $username = '';
     $amount_EUR = $price*$amount_RP;

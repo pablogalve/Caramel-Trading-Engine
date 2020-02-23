@@ -8,9 +8,8 @@ function newLimitOrder($conn, $ticker, $type, $price, $amountRP, $username, $dat
 
     $validData = checkValidData('limit', $price, $amountRP, NULL);
 
-    if($validData == true)
-    {
-        if($ticker == 'primary_market_pgeur'){
+    if($validData == true){
+        if($ticker == 'pgeur'){
             if($type == 'buy'){   
                 $canCreate = check_Availability($conn, $type, $ticker, NULL, $amountRP*$price, $username);  //Checks if user has enough funds
                 if($canCreate == true){
@@ -19,7 +18,7 @@ function newLimitOrder($conn, $ticker, $type, $price, $amountRP, $username, $dat
                     $result = $conn->query($sql); 
                     if($result){
                         updateBalance($conn, NULL, -($amountRP*$price), $username, "eur");
-                        checkMatch($conn);
+                        checkMatch($conn, $ticker);
                     }else die("Connection failed: " . $conn->connect_error);    
                 }
             }else if($type == 'sell'){
@@ -30,7 +29,7 @@ function newLimitOrder($conn, $ticker, $type, $price, $amountRP, $username, $dat
                     $result = $conn->query($sql); 
                     if($result){
                         updateBalance($conn, -$amountRP, NULL, $username, "pg");
-                        checkMatch($conn);
+                        checkMatch($conn, $ticker);
                     }else die("Connection failed: " . $conn->connect_error);                     
                 }
             }
@@ -42,9 +41,8 @@ function newMarketOrder($conn, $ticker, $type, $price, $amountEUR, $username, $d
     
     $validData = checkValidData('market', $price, NULL, $amountEUR);
 
-    if($validData == true)
-    {
-        if($ticker == 'primary_market_pgeur'){
+    if($validData == true){
+        if($ticker == 'pgeur'){
             if($type == 'buy'){
                 $canCreate = check_Availability($conn, $type, $ticker, NULL, $amountEUR, $username);  //Checks if user has enough funds
                 if($canCreate == true){                    
