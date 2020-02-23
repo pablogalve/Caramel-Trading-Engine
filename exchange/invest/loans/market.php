@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
     include '../../database.php';
     include ($_SERVER['DOCUMENT_ROOT'].'/invest/includes/display_market_data.inc.php');
     date_default_timezone_set('Europe/Tallinn');
@@ -40,9 +40,9 @@
                 <input type='number' name='max_term' placeholder='12' min='0' max='120'> months<br>
                 Invest on:
                 <select>
-                    <option value = 'primary'>Primary Market</option>
+                    <option value = 'primary'>All Markets</option>
                     <option value = 'secondary'>Secondary Market</option>
-                    <option value = 'both'>Both markets</option>
+                    <option value = 'both'>Primary Market</option>
                 </select><br>
                 <button type='submit' name='submit_buy_loaneur' >INVEST</button><br>
                 ";    

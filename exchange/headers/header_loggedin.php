@@ -1,7 +1,3 @@
-<?php 
-	//session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">  
     <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
@@ -17,9 +13,9 @@
         <div class="line"></div>
         <div class="index">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">MY ACCOUNT</a></li>
-                <li><a href="#">INVEST</a></li>
+                <li><a href="http://exchange.moonfunding.com">HOME</a></li>
+                <li><a href="http://exchange.moonfunding.com/users/account#">MY ACCOUNT</a></li>
+                <li><a href="http://exchange.moonfunding.com/invest">INVEST</a></li>
                 <li><a href="#">MY INVESTMENTS</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>

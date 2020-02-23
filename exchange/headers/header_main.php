@@ -1,7 +1,3 @@
-<?php 
-	session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">  
     <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
@@ -22,7 +18,7 @@
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">WHY US</a></li>
                 <li><a href="#">CONTACT</a></li>
-                <li><a href="invest">INVEST</a></li>
+                <li><a href="http://exchange.moonfunding.com/invest">INVEST</a></li>
                 <li><a href="users/registration/register">REGISTER</a></li>
                 <li><a href="users/registration/login">LOGIN</a></li>
             </ul>

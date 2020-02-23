@@ -1,5 +1,5 @@
 <?php 
-  session_start(); 
+  include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
 
   if (!isset($_SESSION['username'])) {
 	$_SESSION['msg'] = "You must log in first";

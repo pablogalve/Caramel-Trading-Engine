@@ -1,11 +1,5 @@
 <?php 
-session_start();
-
-if (!isset($_SESSION['username'])) {
-	include '../header_main.php';
-  }else{
-    include '../header_loggedin.php';
-  }
+include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
 ?>
 
 <!DOCTYPE html>

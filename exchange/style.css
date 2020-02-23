@@ -41,16 +41,17 @@ div.index ul{
     display: flex;
     position: absolute;
     right: 50%;
-    transform: translate(50%);
+    transform: translate(-8%);
 }
 div.index ul li{
-    margin: 0px 40px;
-    width: 100px;
+    margin: 0% 8%;
+    width: 50px;
     color: var(--myWhite);
     list-style-type: none;
 }
 div.index ul li a{
     text-decoration: none;
+    width: fit-content;
     color:var(--myWhite);
 }
 .button{
@@ -94,36 +95,18 @@ transition: all 0.4s ease 0s;
 }
 .block1 img{
     width: 7%;
-    transform: translate(-25%);
 }
 .block1 p{
     width: 18%;
-    text-align: center;
-    transform: translate(-40%);
 }
 .block1 h1{
     position: relative;
-    text-align: center;
     top: 70px;
     letter-spacing: 7px;
     font-size: 40px;
 }
 .block1 h3{
     font-size: 30px;
-}
-.equity{
-    position: relative;
-    left: 20%;
-    top: 160px;
-}
-.fixedLoans{/*some problems with this */
-    position: relative;
-    left: 85%;
-    transform: translate(-10%);
-    top: -230px;
-}
-.fixedLoans h3{ 
-    transform: translate(-5%);
 }
 
 

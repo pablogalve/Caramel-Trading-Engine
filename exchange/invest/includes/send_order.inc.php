@@ -1,16 +1,51 @@
 <?php
 include 'check_availability.inc.php';
 include 'display_error.inc.php';
+include 'update_balances.inc.php';
+include 'match_engine.inc.php';
 
-function newMarketOrder($conn, $ticker, $type, $side, $price, $amountEUR, $username, $date){
+function newLimitOrder($conn, $ticker, $type, $price, $amountRP, $username, $date){
+
+    $validData = checkValidData('limit', $price, $amountRP, NULL);
+
+    if($validData == true)
+    {
+        if($ticker == 'primary_market_pgeur'){
+            if($type == 'buy'){   
+                $canCreate = check_Availability($conn, $type, $ticker, NULL, $amountRP*$price, $username);  //Checks if user has enough funds
+                if($canCreate == true){
+                    $sql = "INSERT INTO secondary_market_pgeur_bid (username, price, amount_RP) 
+                    VALUES ('$username', '$price', '$amountRP')";
+                    $result = $conn->query($sql); 
+                    if($result){
+                        updateBalance($conn, NULL, -($amountRP*$price), $username, "eur");
+                        checkMatch($conn);
+                    }else die("Connection failed: " . $conn->connect_error);    
+                }
+            }else if($type == 'sell'){
+                $canCreate = check_Availability($conn, $type, $ticker, $amountRP, NULL, $username);  //Checks if user has enough funds
+                if($canCreate == true){
+                    $sql = "INSERT INTO secondary_market_pgeur_ask (username, price, amount_RP) 
+                    VALUES ('$username', '$price', '$amountRP')";
+                    $result = $conn->query($sql); 
+                    if($result){
+                        updateBalance($conn, -$amountRP, NULL, $username, "pg");
+                    }else die("Connection failed: " . $conn->connect_error);                     
+                }
+            }
+        }
+    }
+}
+
+function newMarketOrder($conn, $ticker, $type, $price, $amountEUR, $username, $date){
     
     $validData = checkValidData('market', $price, NULL, $amountEUR);
 
     if($validData == true)
     {
         if($ticker == 'primary_market_pgeur'){
-            if($type == 'market'){
-                $canCreate = check_Availability($conn, $side, $ticker, NULL, $amountEUR, $username);  //Checks if user has enough funds
+            if($type == 'buy'){
+                $canCreate = check_Availability($conn, $type, $ticker, NULL, $amountEUR, $username);  //Checks if user has enough funds
                 if($canCreate == true){                    
                     $sql = "SELECT price FROM primary_market_pgeur_ask ORDER BY price ASC LIMIT 1";
                     $result = $conn->query($sql);
@@ -19,27 +54,6 @@ function newMarketOrder($conn, $ticker, $type, $side, $price, $amountEUR, $usern
                     if($price >= $row['price']){
                         //TODO: Market orders
                     }
-                }
-            }
-        }
-    }
-}
-
-function newLimitOrder($conn, $ticker, $type, $side, $price, $amountRP, $username, $date){
-
-    $validData = checkValidData('limit', $price, $amountRP, NULL);
-
-    if($validData == true)
-    {
-        if($ticker == 'primary_market_pgeur'){
-            if($type == 'limit'){   
-                $canCreate = check_Availability($conn, $side, $ticker, NULL, $amountRP*$price, $username);  //Checks if user has enough funds
-                if($canCreate == true){
-                    $sql = "INSERT INTO secondary_market_pgeur_bid (username, price, amount_RP) 
-                    VALUES ('$username', '$price', '$amountRP')";
-                    $result = $conn->query($sql);
-                    
-                    
                 }
             }
         }
