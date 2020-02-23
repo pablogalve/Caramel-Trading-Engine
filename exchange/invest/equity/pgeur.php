@@ -60,5 +60,9 @@
         <?php
         display_market_data($conn, 'pgeur', 'secondary_market_bid');
         ?>
+        <h1>Last Trades</h1> 
+        <?php
+        display_market_data($conn, 'pgeur', 'last_trades');
+        ?>
     </body>
 </html>

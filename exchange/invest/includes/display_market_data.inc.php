@@ -48,7 +48,6 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
 
     }
     while($row = mysqli_fetch_assoc($result)){
-      $months = 5;
       echo "<tr><td>". $row['id'] ."</td><td>". $row['interest_rate'] ." %</td>
       <td>". $row['term_months'] ."</td><td> € ". $row['amount_EUR'] ."</td></tr>";
     }
@@ -73,12 +72,22 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
     }else if($type == 'secondary_market_bid'){
       $sql = "SELECT * FROM secondary_market_pgeur_bid ORDER BY price DESC LIMIT 10";
       $result = $conn->query($sql);
+
+    }else if($type == 'last_trades'){
+      ?><th>Username</th>
+      <th>Type</th>
+      <th>Date</th><?php
+      $sql = "SELECT * FROM trades ORDER BY date DESC LIMIT 10";
+      $result = $conn->query($sql);
     }
+
     while($row = mysqli_fetch_assoc($result)){
-      $months = 5;
       $value = $row['amount_RP']*$row['price'];
       echo "<tr><td>". $row['price'] ."</td><td>". $row['amount_RP'] ." PG</td>
-      <td>" . round($value, 2, PHP_ROUND_HALF_EVEN) . " €</td></tr>";
+      <td>" . round($value, 2, PHP_ROUND_HALF_EVEN) . " €</td>";
+
+      if($type == 'last_trades')echo "<td>". $row['username'] ."</td><td>". $row['type'] ."</td><td>". $row['date'] ."</td></tr>";
+      else echo "</tr>";
     }
     echo '</table>';
   }

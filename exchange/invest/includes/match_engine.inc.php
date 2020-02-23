@@ -52,30 +52,14 @@ function exchange($conn, $ticker, $price, $amount_RP, $bid_ID, $ask_ID){
     
     //Recursive function to ensure that there not unfilled matches
     checkMatch($conn, $ticker);
-    echo 'Working';
 }
 
 function addToLastTrades($conn, $ticker, $username, $type, $price, $amount_RP){
-    $date = date('Y-m-d H:i:s a', time());   
-    $username = '';
-    $amount_EUR = $price*$amount_RP;
+    $date = date('Y-m-d H:i:s a', time());
 
-    switch($ticker){
-        case 'pgeur':
-            //if($type = 'buy') //$username = GetBuyerName();
-            //else if($type ='sell') //$username = GetSellerName();
-        break;
-        case 'loaneur':
-            //if($type = 'buy') //$username = GetBuyerName();
-            //else if($type ='sell') //$username = GetSellerName();
-        break;
-        default:
-        //Error. This should not happen
-        break;
-    }
-    
-    //$sql = INSERT INTO trades (`id`, `username`, `price`, `orderType`, `amount_RP`, `amount_EUR`, `date`)
-    //VALUES (NULL, '$username', '$price', '$type', '$amount_RP', '$amount_EUR, '$date')";
+    $sql = "INSERT INTO trades (username, price, ticker, type, amount_RP, date)
+    VALUES ('$username', '$price', '$ticker', '$type', '$amount_RP', '$date')";
+
     $result = $conn->query($sql);    
 }
 ?>

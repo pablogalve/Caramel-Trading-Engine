@@ -1,9 +1,8 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
 include $_SERVER['DOCUMENT_ROOT'].'/database.php';
-include 'admin_includes/create_mint.php';
-include 'admin_includes/create_loan.php';
-include 'admin_includes/create_transfer.php';
+include 'admin_includes/display_form.php';
+include 'admin_includes/display_admin_data.php';
 
 //We make sure that only admin can access that area
 if(!isset($_SESSION['username']))header('Location: http://exchange.moonfunding.com');
@@ -33,53 +32,20 @@ else{
   <h3>WARNING! This is a restricted area!</h3>  
 </div>
 <div class="content">
-  <h3>Mint Royalties and Sell on Primary Market</h3> 
-  <p>Creates new royalties and lists them for sale at primary market. If the order is cancelled, royalties are burned out of the system again.</p>
-  <p></p>
-  <?php
-    echo "<form action='".create_mint($conn)."' method='POST'>
-      Amount:
-      <input type='number' name='amount_RP'>PG<br>
-      Price:
-      <input type='number' name='price' step='0.01'>€<br>      
-      <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>      
-      <button type='submit' name='submit_mint' >Mint Royalties</button>
-    </form>";    
-  ?> 
-  <h3>Transfers and Deposits</h3>  
-  <p>Use that to credit deposits and bonuses.</p>
-  <?php
-    echo "<form action='".create_transfer($conn)."' method='POST'>
-      Amount:
-      <input type='number' name='amount_RP'>PG<br>
-      Amount:
-      <input type='number' name='amount_EUR' step='0.01'>€<br>    
-      Reference:
-      <input type='text' name='reference'><br> 
-      Beneficiary:
-      <input type='text' name='beneficiary'><br> 
-      <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>      
-      <button type='submit' name='submit_transfer' >Transfer</button>
-    </form>";    
-  ?>
-  <h3>Withdrawals</h3>  
-  <p>Accept pending Withdrawal request from investors and send them to their bank accounts.
-  <?php
-    //TODO: Withdrawal system
-  ?>
-  <h3>Issue loans to Primary Market</h3> 
-  <p>Use that to create and issue new loans so that investors can buy them.</p> 
-  <?php
-    echo "<form action='".issue_loan($conn)."' method='POST'>
-      Amount:
-      <input type='number' name='amount_EUR'> €<br>      
-      <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>      
-      Interest Rate:
-      <input type='number' name='interest_rate' step='0.01'> % <br>
-      Term:
-      <input type='number' name='term'> Months <br>
-      <button type='submit' name='issue_loan'>Issue Loan</button>
-    </form>";    
+  <?php 
+  display_form($conn, "credit_deposit"); 
+  display_admin_data("pending_deposits");
+
+  display_form($conn, "credit_bonus"); 
+  display_admin_data("pending_bonuses");
+
+  display_form($conn, "confirm_withdrawal"); 
+  display_admin_data("pending_withdrawals");
+
+  display_form($conn, "mint_royalties"); 
+  display_form($conn, "issue_loan");
+
+  display_form($conn, "freeze_account");
   ?>
 </div>
 		
