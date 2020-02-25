@@ -14,7 +14,7 @@ if (!isset($_SESSION['username']))header('location: http://exchange.moonfunding.
 <html>
 <head>
 	<title>My Account</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../headers/header_style.css">
 </head>
 <body>
 

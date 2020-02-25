@@ -5,7 +5,7 @@
         
         <meta name="title" content="web_Title">
         <meta name="description" content="web_Description">    
-        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="headers/header_style.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
     </head>
@@ -20,5 +20,4 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>        
-        </div>
     </body>

@@ -25,6 +25,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
           <th>Available for Investment</th>
     <?php
     if($type == 'primary_market_ask'){
+      ?><h1>Primary Market Asks</h1><?php
       $sql = "SELECT * FROM primary_market_loaneur_ask ORDER BY interest_rate DESC LIMIT 5";
       $result = $conn->query($sql);
       ?>         
@@ -32,6 +33,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
         </tr>
       <?php
     }else if($type == 'secondary_market_ask'){
+      ?><h1>Secondary Market Asks</h1><?php
       $sql = "SELECT * FROM secondary_market_loaneur_ask ORDER BY interest_rate DESC LIMIT 5";
       $result = $conn->query($sql);
       ?>       
@@ -62,19 +64,23 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
           <th>Value</th>
     <?php
     if($type == 'primary_market_ask'){
+      ?><h1>Primary Market Asks</h1><?php
       $sql = "SELECT * FROM primary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
       $result = $conn->query($sql);
 
     }else if($type == 'secondary_market_ask'){
+      ?><h1>Secondary Market Asks</h1><?php
       $sql = "SELECT * FROM secondary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
       $result = $conn->query($sql);
 
     }else if($type == 'secondary_market_bid'){
+      ?><h1>Secondary Market Bids</h1><?php
       $sql = "SELECT * FROM secondary_market_pgeur_bid ORDER BY price DESC LIMIT 10";
       $result = $conn->query($sql);
 
     }else if($type == 'last_trades'){
-      ?><th>Username</th>
+      ?><h1>Last Trades</h1>
+      <th>Username</th>
       <th>Type</th>
       <th>Date</th><?php
       $sql = "SELECT * FROM trades ORDER BY date DESC LIMIT 10";

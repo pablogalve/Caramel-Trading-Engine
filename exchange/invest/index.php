@@ -3,21 +3,35 @@ include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
 ?>
 
 <!DOCTYPE html>
-<html>      
+<html>     
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
     <body>
         <div class="title">
             <h1>INVEST</h1> 
-            <p>Select your investment between royalties and fixed-interest loans. <br>
-            They are available both at primary and secondary market.</p>
+            <h2>BASIC (For new investors)<h2>
         </div>
+
         <div class="line"></div>
         <div class="options">
             <ul>
-                <li><a href="#">My investments</a></li>
-                <li><a href="equity/pgeur">Equity</a></li>
-                <li><a href="loans/market">Fixed-interest loans</a></li>
+                <img src="../images/grafico-circular.png" alt="equity">
+                <p>Royalty Positions</p>
+                <li><a href="">Royalty Positions</a></li>
+                <li><a href="">Fixed-interest loans</a></li>
             </ul>
         </div>
-            
+
+        <div class="title">
+            <h2>ADVANCED (For experienced investors)<h2>
+        </div>
+
+        <div class="line"></div>
+        <div class="options">
+            <ul>
+                <li><a href="equity/pgeur">Royalty Positions</a></li>
+                <li><a href="loans/market">Fixed-interest loans</a></li>
+            </ul>
         </div>
     </body>

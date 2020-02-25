@@ -1,0 +1,3 @@
+[23-Feb-2020 16:48:03 UTC] PHP Notice:  Undefined index: amount_EUR in /home2/moonfund/public_html/exchange/users/account/admin_includes/create_loan.php on line 7
+[23-Feb-2020 16:48:03 UTC] PHP Notice:  Undefined index: interest_rate in /home2/moonfund/public_html/exchange/users/account/admin_includes/create_loan.php on line 8
+[23-Feb-2020 16:48:03 UTC] PHP Notice:  Undefined index: term in /home2/moonfund/public_html/exchange/users/account/admin_includes/create_loan.php on line 9

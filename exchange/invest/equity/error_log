@@ -1,0 +1,15 @@
+[25-Feb-2020 11:35:08 UTC] PHP Notice:  Undefined variable: ticker in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43
+[25-Feb-2020 11:35:08 UTC] PHP Notice:  Undefined index: amount_RP in /home2/moonfund/public_html/exchange/invest/equity/includes/display_open_orders.inc.php on line 26
+[25-Feb-2020 11:35:08 UTC] PHP Notice:  Undefined index: amount_RP in /home2/moonfund/public_html/exchange/invest/equity/includes/display_open_orders.inc.php on line 27
+[25-Feb-2020 11:36:33 UTC] PHP Notice:  Undefined variable: ticker in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43
+[25-Feb-2020 11:36:33 UTC] PHP Notice:  Undefined index: amount_RP in /home2/moonfund/public_html/exchange/invest/equity/includes/display_open_orders.inc.php on line 27
+[25-Feb-2020 11:36:33 UTC] PHP Notice:  Undefined index: amount_RP in /home2/moonfund/public_html/exchange/invest/equity/includes/display_open_orders.inc.php on line 28
+[25-Feb-2020 11:38:19 UTC] PHP Notice:  Undefined variable: ticker in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43
+[25-Feb-2020 11:43:36 UTC] PHP Notice:  Undefined variable: ticker in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43
+[25-Feb-2020 11:43:36 UTC] PHP Notice:  Undefined variable: username in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43
+[25-Feb-2020 11:43:56 UTC] PHP Notice:  Undefined variable: ticker in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43
+[25-Feb-2020 11:43:56 UTC] PHP Notice:  Undefined variable: username in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43
+[25-Feb-2020 11:43:57 UTC] PHP Notice:  Undefined variable: ticker in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43
+[25-Feb-2020 11:43:57 UTC] PHP Notice:  Undefined variable: username in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43
+[25-Feb-2020 11:53:46 UTC] PHP Notice:  Undefined variable: ticker in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43
+[25-Feb-2020 12:15:26 UTC] PHP Notice:  Undefined variable: ticker in /home2/moonfund/public_html/exchange/invest/equity/pgeur.php on line 43

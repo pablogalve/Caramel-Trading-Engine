@@ -37,23 +37,6 @@ div.line{
     transform: translate(50%);
     background-color: var(--myWhite);
 }
-div.index ul{
-    display: flex;
-    position: absolute;
-    right: 50%;
-    transform: translate(-8%);
-}
-div.index ul li{
-    margin: 0% 8%;
-    width: 50px;
-    color: var(--myWhite);
-    list-style-type: none;
-}
-div.index ul li a{
-    text-decoration: none;
-    width: fit-content;
-    color:var(--myWhite);
-}
 .button{
 height: 44px;
 width: 200px;
@@ -92,6 +75,7 @@ transition: all 0.4s ease 0s;
     height: 85%;
     background-color: var(--myBlack2);
     color: var(--myWhite);
+    display: flex;
 }
 .block1 img{
     width: 7%;
