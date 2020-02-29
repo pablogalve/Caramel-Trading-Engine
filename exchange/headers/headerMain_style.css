@@ -1,0 +1,29 @@
+:root{
+    --myBlack: #0D0D0D;
+    --myBlack2: #262626;
+    --myGrey: #8C8C8C;
+    --myWhite: #D9D9D9;
+    --myGold: #D9AA52;
+}
+body{
+    background-color: var(--myBlack);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden; 
+    color: var(--myWhite);
+}
+
+div.index ul{
+    display: flex;
+    position: absolute;
+    right:50%;
+    transform: translate(50%);
+}
+div.index ul li{
+    color: var(--myWhite);
+    list-style-type: none;
+    width: 120px;
+}
+div.index ul li a{
+    text-decoration: none;
+    color:var(--myWhite);
+}
