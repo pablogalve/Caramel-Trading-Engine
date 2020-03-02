@@ -13,7 +13,10 @@ function updateOrderBook($conn, $ticker, $orderType, $amount_RP, $order_id){
             $result2 = $conn->query($sql2);
     
             while($row = mysqli_fetch_assoc($result2)){
-                if($row['amount_RP'] <= 0)deleteOrder($conn, $ticker, 'buy', $order_id);            
+                if($row['amount_RP'] <= 0){
+                    deleteOrder($conn, $ticker, 'buy', $order_id);  
+                    delete_open_order($conn, $order_id);
+                }        
             }
         }else if($orderType=='sell'){
             $sql = "UPDATE secondary_market_pgeur_ask SET amount_RP=amount_RP-'$amount_RP' WHERE id='$order_id'";   
@@ -24,7 +27,10 @@ function updateOrderBook($conn, $ticker, $orderType, $amount_RP, $order_id){
             $result2 = $conn->query($sql2);
     
             while($row = mysqli_fetch_assoc($result2)){
-                if($row['amount_RP'] <= 0)deleteOrder($conn, $ticker, 'sell', $order_id);            
+                if($row['amount_RP'] <= 0){
+                    deleteOrder($conn, $ticker, 'sell', $order_id);  
+                    delete_open_order($conn, $order_id);
+                }          
             }
         }
     }    

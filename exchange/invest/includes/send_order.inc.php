@@ -19,7 +19,8 @@ function newLimitOrder($conn, $ticker, $type, $price, $amount_RP, $username, $da
                     $result = $conn->query($sql); 
                     if($result){
                         updateBalance($conn, NULL, -($amount_RP*$price), $username, "eur");
-                        create_open_order($conn, $price, $amount_RP, $date, $username, $ticker, $type);
+                        $order_id = getLastBidID($conn, $ticker); //Ensure that order_id is the same both in the orderbook and in open_orders
+                        create_open_order($conn, $order_id, $price, $amount_RP, $date, $username, $ticker, $type);
                         checkMatch($conn, $ticker);
                     }else die("Connection failed: " . $conn->connect_error);    
                 }
@@ -31,6 +32,8 @@ function newLimitOrder($conn, $ticker, $type, $price, $amount_RP, $username, $da
                     $result = $conn->query($sql); 
                     if($result){
                         updateBalance($conn, -$amount_RP, NULL, $username, "pg");
+                        $order_id = getLastAskID($conn, $ticker); //Ensure that order_id is the same both in the orderbook and in open_orders
+                        create_open_order($conn, $order_id, $price, $amount_RP, $date, $username, $ticker, $type);
                         checkMatch($conn, $ticker);
                     }else die("Connection failed: " . $conn->connect_error);                     
                 }

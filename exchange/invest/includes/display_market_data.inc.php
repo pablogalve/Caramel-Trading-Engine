@@ -70,7 +70,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
 
     }else if($type == 'secondary_market_ask'){
       ?><h1>Secondary Market Asks</h1><?php
-      $sql = "SELECT * FROM secondary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
+      $sql = "SELECT * FROM secondary_market_pgeur_ask ORDER BY price ASC LIMIT 10";
       $result = $conn->query($sql);
 
     }else if($type == 'secondary_market_bid'){
