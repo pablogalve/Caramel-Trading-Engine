@@ -1,9 +1,9 @@
 <?php
     include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
     include '../../database.php';
-    include $_SERVER['DOCUMENT_ROOT'].'/invest/includes/display_market_data.inc.php';
+    include ($_SERVER['DOCUMENT_ROOT'].'/invest/includes/display_market_data.inc.php');
     include 'includes/display_form.inc.php';
-    include $_SERVER['DOCUMENT_ROOT'].'/invest/includes/display_open_orders.inc.php';
+    include 'includes/display_open_orders.inc.php';
 ?>
 
 <!DOCTYPE html>

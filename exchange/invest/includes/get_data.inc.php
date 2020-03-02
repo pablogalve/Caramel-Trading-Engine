@@ -68,24 +68,6 @@ function getSellOrderID($conn, $ticker){
         $result = $conn->query($sql);
         $row = mysqli_fetch_array($result);
         return $row['id'];
-    }
-}
-
-function getLastBidID($conn, $ticker){
-    if($ticker=='pgeur'){
-        $sql = "SELECT id FROM secondary_market_pgeur_bid ORDER BY id DESC LIMIT 1";
-        $result = $conn->query($sql);
-        $row = mysqli_fetch_array($result);
-        return $row['id'];
-    }
-}
-
-function getLastAskID($conn, $ticker){
-    if($ticker=='pgeur'){
-        $sql = "SELECT id FROM secondary_market_pgeur_ask ORDER BY id DESC LIMIT 1";
-        $result = $conn->query($sql);
-        $row = mysqli_fetch_array($result);
-        return $row['id'];
-    }
+   }
 }
 ?>
