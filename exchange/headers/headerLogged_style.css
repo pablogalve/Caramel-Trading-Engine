@@ -5,23 +5,16 @@
     --myWhite: #D9D9D9;
     --myGold: #D9AA52;
 }
-body{
-    background-color: var(--myBlack);
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden; 
-    color: var(--myWhite);
-}
-
-div.index ul{
+div.indexLogged ul{
     display: flex;
     position: absolute;
 }
-div.index ul li{
+div.indexLogged ul li{
     color: var(--myWhite);
     list-style-type: none;
     margin-right: 8%;
 }
-div.index ul li a{
+div.indexLogged ul li a{
     text-decoration: none;
     color:var(--myWhite);
 }

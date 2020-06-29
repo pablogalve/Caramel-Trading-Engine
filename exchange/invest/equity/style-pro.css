@@ -1,0 +1,27 @@
+html { 
+    font-size: 22px; 
+    background-color: black;
+}
+body { padding: 1rem; }
+
+.card {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border: 1.5px solid #fff;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}

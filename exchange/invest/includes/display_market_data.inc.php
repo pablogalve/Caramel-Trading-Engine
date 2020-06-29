@@ -10,6 +10,12 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
     padding: 5px;
     text-align: left;
   }
+  .ask_price{
+    color: red;
+  }
+  .bid_price{
+    color: green;
+  }
   </style>
   </head>
   <body>
@@ -63,24 +69,26 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
           <th>Amount</th>
           <th>Value</th>
     <?php
+
+    $style = "null";
+
     if($type == 'primary_market_ask'){
       ?><h1>Primary Market Asks</h1><?php
       $sql = "SELECT * FROM primary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
       $result = $conn->query($sql);
 
     }else if($type == 'secondary_market_ask'){
-      ?><h1>Secondary Market Asks</h1><?php
       $sql = "SELECT * FROM secondary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
       $result = $conn->query($sql);
+      $style = "ask_price";
 
     }else if($type == 'secondary_market_bid'){
-      ?><h1>Secondary Market Bids</h1><?php
       $sql = "SELECT * FROM secondary_market_pgeur_bid ORDER BY price DESC LIMIT 10";
       $result = $conn->query($sql);
+      $style = "bid_price";
 
     }else if($type == 'last_trades'){
       ?><h1>Last Trades</h1>
-      <th>Username</th>
       <th>Type</th>
       <th>Date</th><?php
       $sql = "SELECT * FROM trades ORDER BY date DESC LIMIT 10";
@@ -89,10 +97,18 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
 
     while($row = mysqli_fetch_assoc($result)){
       $value = $row['amount_RP']*$row['price'];
-      echo "<tr><td>". $row['price'] ."</td><td>". $row['amount_RP'] ." PG</td>
-      <td>" . round($value, 2, PHP_ROUND_HALF_EVEN) . " €</td>";
+      echo "<tr><td><div class='$style'>". 
+      round($row['price'], 2, PHP_ROUND_HALF_EVEN) . "</div></td> 
+      <td>". round($row['amount_RP'], 2, PHP_ROUND_HALF_EVEN) ." </td>
+      <td>" . round($value, 2, PHP_ROUND_HALF_EVEN) . "€</td>";
 
-      if($type == 'last_trades')echo "<td>". $row['username'] ."</td><td>". $row['type'] ."</td><td>". $row['date'] ."</td></tr>";
+      if($type == 'last_trades'){
+        if($row['type'] == 'buy')$style = "bid_price";
+        else if($row['type'] == 'sell')$style = "ask_price";
+
+        echo "<td><div class='$style'>". $row['type'] ."</div></td>
+        <td>". $row['date'] ."</td></tr>";
+      }
       else echo "</tr>";
     }
     echo '</table>';

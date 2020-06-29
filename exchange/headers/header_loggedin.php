@@ -11,7 +11,7 @@
     </head>
     <body>        
         <div class="line"></div>
-        <div class="index">
+        <div class="indexLogged">
             <ul>
                 <li><a href="http://exchange.moonfunding.com">HOME</a></li>
                 <li><a href="http://exchange.moonfunding.com/users/account#">MY ACCOUNT</a></li>

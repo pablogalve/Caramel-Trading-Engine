@@ -38,32 +38,32 @@ div.line{
     background-color: var(--myWhite);
 }
 .button{
-height: 44px;
-width: 200px;
-position: absolute;
-right: 50%;
-transform: translate(50%);
-top:75%;
-text-align: center;
-border-radius: 50px;
-color: var(--myWhite);
-text-decoration: none;
-background: var(--myGold);
-border-radius: 50px;
-display: inline-block;
-border: none;
-padding-top: 20px;
-transition: all 0.4s ease 0s;
-font-family: 'Roboto', sans-serif; 
-font-size: 20px;
-font-weight: bold;
-letter-spacing: 3px;
+    height: 44px;
+    width: 200px;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+    top:75%;
+    text-align: center;
+    border-radius: 50px;
+    color: var(--myWhite);
+    text-decoration: none;
+    background: var(--myGold);
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    padding-top: 20px;
+    transition: all 0.4s ease 0s;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 .button:hover{
-text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
--webkit-box-shadow: -1px 0px 8px 1px var(--myGold);
--moz-box-shadow: -1px 0px 8px 1px var(--myGold);
-transition: all 0.4s ease 0s;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: -1px 0px 8px 1px var(--myGold);
+    -moz-box-shadow: -1px 0px 8px 1px var(--myGold);
+    transition: all 0.4s ease 0s;
 }
 
 
