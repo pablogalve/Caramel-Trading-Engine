@@ -3,7 +3,7 @@
     include '../../database.php';
     include ($_SERVER['DOCUMENT_ROOT'].'/invest/includes/display_market_data.inc.php');
     include 'includes/display_form.inc.php';
-    include 'includes/display_open_orders.inc.php';
+    include ($_SERVER['DOCUMENT_ROOT'].'/invest/includes/display_open_orders.inc.php');
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +56,7 @@
         <?php
             //Display open orders
             if (isset($_SESSION['username'])) {
-                display_equity_open_orders($conn, $ticker, $username);
+                display_open_orders($conn, 'royalty_market', 'pgeur', $username);                
             }else{
                 echo '<br> You are not logged in';
             }            
