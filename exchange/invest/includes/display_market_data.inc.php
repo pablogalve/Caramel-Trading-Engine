@@ -89,7 +89,6 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
 
     }else if($type == 'last_trades'){
       ?><h1>Last Trades</h1>
-      <th>Type</th>
       <th>Date</th><?php
       $sql = "SELECT * FROM trades ORDER BY date DESC LIMIT 10";
       $result = $conn->query($sql);
@@ -111,8 +110,11 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
 
       //We display ( Type | Date ) only if it's "last trades"
       if($type == 'last_trades'){
-        echo "<td><div class='$style'>". $row['type'] ."</div></td>
-        <td>". $row['date'] ."</td></tr>";
+        //We calculate date in (H:i:s)
+        $date = $row['date'];
+        $date = strtotime($date);
+
+        echo "<td>". date('H:i:s', $date) ."</td></tr>";
       }
       else echo "</tr>";
     }

@@ -1,6 +1,21 @@
 <?php
 
 function display_open_orders($conn, $market, $ticker, $username){
+    ?>
+  <html>
+    <head>
+        <style>
+            .sell_style{
+                color: red;
+            }
+            .buy_style{
+                color: green;
+            }
+        </style>
+    </head>
+  </html>
+  
+  <?php
     if($market == 'royalty_market'){
         if($ticker == 'pgeur'){
             //Select data from database
@@ -18,13 +33,28 @@ function display_open_orders($conn, $market, $ticker, $username){
                     <th>Amount</th>
                     <th>Value</th>
                     <th>Date</th>
-                </tr>
+                </tr>                
             <?php
             //Table data
             while($row = mysqli_fetch_assoc($result)){
+                //Set style (colors)
+                if($row['order_type'] == 'buy')$style = "buy_style";
+                else if($row['order_type'] == 'sell')$style = "sell_style";
+
+                //We calculate value and date (DD:MM:YYYY)
                 $value = $row['amount_RP'] * $row['price'];
-                echo "<tr><td>". $row['ticker'] ."</td><td>". $row['order_type'] ."</td><td>". $row['price'] ." €</td><td>". $row['amount_RP'] ." PG</td>
-            <td>". $value ." €</td><td> ". $row['date'] ."</td></tr>";
+                $value = round($value, 2, PHP_ROUND_HALF_EVEN);
+                $date = $row['date'];
+                $date = strtotime($date);
+
+                //Show open orders from database
+                echo "<tr>
+                <td>". $row['ticker'] ."</td>
+                <td><div class='$style'>". $row['order_type'] ."</div></td>
+                <td>". $row['price'] ." €</td>
+                <td>". $row['amount_RP'] ." CC</td>
+                <td>". $value ." €</td>
+                <td>". date('d/m/Y', $date) ."</td></tr>";
             }
 
             //Close table
