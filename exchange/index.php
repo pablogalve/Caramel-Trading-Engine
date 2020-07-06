@@ -73,7 +73,7 @@
     <div class="w3-half">
       <img src="images/loan.png" alt="" class="what_we_offer_image">
       <p class="w3-large"><b>Invest in Loans</b></p>
-      <p class="text">By investing into fixed-interest loans you become the bank by providing funding for business operations. Your investment is always collaterallized by company’s assets, which in case of default will protect your investment. You can expect to earn a guaranteed 1.5-2.5% interest annually.</p>
+      <p class="text">By investing into fixed-interest loans you become the bank by providing funding for business operations. Your investment is always collaterallized by company’s assets, which in case of default will protect your investment. You can expect to earn a guaranteed 2-4% interest annually.</p>
     </div>
   </div>
 </div>
@@ -82,11 +82,11 @@
 <div class="w3-container" style="padding:128px 16px" id="empower_projects">
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-half">
-      <img src="images/help_eachother.png" alt="">
+      <img src="images/help_eachother.png" alt="" class="image">
     </div>
     <div class="w3-half">
       <h1><b>We empower projects</b> that <br> improve the lives of millions of people</h1>
-      <p class="text">We invest in projects that have the potential of scaling while respecting both the ecosystem and their workforce.
+      <p class="text"><b>We invest in projects that have the potential of scaling while respecting both the ecosystem and their workforce.</b>
       <br><br>
       Join us now to grow your savings while leaving a positive impact on the world</p>
       <a href="https://www.pablogalve.com/invest/equity/market-pro" class="w3-button w3-xlarge w3-round-xxlarge" id="get_started_button">GET STARTED</a>
@@ -115,16 +115,8 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>  
+  <p>Powered by <a href="https://www.pablogalve.com" title="Caramel Group" class="w3-hover-text-green">Caramel Group</a></p>
 </footer>
  
 <script>
