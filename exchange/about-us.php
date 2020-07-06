@@ -8,6 +8,10 @@
 
 <body>
 
+<?php
+    include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
+?>
+
 <div class="about-section">
     <h1>About Us</h1>
     <p>Caramel Capital is an investment firm focused on good opportunities.</p>

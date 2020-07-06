@@ -16,6 +16,10 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
   .bid_price{
     color: green;
   }
+  tr.spaceUnder>td {
+  padding-bottom: 0em;
+  font-size:12px;
+  }
   </style>
   </head>
   <body>
@@ -90,7 +94,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
     }else if($type == 'last_trades'){
       ?><h1>Last Trades</h1>
       <th>Date</th><?php
-      $sql = "SELECT * FROM trades ORDER BY date DESC LIMIT 10";
+      $sql = "SELECT * FROM trades ORDER BY date DESC LIMIT 30";
       $result = $conn->query($sql);
     }
 
@@ -103,7 +107,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
 
       //We display ( Price | Amount | Value )
       $value = $row['amount_RP']*$row['price'];
-      echo "<tr><td><div class='$style'>". 
+      echo "<tr class='spaceUnder'><td><div class='$style'>". 
       round($row['price'], 2, PHP_ROUND_HALF_EVEN) . "</div></td> 
       <td>". round($row['amount_RP'], 2, PHP_ROUND_HALF_EVEN) ." </td>
       <td>" . round($value, 2, PHP_ROUND_HALF_EVEN) . "€</td>";

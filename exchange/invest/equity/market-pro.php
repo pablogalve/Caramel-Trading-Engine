@@ -12,11 +12,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-pro.css">
+    <link href="https://pablogalve.com/headers/headerMain_style.css" rel="stylesheet"/>
     <title>Caramel Capital Market</title>
 </head>
 <body>
     <div class="cards">
-        <div class="card">CANDLESTICK GRAPH</div>
+        <div class="card">CANDLESTICK GRAPH
+            <?php 
+                //Display candlestick chart
+                include 'charts/royalty_chart.html';
+            ?>
+        </div>
         <div class="card">ORDER BOOK
         <?php 
             //Display visual data
@@ -45,6 +51,10 @@
             ?>
         </div>
         <div class="card">MARKET DEPTH
+            <?php 
+                //Display candlestick chart
+                include 'charts/market_depth.html';
+            ?>
         </div>
         <div class="card">TRADE HISTORY
         <?php
