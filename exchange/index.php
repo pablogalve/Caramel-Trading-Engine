@@ -18,6 +18,7 @@
       <a href="#home" class="w3-bar-item w3-button w3-wide" style="color:#D9D9D9">LOGO</a>
 
       <a href="https://www.pablogalve.com/invest/equity/market-pro" class="w3-bar-item w3-button" style="color:#D9D9D9">INVEST</a>  
+      <a href="https://www.pablogalve.com/about-us" class="w3-bar-item w3-button" style="color:#D9D9D9">ABOUT</a> 
     </div>
 
     <div class="w3-right w3-hide-small">

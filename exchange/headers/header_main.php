@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">  
     <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
-        <title>Pantera Group</title>
+        <title>Caramel Capital</title>
         
         <meta name="title" content="web_Title">
         <meta name="description" content="web_Description">    

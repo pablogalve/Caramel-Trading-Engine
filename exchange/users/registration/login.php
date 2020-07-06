@@ -6,7 +6,7 @@ include('server.php');
 //If already logged in, then redirect to "my account" panel
 if (isset($_SESSION['username'])) {
 	$_SESSION['msg'] = "You are already logged in";
-  	header('location: http://exchange.moonfunding.com/users/account/');
+  	header('location: https://www.pablogalve.com/users/account/');
   }
 
 ?>
@@ -14,12 +14,15 @@ if (isset($_SESSION['username'])) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login Pantera Group</title>
+  <title>Login</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="header">
-  	<h2>Login</h2>
+	  <h2>Login</h2>
+	  <h3>Demo Account with virtual money</h3>
+	  <p>Username: test1</p>
+	  <p>Password: test1</p>
   </div>
 	 
   <form method="post" action="login.php">

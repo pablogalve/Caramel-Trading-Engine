@@ -13,12 +13,16 @@ if (isset($_SESSION['username'])) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Register Pantera Group</title>
+  <title>Register</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="header">
-  	<h2>Register</h2>
+	  <h2>Register</h2>
+	  <h3>Demo Account with virtual money</h3>
+	  <p>Username: test1</p>
+	  <p>Password: test1</p>
+	  <p>You can go to "login page" and use those login details</p>
   </div>
 	
   <form method="post" action="register.php">
