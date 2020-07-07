@@ -7,7 +7,8 @@
 <div id="royalty_chart" style="height: 100%; width: 100%; min-width: 310px"></div>
 
 <script>
-    Highcharts.getJSON('datachart.php', function (data) {
+    //Highcharts.getJSON('datachart.php', function (data) {
+    Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-ohlcv.json', function (data){
 
         // split the data set into ohlc and volume
         var ohlc = [],
@@ -48,10 +49,15 @@
             },
 
             title: {
-                text: 'Caramel Capital'
+                text: 'Caramel Capital / EUR'
+            },
+
+            chart:{
+                backgroundColor: 'black',
             },
 
             yAxis: [{
+                min: 0,
                 labels: {
                     align: 'right',
                     x: -3

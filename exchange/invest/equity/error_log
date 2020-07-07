@@ -1,3 +1,11 @@
-[06-Jul-2020 22:37:41 UTC] PHP Warning:  include(charts/market_depth): failed to open stream: No such file or directory in /home2/moonfund/public_html/pablogalve.com/invest/equity/market-pro.php on line 57
-[06-Jul-2020 22:37:41 UTC] PHP Warning:  include(charts/market_depth): failed to open stream: No such file or directory in /home2/moonfund/public_html/pablogalve.com/invest/equity/market-pro.php on line 57
-[06-Jul-2020 22:37:41 UTC] PHP Warning:  include(): Failed opening 'charts/market_depth' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home2/moonfund/public_html/pablogalve.com/invest/equity/market-pro.php on line 57
+[07-Jul-2020 14:56:57 UTC] PHP Notice:  Undefined variable: style in /home2/moonfund/public_html/pablogalve.com/invest/includes/display_market_data.inc.php on line 107
+[07-Jul-2020 14:56:57 UTC] PHP Notice:  Undefined variable: style in /home2/moonfund/public_html/pablogalve.com/invest/includes/display_market_data.inc.php on line 107
+[07-Jul-2020 14:56:57 UTC] PHP Notice:  Undefined variable: style in /home2/moonfund/public_html/pablogalve.com/invest/includes/display_market_data.inc.php on line 107
+[07-Jul-2020 14:56:57 UTC] PHP Notice:  Undefined variable: style in /home2/moonfund/public_html/pablogalve.com/invest/includes/display_market_data.inc.php on line 107
+[07-Jul-2020 14:56:57 UTC] PHP Notice:  Undefined variable: style in /home2/moonfund/public_html/pablogalve.com/invest/includes/display_market_data.inc.php on line 107
+[07-Jul-2020 14:56:57 UTC] PHP Notice:  Undefined variable: style in /home2/moonfund/public_html/pablogalve.com/invest/includes/display_market_data.inc.php on line 107
+[07-Jul-2020 14:56:57 UTC] PHP Notice:  Undefined variable: style in /home2/moonfund/public_html/pablogalve.com/invest/includes/display_market_data.inc.php on line 107
+[07-Jul-2020 14:56:57 UTC] PHP Notice:  Undefined variable: style in /home2/moonfund/public_html/pablogalve.com/invest/includes/display_market_data.inc.php on line 107
+[07-Jul-2020 14:56:57 UTC] PHP Notice:  Undefined variable: style in /home2/moonfund/public_html/pablogalve.com/invest/includes/display_market_data.inc.php on line 107
+[07-Jul-2020 14:56:57 UTC] PHP Notice:  Undefined variable: style in /home2/moonfund/public_html/pablogalve.com/invest/includes/display_market_data.inc.php on line 107
+[07-Jul-2020 17:30:30 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home2/moonfund/public_html/pablogalve.com/invest/equity/market-pro.php on line 49

@@ -7,18 +7,34 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
   table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 5px;
-    text-align: left;
+    padding: 5px;  
   }
   .ask_price{
-    color: red;
+    color: red;    
   }
   .bid_price{
     color: green;
   }
   tr.spaceUnder>td {
   padding-bottom: 0em;
-  font-size:12px;
+  font-size:15px;
+  }
+  * {
+  box-sizing: border-box;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
   </style>
   </head>
@@ -66,183 +82,124 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
     echo '</table>';
 
   }else if($ticker == 'pgeur'){
-    ?>
-      <table style="width:100%">
+    if($type == 'orderbook_styled'){
+      ?>
+      <div class="row">
+        <div class="column">
+          <h3>Bids</h3>
+          <table class="w3-hoverable">        
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Amount</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <?php
+          //We get bids from database
+          $sql = "SELECT * FROM secondary_market_pgeur_bid ORDER BY price DESC LIMIT 20";
+          $result = $conn->query($sql);
+
+          while($row = mysqli_fetch_assoc($result)){
+            //We display ( Value | Amount | Price )
+            $value = $row['amount_RP']*$row['price'];
+
+            echo "<tr class='spaceUnder'><td>". 
+            round($value, 2, PHP_ROUND_HALF_EVEN) . "</td> 
+            <td>". round($row['amount_RP'], 2, PHP_ROUND_HALF_EVEN) ." </td>
+            <td><div class='bid_price'>" . round($row['price'], 2, PHP_ROUND_HALF_EVEN) . "€</div></td>";
+          }
+          ?>
+        </table>
+        </div>
+        <div class="column">
+          <h3>Asks</h3>
+          <table class="w3-hoverable">
+          <thead>
+            <tr>
+              <th>Price</th>
+              <th>Amount</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <?php
+          //We get asks from database
+          $sql = "SELECT * FROM secondary_market_pgeur_ask ORDER BY price ASC LIMIT 20";
+          $result = $conn->query($sql);
+
+          while($row = mysqli_fetch_assoc($result)){
+            //We display ( Price | Amount | Value )
+            $value = $row['amount_RP']*$row['price'];
+
+            echo "<tr class='spaceUnder'><td><div class='ask_price'>". 
+            round($row['price'], 2, PHP_ROUND_HALF_EVEN) . "</td> 
+            <td>". round($row['amount_RP'], 2, PHP_ROUND_HALF_EVEN) ." </td>
+            <td>" . round($value, 2, PHP_ROUND_HALF_EVEN) . "€</div></td>";
+          }
+          ?>
+        </table>
+        </div>
+      </div>
+      <?php
+    }else{
+      ?>
+      <table style="width:10%">
         <tr>
           <th>Price</th>
           <th>Amount</th>
           <th>Value</th>
-    <?php
+      <?php
 
-    $style = "null";
+      $style = "null";
 
-    if($type == 'primary_market_ask'){
-      ?><h1>Primary Market Asks</h1><?php
-      $sql = "SELECT * FROM primary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
-      $result = $conn->query($sql);
+      if($type == 'primary_market_ask'){
+        ?><h1>Primary Market Asks</h1><?php
+        $sql = "SELECT * FROM primary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
+        $result = $conn->query($sql);
 
-    }else if($type == 'secondary_market_ask'){
-      $sql = "SELECT * FROM secondary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
-      $result = $conn->query($sql);
-      $style = "ask_price";
+      }else if($type == 'secondary_market_ask'){
+        $sql = "SELECT * FROM secondary_market_pgeur_ask ORDER BY price DESC LIMIT 10";
+        $result = $conn->query($sql);
+        $style = "ask_price";    
 
-    }else if($type == 'secondary_market_bid'){
-      $sql = "SELECT * FROM secondary_market_pgeur_bid ORDER BY price DESC LIMIT 10";
-      $result = $conn->query($sql);
-      $style = "bid_price";
+      }else if($type == 'secondary_market_bid'){
+        $sql = "SELECT * FROM secondary_market_pgeur_bid ORDER BY price DESC LIMIT 10";
+        $result = $conn->query($sql);
+        $style = "bid_price";   
 
-    }else if($type == 'last_trades'){
-      ?><h1>Last Trades</h1>
-      <th>Date</th><?php
-      $sql = "SELECT * FROM trades ORDER BY date DESC LIMIT 30";
-      $result = $conn->query($sql);
-    }
-
-    while($row = mysqli_fetch_assoc($result)){
-      //We setup the color
-      if($type == 'last_trades'){
-        if($row['type'] == 'buy')$style = "bid_price";
-        else if($row['type'] == 'sell')$style = "ask_price";
+      }else if($type == 'last_trades'){
+        ?><h1>Last Trades</h1>
+        <th>Date</th><?php
+        $sql = "SELECT * FROM trades ORDER BY date DESC LIMIT 30";
+        $result = $conn->query($sql);
       }
 
-      //We display ( Price | Amount | Value )
-      $value = $row['amount_RP']*$row['price'];
-      echo "<tr class='spaceUnder'><td><div class='$style'>". 
-      round($row['price'], 2, PHP_ROUND_HALF_EVEN) . "</div></td> 
-      <td>". round($row['amount_RP'], 2, PHP_ROUND_HALF_EVEN) ." </td>
-      <td>" . round($value, 2, PHP_ROUND_HALF_EVEN) . "€</td>";
-
-      //We display ( Type | Date ) only if it's "last trades"
-      if($type == 'last_trades'){
-        //We calculate date in (H:i:s)
-        $date = $row['date'];
-        $date = strtotime($date);
-
-        echo "<td>". date('H:i:s', $date) ."</td></tr>";
-      }
-      else echo "</tr>";
-    }
-    echo '</table>';
-  }
-?>
-
-
-<?php
-  if($ticker == 'mfeur'){
-        if($type == 'lastTrades'){
-?>
-            <html>
-            <head>
-            <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-                padding: 5px;
-                text-align: left;
-            }
-            </style>
-            </head>
-            <body>
-    
-            <table style="width:100%">
-              <tr>
-                <th>Username</th>
-                <th>Amount(MF)</th>
-                <th>Price(EUR)</th>
-                <th>Type</th>
-                <th>Fee(EUR)</th>
-                <th>Fee(Royalty)</th>
-                <th>Date</th>
-              </tr>
-            
-            <?php
-                $sql = "SELECT * FROM mfeurtrades ORDER BY date DESC LIMIT 20";
-                $result = $conn->query($sql);
-                echo "<br><br><br> Last Trades <br>";
-                
-                while($row = mysqli_fetch_assoc($result)){
-                    echo "<tr><td>". $row['username'] ."</td><td>". $row['amountRP'] ."</td><td>". $row['price'] ."</td><td>". $row['orderType'] ."</td><td>". $row['feeEUR'] ."</td><td>". $row['feeRP'] ."</td><td>". $row['date'] ."</td></tr>";
-                }
-                echo '</table>';
-            ?>
-            </table>
-            </body>
-            </html>
-            <?php
-        }else if($type == 'bid'){
-            ?>
-            <html>
-            <head>
-            <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-                padding: 5px;
-                text-align: left;
-            }
-            </style>
-            </head>
-            <body>
-    
-            <table style="width:100%">
-              <tr>
-                <th>Username</th>
-                <th>Amount(MF)</th>
-                <th>Price(EUR)</th>
-              </tr>
-            
-            <?php
-
-            $sql = "SELECT * FROM mfeurbids ORDER BY price DESC LIMIT 10";
-            $result = $conn->query($sql);
-            echo "<br><br><br> Buy Orders <br>";
-            
-            while($row = mysqli_fetch_assoc($result)){
-                echo "<tr><td>". $row['username'] ."</td><td>". $row['amountRP'] ."</td><td>". $row['price'] ."</td></tr>";
-            }
-            echo '</table>';
-            ?>
-            </table>
-            </body>
-            </html>
-            <?php
-        }else if($type == 'ask'){
-            ?>
-            <html>
-            <head>
-            <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-                padding: 5px;
-                text-align: left;
-            }
-            </style>
-            </head>
-            <body>
-    
-            <table style="width:100%">
-              <tr>
-                <th>Username</th>
-                <th>Amount(MF)</th>
-                <th>Price(EUR)</th>
-              </tr>
-            
-            <?php
-
-            $sql = "SELECT * FROM mfeurasks ORDER BY price DESC LIMIT 10";
-            $result = $conn->query($sql);
-            echo "<br><br><br> Sell Orders <br>";
-            
-            while($row = mysqli_fetch_assoc($result)){
-                echo "<tr><td>". $row['username'] ."</td><td>". $row['amountRP'] ."</td><td>". $row['price'] ."</td></tr>";
-            }
-            echo '</table>';
-            ?>
-            </table>
-            </body>
-            </html>
-            <?php
+      while($row = mysqli_fetch_assoc($result)){
+        //We setup the color
+        if($type == 'last_trades'){
+          if($row['type'] == 'buy')$style = "bid_price";
+          else if($row['type'] == 'sell')$style = "ask_price";
         }
-    }
+
+        //We display ( Price | Amount | Value )
+        $value = $row['amount_RP']*$row['price'];
+        echo "<tr class='spaceUnder'><td><div class='$style'>". 
+        round($row['price'], 2, PHP_ROUND_HALF_EVEN) . "</td> 
+        <td>". round($row['amount_RP'], 2, PHP_ROUND_HALF_EVEN) ." </td>
+        <td>" . round($value, 2, PHP_ROUND_HALF_EVEN) . "€</div></td>";
+
+        //We display ( Type | Date ) only if it's "last trades"
+        if($type == 'last_trades'){
+          //We calculate date in (H:i:s)
+          $date = $row['date'];
+          $date = strtotime($date);
+
+          echo "<td>". date('H:i:s', $date) ."</td></tr>";
+        }
+        else echo "</tr>";
+      }
+      echo '</table>';
+    }    
+  }
 }
+?>

@@ -2,25 +2,73 @@ html {
     font-size: 22px; 
     background-color: black;
 }
-body { padding: 1rem; }
+body { 
+  padding: 1rem;  
+}
+
+p{
+  color:white;
+}
+
+.candlestick_graph { grid-area: candlestick_graph; 
+min-height: 300px;}
+.market_depth_graph { grid-area: market_depth_graph; }
+.orderbook { grid-area: orderbook; }
+.new_order { grid-area: new_order; }
+.last_trades { grid-area: last_trades; }
+.open_orders { grid-area: open_orders; }
+
+.cards {
+  display: grid;
+  grid-gap: 0.5rem;  
+}
 
 .card {
   background-color: black;
-  color: white;
+  color: #D9D9D9;
   padding: 1rem;
   border: 1.5px solid #fff;
 }
 
-.cards {
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 0.5rem;
-}
-
 @media (min-width: 600px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
+  .cards { grid-template-columns: 10fr 1fr 2fr; }
 }
 
 @media (min-width: 900px) {
-  .cards { grid-template-columns: repeat(3, 1fr); }
+  .cards { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .cards { grid-template-areas: 
+    'last_trades candlestick_graph candlestick_graph candlestick_graph candlestick_graph new_order'
+    'last_trades candlestick_graph candlestick_graph candlestick_graph candlestick_graph new_order'
+    'last_trades market_depth_graph orderbook orderbook orderbook open_orders';}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  width: 5%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
 }
