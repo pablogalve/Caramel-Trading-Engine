@@ -19,9 +19,11 @@ function newLimitOrder($conn, $ticker, $type, $price, $amount_RP, $username, $da
                     $result = $conn->query($sql); 
                     if($result){
                         updateBalance($conn, NULL, -($amount_RP*$price), $username, "eur");
-                        $sql = "SELECT MAX(id) FROM secondary_market_pgeur_bid";
+
+                        //We get the id from the public market to assign it to open_orders
+                        $sql = "SELECT id FROM secondary_market_pgeur_bid ORDER BY id DESC LIMIT 1";
                         $result = $conn->query($sql);
-                        while($row = mysqli_fetch_assoc($result)){
+                        while($row = mysqli_fetch_assoc($result)){                            
                             create_open_order($conn, $price, $amount_RP, $date, $username, $ticker, $type, $row['id']);
                         }
                         checkMatch($conn, $ticker);
@@ -35,6 +37,13 @@ function newLimitOrder($conn, $ticker, $type, $price, $amount_RP, $username, $da
                     $result = $conn->query($sql); 
                     if($result){
                         updateBalance($conn, -$amount_RP, NULL, $username, "pg");
+
+                        //We get the id from the public market to assign it to open_orders
+                        $sql = "SELECT id FROM secondary_market_pgeur_ask ORDER BY id DESC LIMIT 1";
+                        $result = $conn->query($sql);
+                        while($row = mysqli_fetch_assoc($result)){                            
+                            create_open_order($conn, $price, $amount_RP, $date, $username, $ticker, $type, $row['id']);
+                        }
                         checkMatch($conn, $ticker);
                     }else die("Connection failed: " . $conn->connect_error);                     
                 }
