@@ -30,16 +30,31 @@ min-height: 300px;}
   border: 1.5px solid #fff;
 }
 
-@media (min-width: 600px) {
-  .cards { grid-template-columns: 10fr 1fr 2fr; }
+.cards { grid-template-columns: 1fr}
+.cards { grid-template-areas: 
+    'candlestick_graph'
+    'new_order'
+    'orderbook'
+    'open_orders'
+    'last_trades'
+    'market_depth_graph';}
+
+@media (min-width: 800px) {
+  .cards { grid-template-columns: 50% 50% }
+  .cards { grid-template-areas: 
+    'candlestick_graph candlestick_graph'
+    'candlestick_graph candlestick_graph'
+    'last_trades new_order'
+    'orderbook orderbook'
+    'market_depth_graph open_orders';}
 }
 
-@media (min-width: 900px) {
-  .cards { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+@media (min-width: 1500px) {
+  .cards { grid-template-columns: 21% 25% 5% 5% 20% 22%; }
   .cards { grid-template-areas: 
     'last_trades candlestick_graph candlestick_graph candlestick_graph candlestick_graph new_order'
     'last_trades candlestick_graph candlestick_graph candlestick_graph candlestick_graph new_order'
-    'last_trades market_depth_graph orderbook orderbook orderbook open_orders';}
+    'market_depth_graph orderbook orderbook orderbook open_orders open_orders';}
 }
 
 * {

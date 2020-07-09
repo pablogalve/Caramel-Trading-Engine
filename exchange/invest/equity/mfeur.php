@@ -1,54 +1,48 @@
-<?php
-    //session_start();
-    //include '../header.php';
-    include 'includes/order_functions.inc.php';
-    include '../database.php';
-    include 'includes/display_market_data.inc.php';
-    include 'includes/buy_or_sell.inc.php';
-    date_default_timezone_set('Europe/Tallinn');
-    include 'mfeurcandlestick.htm';
-    if (isset($_SESSION['id'])) {
-  echo $_SESSION['id'];
- }else{
-     echo "You are not logged in!";
- }
-?>
+<!DOCTYPE html>
 <html>
 <head>
-<title> Market </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {background: #bbb;}
+</style>
 </head>
 <body>
-<h2>This is the marketplace for MF royalties!</h2>
-<h3>You can buy/sell them at real-time with euros!</h3>
-<p>To see the users, visit http://exchange.moonfunding.com/holders</p>
-<p>Disclaimer: User's balances are wrong, we're still working on it</p>
-<?php
-echo "<form action='".buy($conn)."' method='POST'> 
-    <input type='text' name='price' placeholder='Price'><br>
-        <input type='text' name='amountRP' placeholder='Amount'><br>
-        <input type='text' name='username' placeholder='Username'><br>
-        <input type='hidden' name='ticker' value='mfeur'>
-        <input type='hidden' name='type' value='buy'>
-        <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-        
-        <button type='submit' name='submitbuymfeur' >BUY</button>
-    </form>";
-  
-echo "<form action='".sell($conn)."' method='POST'> 
-    <input type='text' name='price' placeholder='Price'><br>
-        <input type='text' name='amountRP' placeholder='Amount'><br>
-        <input type='text' name='username' placeholder='Username'><br>
-        <input type='hidden' name='ticker' value='mfeur'>
-        <input type='hidden' name='type' value='sell'>
-        <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-        
-        <button type='submit' name='submitsellmfeur'>SELL</button>
-    </form>";
-    
-display_market_data($conn, 'mfeur', 'bid');
-display_market_data($conn, 'mfeur', 'ask');
-display_market_data($conn, 'mfeur', 'lastTrades');
-?>
+
+<h2>Closable List Items</h2>
+<p>Click on the "x" symbol to the right of the list item to close/hide it.</p>
+
+<ul>
+  <li>Adele</li>
+  <li>Agnes<span class="close">&times;</span></li>
+
+  <li>Billy<span class="close">&times;</span></li>
+  <li>Bob<span class="close">&times;</span></li>
+
+  <li>Calvin<span class="close">&times;</span></li>
+  <li>Christina<span class="close">&times;</span></li>
+  <li>Cindy</li>
+</ul>
+
+<script>
+var closebtns = document.getElementsByClassName("close");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';//TODO
+  });
+}
+</script>
 
 </body>
 </html>

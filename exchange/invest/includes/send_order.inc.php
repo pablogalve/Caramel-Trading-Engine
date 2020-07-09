@@ -19,7 +19,11 @@ function newLimitOrder($conn, $ticker, $type, $price, $amount_RP, $username, $da
                     $result = $conn->query($sql); 
                     if($result){
                         updateBalance($conn, NULL, -($amount_RP*$price), $username, "eur");
-                        create_open_order($conn, $price, $amount_RP, $date, $username, $ticker, $type);
+                        $sql = "SELECT MAX(id) FROM secondary_market_pgeur_bid";
+                        $result = $conn->query($sql);
+                        while($row = mysqli_fetch_assoc($result)){
+                            create_open_order($conn, $price, $amount_RP, $date, $username, $ticker, $type, $row['id']);
+                        }
                         checkMatch($conn, $ticker);
                     }else die("Connection failed: " . $conn->connect_error);    
                 }

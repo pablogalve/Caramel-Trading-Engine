@@ -11,6 +11,16 @@ function display_open_orders($conn, $market, $ticker, $username){
             .buy_style{
                 color: green;
             }
+            .close_button {
+                background-color: red; 
+                border: none;
+                color: white;
+                padding: 2.5% 10%;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
         </style>
     </head>
   </html>
@@ -24,8 +34,7 @@ function display_open_orders($conn, $market, $ticker, $username){
 
             //Table header
             ?>
-            <h2>Royalty Market</h2>
-            <table style="width:100%">
+            <table class="w3-hoverable" style="width:100%">
                 <tr>
                     <th>Ticker</th>
                     <th>Type</th>
@@ -33,6 +42,7 @@ function display_open_orders($conn, $market, $ticker, $username){
                     <th>Amount</th>
                     <th>Value</th>
                     <th>Date</th>
+                    <th>Close</th>
                 </tr>                
             <?php
             //Table data
@@ -46,6 +56,7 @@ function display_open_orders($conn, $market, $ticker, $username){
                 $value = round($value, 2, PHP_ROUND_HALF_EVEN);
                 $date = $row['date'];
                 $date = strtotime($date);
+                $order_id = $row['order_id'];
 
                 //Show open orders from database
                 echo "<tr>
@@ -54,16 +65,23 @@ function display_open_orders($conn, $market, $ticker, $username){
                 <td>". $row['price'] ." €</td>
                 <td>". $row['amount_RP'] ." CC</td>
                 <td>". $value ." €</td>
-                <td>". date('d/m/Y', $date) ."</td></tr>";
+                <td>". date('d/m/Y', $date) ."</td>
+                <td><form method='POST' action='".cancel_order($conn, $row['ticker'], $row['order_type'], $order_id)."'>
+                <input type='hidden' name='order_id' value='$order_id'>
+                <button type='submit' name='cancel_button' class='close_button'>x</button>
+                </form></td></tr>";
             }
 
             //Close table
-            ?></table><?php
+            ?></table>
+            
+            <?php
         }        
     }else if($market == 'loan_market'){
         if($ticker == 'loaneur'){
             //TODO: Display My Open Orders in loan market
         }
-    }    
+    }
+       
 }
 ?>

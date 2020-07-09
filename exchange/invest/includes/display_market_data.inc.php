@@ -97,7 +97,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
           </thead>
           <?php
           //We get bids from database
-          $sql = "SELECT * FROM secondary_market_pgeur_bid ORDER BY price DESC LIMIT 20";
+          $sql = "SELECT * FROM secondary_market_pgeur_bid ORDER BY price DESC LIMIT 10";
           $result = $conn->query($sql);
 
           while($row = mysqli_fetch_assoc($result)){
@@ -124,7 +124,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
           </thead>
           <?php
           //We get asks from database
-          $sql = "SELECT * FROM secondary_market_pgeur_ask ORDER BY price ASC LIMIT 20";
+          $sql = "SELECT * FROM secondary_market_pgeur_ask ORDER BY price ASC LIMIT 10";
           $result = $conn->query($sql);
 
           while($row = mysqli_fetch_assoc($result)){
@@ -143,7 +143,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
       <?php
     }else{
       ?>
-      <table style="width:10%">
+      <table  class="w3-hoverable" style="width:10%">
         <tr>
           <th>Price</th>
           <th>Amount</th>
@@ -170,7 +170,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
       }else if($type == 'last_trades'){
         ?><h1>Last Trades</h1>
         <th>Date</th><?php
-        $sql = "SELECT * FROM trades ORDER BY date DESC LIMIT 30";
+        $sql = "SELECT * FROM trades ORDER BY date DESC LIMIT 10";
         $result = $conn->query($sql);
       }
 

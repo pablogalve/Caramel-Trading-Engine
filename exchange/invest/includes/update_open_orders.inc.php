@@ -1,8 +1,8 @@
 <?php
 
-function create_open_order($conn, $price, $amount_RP, $date, $username, $ticker, $type){
-    $sql = "INSERT INTO open_orders (price, amount_RP, date, username, ticker, order_type) 
-    VALUES ('$price', '$amount_RP', '$date', '$username', '$ticker', '$type')";
+function create_open_order($conn, $price, $amount_RP, $date, $username, $ticker, $type, $order_id){
+    $sql = "INSERT INTO open_orders (price, amount_RP, date, username, ticker, order_type, order_id) 
+    VALUES ('$price', '$amount_RP', '$date', '$username', '$ticker', '$type', '$order_id)";
     $result = $conn->query($sql);
 }
 

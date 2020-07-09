@@ -1,5 +1,6 @@
 <?php
 include ($_SERVER['DOCUMENT_ROOT'].'/invest/includes/create_order.inc.php');
+include ($_SERVER['DOCUMENT_ROOT'].'/invest/includes/cancel_order_manually.php');
 
 function display_form($conn, $name){
     //To get available funds
@@ -56,7 +57,7 @@ function display_form($conn, $name){
         case 'create_limit_sell':
             ?><h2>SELL PG Royalties</h2><?php
             echo "$row[pg] PG Available<br>";
-            echo "<form action='".create_limit_order($conn)."' method='POST'>
+            echo "<form action='".create_limit_order($conn, 30)."' method='POST'>
                 Amount:
                 <input type='number' name='amount_RP' step='0.0001' min='10.0000'> PG <br>
                 Price:
