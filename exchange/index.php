@@ -11,7 +11,7 @@
 <body>
 
 <?php 
-  include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
+  include 'headers/header_setup.php';
 ?>
 
 <!-- Header with full-height image -->
@@ -29,7 +29,7 @@
     <br>    
     <br>
     <br>
-    <a href="https://www.pablogalve.com/invest/equity/market-pro" class="w3-button w3-xlarge w3-round-xxlarge" id="get_started_button">GET STARTED</a>
+    <a href="https://www.pablogalve.com/caramel_capital/invest/equity/market-pro" class="w3-button w3-xlarge w3-round-xxlarge" id="get_started_button">GET STARTED</a>
   </div>
 </div>
 
@@ -61,7 +61,7 @@
       <p class="text"><b>We invest in projects that have the potential of scaling while respecting both the ecosystem and their workforce.</b>
       <br><br>
       Join us now to grow your savings while leaving a positive impact on the world</p>
-      <a href="https://www.pablogalve.com/invest/equity/market-pro" class="w3-button w3-xlarge w3-round-xxlarge" id="get_started_button">GET STARTED</a>
+      <a href="https://www.pablogalve.com/caramel_capital/invest/equity/market-pro" class="w3-button w3-xlarge w3-round-xxlarge" id="get_started_button">GET STARTED</a>
     </div>
   </div>
 </div>
@@ -77,7 +77,7 @@
         From day one, we designed and built an investment platform for newcomers and experts alike.
         <br><br>
         Everything you need to succeed at your fingertips thanks to our user-friendly interface</p>
-        <a href="https://www.pablogalve.com/invest/equity/market-pro" class="w3-button w3-xlarge w3-round-xxlarge" id="get_started_button">GET STARTED</a>
+        <a href="https://www.pablogalve.com/caramel_capital/invest/equity/market-pro" class="w3-button w3-xlarge w3-round-xxlarge" id="get_started_button">GET STARTED</a>
     </div>
     <div class="w3-half">
       <img src="images/shake_hands.png" alt="" class="image">

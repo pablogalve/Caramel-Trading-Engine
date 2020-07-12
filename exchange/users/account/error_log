@@ -1,2 +1,0 @@
-[06-Jul-2020 17:17:58 UTC] PHP Notice:  Undefined variable: result in /home2/moonfund/public_html/pablogalve.com/users/account/index.php on line 48
-[06-Jul-2020 17:17:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home2/moonfund/public_html/pablogalve.com/users/account/index.php on line 48

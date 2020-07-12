@@ -6,7 +6,7 @@ include('server.php');
 //If already logged in, then redirect to "my account" panel
 if (isset($_SESSION['username'])) {
 	$_SESSION['msg'] = "You are already logged in";
-  	header('location: https://www.pablogalve.com/users/account/');
+  	header('location: https://www.pablogalve.com/caramel_capital/users/account/');
   }
 
 ?>

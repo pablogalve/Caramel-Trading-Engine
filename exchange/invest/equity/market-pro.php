@@ -1,9 +1,9 @@
 <?php
-    include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
+    include '../../headers/header_setup.php';
     include '../../database.php';
-    include ($_SERVER['DOCUMENT_ROOT'].'/invest/includes/display_market_data.inc.php');
+    include '../includes/display_market_data.inc.php';
     include 'includes/display_form.inc.php';
-    include ($_SERVER['DOCUMENT_ROOT'].'/invest/includes/display_open_orders.inc.php');
+    include '../includes/display_open_orders.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -24,8 +24,8 @@
             ?>
         </div>
         <div class="card orderbook">    
-            <?php      
-            display_market_data($conn, 'pgeur', 'orderbook_styled');        
+            <?php             
+            display_market_data($conn, 'pgeur', 'orderbook_styled');                  
         ?>
         </div>
         <div class="card new_order"><h3>Start Trading</h3>
@@ -40,12 +40,14 @@
                 $sql = "SELECT eur,pg FROM users WHERE username='$username' LIMIT 1";
                 $result = $conn->query($sql);
                 $row = $result->fetch_array();
-                echo "Available funds: $row[eur] € <br>";
-                echo "Available royalties: $row[pg] PG <br>";
+                
+                echo '<h6 class="w3-text-teal">Available Funds</h6>';
+                echo '<p>' . $row['eur'] . ' €</p>';
+                echo '<p>' . $row['pg'] . ' Royalties</p>';
             }else{                
                 ?>
-                <a href="https://www.pablogalve.com/users/registration/login" class="button">Login</a>
-                <a href="https://www.pablogalve.com/users/registration/register" class="button">Register</a>
+                <a href="https://www.pablogalve.com/caramel_capital/users/registration/login" class="button">Login</a>
+                <a href="https://www.pablogalve.com/caramel_capital/users/registration/register" class="button">Register</a>
                 <h3>Welcome to Caramel Capital</h3>
                 <p>We provide access to investments for you through:</p>
                 <ul>
@@ -59,7 +61,9 @@
         <div class="card market_depth_graph">
             <?php 
                 //Display market depth chart
-                include 'charts/market_depth.html';
+                $last_price = getLastPrice($conn, 'pgeur');
+                echo "<div style='text-align:center;font-size:30px;'>$last_price</div>";
+                include 'charts/market_depth.php';
             ?>
         </div>
         <div class="card last_trades">
@@ -75,8 +79,8 @@
                 display_open_orders($conn, 'royalty_market', 'pgeur', $username);                
             }else{
                 ?>
-                <a href="https://www.pablogalve.com/users/registration/login" class="button">Login</a>
-                <a href="https://www.pablogalve.com/users/registration/register" class="button">Register</a>
+                <a href="https://www.pablogalve.com/caramel_capital/users/registration/login" class="button">Login</a>
+                <a href="https://www.pablogalve.com/caramel_capital/users/registration/register" class="button">Register</a>
                 <h3>Welcome to Caramel Capital</h3>
                 <p>We provide access to investments for you through:</p>
                 <ul>

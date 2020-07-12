@@ -105,7 +105,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
             $value = $row['amount_RP']*$row['price'];
 
             echo "<tr class='spaceUnder'><td>". 
-            round($value, 2, PHP_ROUND_HALF_EVEN) . "</td> 
+            round($value, 2, PHP_ROUND_HALF_EVEN) . "€</td> 
             <td>". round($row['amount_RP'], 2, PHP_ROUND_HALF_EVEN) ." </td>
             <td><div class='bid_price'>" . round($row['price'], 2, PHP_ROUND_HALF_EVEN) . "€</div></td>";
           }
@@ -132,7 +132,7 @@ function display_market_data($conn, $ticker, $type){  //$type= bid, ask or lastT
             $value = $row['amount_RP']*$row['price'];
 
             echo "<tr class='spaceUnder'><td><div class='ask_price'>". 
-            round($row['price'], 2, PHP_ROUND_HALF_EVEN) . "</td> 
+            round($row['price'], 2, PHP_ROUND_HALF_EVEN) . "€</td> 
             <td>". round($row['amount_RP'], 2, PHP_ROUND_HALF_EVEN) ." </td>
             <td>" . round($value, 2, PHP_ROUND_HALF_EVEN) . "€</div></td>";
           }

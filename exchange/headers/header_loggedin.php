@@ -17,13 +17,13 @@
             <div class="w3-left w3-hide-small">
             <a href="#home" class="w3-bar-item w3-button w3-wide" style="color:#D9D9D9">LOGO</a>
 
-            <a href="https://www.pablogalve.com/invest/equity/market-pro" class="w3-bar-item w3-button" style="color:#D9D9D9">INVEST</a>  
-            <a href="https://www.pablogalve.com/about-us" class="w3-bar-item w3-button" style="color:#D9D9D9">ABOUT</a> 
+            <a href="https://www.pablogalve.com/caramel_capital/invest/equity/market-pro" class="w3-bar-item w3-button" style="color:#D9D9D9">INVEST</a>  
+            <a href="https://www.pablogalve.com/caramel_capital/about-us" class="w3-bar-item w3-button" style="color:#D9D9D9">ABOUT</a> 
             </div>
 
             <div class="w3-right w3-hide-small">            
-            <a href="https://www.pablogalve.com/users/account" class="w3-bar-item w3-button" style="color:#D9D9D9">MY ACCOUNT</a>
-            <a href="https://www.pablogalve.com/users/registration/logout" class="w3-bar-item w3-button" style="color:#D9D9D9"><i class="fa fa-power-off w3-margin-right"></i></a>
+            <a href="https://www.pablogalve.com/caramel_capital/users/account" class="w3-bar-item w3-button" style="color:#D9D9D9">MY ACCOUNT</a>
+            <a href="https://www.pablogalve.com/caramel_capital/users/registration/logout" class="w3-bar-item w3-button" style="color:#D9D9D9"><i class="fa fa-power-off w3-margin-right"></i></a>
             </div>
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->

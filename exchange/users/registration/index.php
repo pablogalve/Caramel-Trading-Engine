@@ -1,5 +1,5 @@
 <?php 
-  include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
+  include 'https://pablogalve.com/caramel_capital/headers/header_setup.php';
 
   if (!isset($_SESSION['username'])) {
 	$_SESSION['msg'] = "You must log in first";

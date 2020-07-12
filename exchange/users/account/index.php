@@ -1,13 +1,16 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'].'/headers/header_setup.php';
+include '../../headers/header_setup.php';
 include '../../database.php';
 
-if (!isset($_SESSION['username']))header('location: https://www.pablogalve.com/users/registration/login');
-  else{
+if (!isset($_SESSION['username'])){
+    //If user is not logged in, we redirect to login page
+    header('location: https://www.pablogalve.com/caramel_capital/users/registration/login');
+}else{
+    //If user is logged in, we get their data from database
     $username = $_SESSION['username'];
     $sql = "SELECT * FROM users WHERE username='$username'";
     $result = $conn->query($sql);
-  }
+}
 ?>
 
 <!DOCTYPE html>
@@ -67,9 +70,7 @@ if (!isset($_SESSION['username']))header('location: https://www.pablogalve.com/u
             //Language
             echo '<div><p class="left"><i class="fa fa-language fa-fw w3-margin-right w3-large w3-text-teal"></i>Preferred language </p><p class="right">' . $row['role'] . '</p></div>';
             //Role
-            echo '<div><p class="left"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Role </p><p class="right">' . $row['role'] . '</p></div>';
-            
-            
+            echo '<div><p class="left"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Role </p><p class="right">' . $row['role'] . '</p></div>';  
           ?>          
         </div>
       </div><br>

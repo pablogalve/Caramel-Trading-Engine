@@ -70,4 +70,13 @@ function getSellOrderID($conn, $ticker){
         return $row['id'];
    }
 }
+
+function getLastPrice($conn, $ticker){
+    if($ticker=='pgeur'){
+        $sql = "SELECT price FROM trades ORDER BY date DESC LIMIT 1";
+        $result = $conn->query($sql);
+        $row = mysqli_fetch_array($result);
+        return $row['price'];
+    }
+}
 ?>

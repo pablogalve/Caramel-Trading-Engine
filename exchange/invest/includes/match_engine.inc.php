@@ -2,7 +2,6 @@
 include 'get_data.inc.php';
 include 'getMarketMaker.inc.php';
 include 'update_orderbook.inc.php';
-//include 'update_balances.inc.php';
 
 function checkMatch($conn, $ticker){
     $bid = getBiggestBid($conn, $ticker);
