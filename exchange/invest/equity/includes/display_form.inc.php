@@ -48,11 +48,32 @@ function display_form($conn, $name){
         break;
         case 'create_limit_order':
             ?><h2>Limit order</h2><?php
-            echo "<form action='".create_limit_order($conn)."' method='POST'>
-                Amount:
-                <input type='number' name='amount_RP' step='0.0001' min='5.0000'> PG <br>
-                Price:
-                <input type='number' name='price' step='0.01' min='0'> € <br>
+
+            echo "<form action='".create_limit_order($conn)."' method='POST'>                
+                <table>
+                    <tr>
+                        <td>
+                            Amount
+                        </td>
+                        <td>
+                            <input type='number' name='amount_RP' step='0.0001' min='5.0000'>
+                        </td>
+                        <td>
+                            CC
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td>
+                            Price
+                        </td>
+                        <td>
+                            <input type='number' name='price' step='0.01' min='0'>
+                        </td>
+                        <td>
+                            €
+                        </td>
+                    </tr> 
+                </table>
                 <input type='hidden' name='ticker' value='pgeur'>
                 <input type='hidden' name='type' value='limit'>
                 <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>

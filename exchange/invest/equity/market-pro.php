@@ -12,6 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-pro.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Caramel Capital Market</title>
 </head>
@@ -44,6 +45,11 @@
                 echo '<h6 class="w3-text-teal">Available Funds</h6>';
                 echo '<p>' . $row['eur'] . ' €</p>';
                 echo '<p>' . $row['pg'] . ' Royalties</p>';
+                if($row['eur'] < 10){
+                    echo "<div class='w3-panel w3-pale-yellow w3-border'>
+                        <p style='color:black'<strong>Hey!</strong> You can add funds to your account in the 'Deposit' tab in the navbar.</p>
+                        </div>";
+                }
             }else{                
                 ?>
                 <a href="https://www.pablogalve.com/caramel_capital/users/registration/login" class="button">Login</a>

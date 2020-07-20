@@ -27,6 +27,10 @@ if (!isset($_SESSION['username'])){
   p.left { float: left; }
 
   p.right {float: right; text-align: right; }
+
+  .btn {
+    font-size: 10px;
+  }
 </style>
 <body class="w3-light-grey">
 
@@ -41,7 +45,7 @@ if (!isset($_SESSION['username'])){
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="../../images/pablogalve.PNG" style="width:100%" alt="Profile Picture">
+          <img src="../../images/profile_pic_blank.jpeg" style="width:100%" alt="Profile Picture">
           <div class="w3-display-bottomleft w3-container w3-text-black">
           </div>
         </div>              
@@ -49,28 +53,29 @@ if (!isset($_SESSION['username'])){
           <?php
           //First and Last Name
           while($row = mysqli_fetch_array($result)){
-            echo "<td><h2>" . $row['role'] . "</h2></td>";          
+            echo "<td><h2>" . $row['username'] . "</h2></td>";          
           ?>           
           <?php
             //Investor ID
             echo '<div><p class="left"><i class="fa fa-list-ol fa-fw w3-margin-right w3-large w3-text-teal"></i>Investor ID </p>
-            <p class="right">' . $row['role'] . '</p></div>';
+            <p class="right">' . $row['id'] . '</p></div>';
             //Username
             echo '<div><p class="left"><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-teal"></i>Username </p><p class="right">' . $row['username'] . '</p></div>';
             //Address
-            echo '<div><p class="left"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Address </p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Address </p><p class="right"> Henry Street <button class="btn"><i class="fa fa-pencil"></i></button></p></div>';
             //City
-            echo '<div><p class="left"><i class="fa fa-map-marker fa-fw w3-margin-right w3-large w3-text-teal"></i>City </p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-map-marker fa-fw w3-margin-right w3-large w3-text-teal"></i>City </p><p class="right">Dublin <button class="btn"><i class="fa fa-pencil"></i></button></p></div>';
             //Postal Code
-            echo '<div><p class="left"><i class="fa fa-plane fa-fw w3-margin-right w3-large w3-text-teal"></i>Postal Code </p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-plane fa-fw w3-margin-right w3-large w3-text-teal"></i>Postal Code </p><p class="right">D08 XY01 <button class="btn"><i class="fa fa-pencil"></i></button></p></div>';
             //Email
-            echo '<div><p class="left"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Email </p><p class="right">' . $row['email'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Email </p><p class="right">' . $row['email'] . ' <button class="btn"><i class="fa fa-pencil"></i></button></p></div>';
             //Phone Number
-            echo '<div><p class="left"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Phone </p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Phone </p><p class="right">' . $row['role'] . ' <button class="btn"><i class="fa fa-pencil"></i></button></p></div>';
             //Language
-            echo '<div><p class="left"><i class="fa fa-language fa-fw w3-margin-right w3-large w3-text-teal"></i>Preferred language </p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-language fa-fw w3-margin-right w3-large w3-text-teal"></i>Preferred language </p><p class="right">' . $row['role'] . 
+            ' <button class="btn"><i class="fa fa-pencil"></i></button></p></div>';
             //Role
-            echo '<div><p class="left"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Role </p><p class="right">' . $row['role'] . '</p></div>';  
+            echo '<div><p class="left"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Role </p><p class="right">' . $row['role'] . '</p></div>'; 
           ?>          
         </div>
       </div><br>
@@ -92,7 +97,7 @@ if (!isset($_SESSION['username'])){
             //CC Balance
             echo '<div><p class="left"><i class="fa fa-pie-chart fa-fw w3-margin-right w3-large w3-text-teal"></i>Royalty Balance</p><p class="right">' . $row['pg'] . ' Royalties</p></div>';
             //On loans
-            echo '<div><p class="left"><i class="fa fa-signal fa-fw w3-margin-right w3-large w3-text-teal"></i>On loans </p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-signal fa-fw w3-margin-right w3-large w3-text-teal"></i>On loans </p><p class="right"> Cooming Soon </p></div>';
 
             echo '<h6 class="w3-text-teal">Open Orders</h6>';
 
@@ -107,20 +112,18 @@ if (!isset($_SESSION['username'])){
 
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Documents</h2>
-        <h5 class="w3-opacity"><b>Virtual Wallet</b></h5>
-          <h6 class="w3-text-teal">Balances</h6>
           <?php            
             //Document Type
-            echo '<div><p class="left"><i class="fa fa-id-card-o fa-fw w3-margin-right w3-large w3-text-teal"></i>Document Type </p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-id-card-o fa-fw w3-margin-right w3-large w3-text-teal"></i>Document Type </p><p class="right">ID Card</p></div>';
             //Document Number
-            echo '<div><p class="left"><i class="fa fa-id-badge fa-fw w3-margin-right w3-large w3-text-teal"></i>Document Number </p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-id-badge fa-fw w3-margin-right w3-large w3-text-teal"></i>Document Number </p><p class="right"> 123456789R </p></div>';
             //Expiration Date
-            echo '<div><p class="left"><i class="fa fa-calendar fa-fw w3-margin-right w3-large w3-text-teal"></i>Expiration Date </p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-calendar fa-fw w3-margin-right w3-large w3-text-teal"></i>Expiration Date </p><p class="right"> 01/01/2035 </p></div>';
 
             //Country
-            echo '<div><p class="left"><i class="fa fa-globe fa-fw w3-margin-right w3-large w3-text-teal"></i>Country</p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-globe fa-fw w3-margin-right w3-large w3-text-teal"></i>Country</p><p class="right">Ireland</p></div>';
             //Personal Number
-            echo '<div><p class="left"><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-teal"></i>Personal Number </p><p class="right">' . $row['role'] . '</p></div>';
+            echo '<div><p class="left"><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-teal"></i>Personal Number </p><p class="right">123456789R</p></div>';
             }
           ?>   
       </div>

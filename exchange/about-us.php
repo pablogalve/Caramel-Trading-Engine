@@ -9,7 +9,7 @@
 <body>
 
 <?php
-    include 'https://pablogalve.com/caramel_capital/headers/header_setup.php';
+    include 'headers/header_setup.php';
 ?>
 
 <div class="about-section">
