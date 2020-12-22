@@ -1,41 +1,47 @@
-# Moon Funding
+# Caramel Trading Engine
 
 ## Summary
+Caramel Trading Engine is a real-time marketplace where you can trade stocks.
 
-Moon Funding is a one-stop solution to creating a business from scratch!
-
-**Share an idea.** We’ll evolve it / fill in the gaps. Fund it. Build it. 
-
-You’ll receive frequent dividends if your project achieves profitability.                                                         You can buy/sell your positions on our marketplace in real time. If you want to sell your idea, and walk away at any time – you’re welcome to do that. Once your business is fully established, you can graduate it from our system entirely, and take it off into the world.
-
-**We’re a full service solution!** Writing down your idea, and your rules, is all that’s required of our entrepreneurs. And we even make that part easy!
-
-**To re-iterate in bullet point form, Moon Funding is:**
-* A platform for users to post business projects, and for our crowd to brainstorm, and collaborate with the entrepreneur (for a reward!), to develop the idea, it’s documentation, and settings / terms. Aiming to provide complete transparency for all parties.
-* An equity crowdfunding platform, using cryptocurrencies to finance user projects.
-* An online marketplace for users to buy/sell their (hopefully) dividend paying positions in user projects, in real-time.
-* A communications platform, for project managers to share near real-time accounts, and updates, aiming to provide unprecedented levels of operational transparency to their backers. And for the crowd to continually make suggestions, and feedback.
-* A crowd control platform, where backers have established procedures to vote on any desired changes / evolutions to the businesses (Voting System).
-
-**In conclusion...**
-A fair, and transparent platform for people to list, back, manage and trade startups. Until such time they choose to graduate the startup (now an established business) away from our platform, and into the world.
-And we even have a little device, that does it’s best, to protect backers from any failed projects as well (Safety Net).
-
-## Our Whitepaper in 10 different languages
-Our users have translated our whitepaper into their mother tongue, including english, spanish, french, hindi, filipino, catalan, indonesian, portugues, ukranian and vietnamese. 
-
-Choose your own language to get involved into our mission!
-
-[Translations](https://github.com/pablogalve/exchange_PHP/tree/master/Whitepaper)
-
-## Landing Page v1.0
 <p align="left">
-  <img src="Assets/landing_page_v2.png" width="800" title="Landing Page"> 
+  <img src="Assets/images/project/trading_view_logged_in.PNG" width="800" title="Trading View Logged In"> 
 </p>
 
-## Landing Page v0.1
- <p align="left">
-  <img src="Assets/landing_page_v1.png" width="800" title="Landing Page"> 
+## Features
+- Built-in matching engine.
+- Interactive Candlestick Historical Price Graph.
+- Interactive Market Depth Graph.
+- Create and cancel buy/sell orders.
+- Last Trades List.
+- My Open Orders List.
+- Bids and Asks.
+- Account system: Register/Login
+- Admin Dashboard (Work in progress).
+- [KYC Verification](https://en.wikipedia.org/wiki/Know_your_customer) (Work in progress)
+
+## Contributing
+### Fork this repository
+Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
+### Clone your fork
+Clone your forked repository to your local machine.
+### Create or browse an existing issue
+Assign yourself to an existing issue or create a new issue so other contributors know what you are working on.
+[Issues](https://github.com/pablogalve/Caramel-Trading-Engine/issues)
+### Create a branch
+Create a branch with a descriptive name on your forked repository.
+### Make necessary changes and commit those changes
+### Submit your changes for review
+Create a Pull Request with your changes. I promise that I'll review it as soon as possible to include it in the main repository!
+
+## View a Demo Live Engine
+### Instructions
+- Visit our [Live Demo](https://www.pablogalve.com/caramel_capital/invest/equity/market-pro)
+- Create an account (Register), or request credentials and we'll provide them for you.
+- Visit the 'deposit' section and choose to credit your account with 1000, 10k or 25k EUR
+<p align="left">
+  <img src="Assets/images/project/deposit_demo.PNG" width="600" title="Deposit Demo"> 
 </p>
+- That's all! You can now go to the 'invest' section and start trading!
 
-
+## License
+Check out our [license](license.md)
