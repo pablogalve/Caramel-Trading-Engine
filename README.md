@@ -49,7 +49,7 @@ Create a Pull Request with your changes. I promise that I'll review it as soon a
 ## Live Demo
 ### Instructions
 - Visit our [Live Demo](https://www.pablogalve.com/caramel_capital/invest/equity/market-pro).
-- Create an account (Register), or request credentials and we'll provide them for you.
+- Create an account (Register), or use the following credentials (user: test1 | password: test1).
 - Visit the 'deposit' section and choose to credit your account with 1000, 10k or 25k EUR. <p align="left"><img src="Assets/images/project/deposit_demo.PNG" width="500" title="Deposit Demo"></p>
 - That's all! You can now go to the 'invest' section and start trading!
 
