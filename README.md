@@ -62,4 +62,4 @@ Congratulations! Your database is setup and running!
 - That's all! You can now go to the 'invest' section and start trading!
 
 ## License
-Check out our [license](license.md).
+Check out our [license](LICENSE.md).
