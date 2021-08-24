@@ -10,7 +10,7 @@ Caramel Trading Engine is a real-time marketplace where you can trade stocks.
 ## Table of Contents  
 [Summary](#summary)  
 [Features](#features)  
-[Contributing](#contributing) 
+[Contributing](#contributing)  
 [Setup database](#setup-database)  
 [Live Demo](#live-demo)  
 [License](#license)
@@ -28,24 +28,12 @@ Caramel Trading Engine is a real-time marketplace where you can trade stocks.
 - [KYC Verification](https://en.wikipedia.org/wiki/Know_your_customer) (Work in progress).
 
 ## Contributing
-### Fork this repository
-Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
+Want to report a bug, request a feature, contribute or translate Caramel Trading Engine?
 
-### Clone your fork
-Clone your forked repository to your local machine.
-
-### Create or browse an existing issue
-Assign yourself to an existing issue or create a new issue so other contributors know what you are working on.  
-Check out our list of [Issues](https://github.com/pablogalve/Caramel-Trading-Engine/issues).
-
-### Create a branch
-Create a branch with a descriptive name on your forked repository.
-
-### Make necessary changes and commit those changes
-Now it's time to create!
-
-### Submit your changes for review
-Create a Pull Request with your changes. I promise that I'll review it as soon as possible to include it in the main repository!
+- Browse our issues, comment on proposals, report bugs.
+- Clone the caramel trading engine repo, make some changes and issue a pull-request with your changes.
+- Anything you want to tell us please send it to pablogalve100@gmail.com
+- If you need technical support or customization service, contact: pablogalve100@gmail.com
 
 ## Setup database
 You will need to set up your own database. This time I'm using phpmyadmin.
