@@ -10,7 +10,8 @@ Caramel Trading Engine is a real-time marketplace where you can trade stocks.
 ## Table of Contents  
 [Summary](#summary)  
 [Features](#features)  
-[Contributing](#contributing)  
+[Contributing](#contributing) 
+[Setup database](#setup-database)  
 [Live Demo](#live-demo)  
 [License](#license)
 
@@ -45,6 +46,13 @@ Now it's time to create!
 
 ### Submit your changes for review
 Create a Pull Request with your changes. I promise that I'll review it as soon as possible to include it in the main repository!
+
+## Setup database
+You will need to set up your own database. This time I'm using phpmyadmin.
+1. Go to "demo_database_backup/demo_database.sql" and import this .sql file into your phpmyadmin database. This will create all the needed tables + add some demo data.
+2. Go to "exchange/demo-database.php" and rename the file from "demo-database.php" to "database.php"
+3. Introduce your credentials inside "database.php" (DB_Server, DB_Username, DB_Password, DB_Database)
+Congratulations! Your database is setup and running!
 
 ## Live Demo
 ### Instructions
